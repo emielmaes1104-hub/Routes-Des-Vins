@@ -27,7 +27,7 @@ window.RDV.translations = {
     hero_subtitle: 'Not your casual winetasting',
     hero_date:     '20 november 2026 · Gent',
     hero_cta:      'Tickets kopen',
-    hero_body:     'Doe je rugzak dicht. Vanavond vertrek je op een reis langs vijf wijnregio\'s — zonder vliegticket, maar met een boarding pass.',
+    hero_body:     'Doe je rugzak dicht. Vanavond vertrek je op een reis langs vijf wijnregio\'s, zonder vliegticket maar met een boarding pass.',
 
     /* ── Home Countdown ── */
     countdown_title: 'De reis begint over...',
@@ -287,7 +287,7 @@ window.RDV.translations = {
     hero_subtitle: 'Not your casual winetasting',
     hero_date:     '20 novembre 2026 · Gand',
     hero_cta:      'Acheter des billets',
-    hero_body:     'Fermez votre sac. Ce soir, vous partez en voyage à travers cinq régions viticoles — sans billet d\'avion, mais avec une carte d\'embarquement.',
+    hero_body:     'Fermez votre sac. Ce soir, vous partez en voyage à travers cinq régions viticoles, sans billet d\'avion mais avec une carte d\'embarquement.',
 
     /* ── Home Countdown ── */
     countdown_title: 'Le voyage commence dans...',

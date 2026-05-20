@@ -101,6 +101,9 @@
 <!-- Story Section -->
 <section class="section" style="background:var(--c-cream)">
   <div class="container">
+    <div style="width:100%;margin-bottom:3rem;border-radius:20px;overflow:hidden;">
+      <img src="fotos/sfeer2.jpg" alt="Routes Des Vins sfeer" style="width:100%;height:320px;object-fit:cover;object-position:50% 30%;display:block;">
+    </div>
     <div class="story-grid">
       <!-- Quote block -->
       <div class="reveal-scale" style="background:var(--c-forest);border-radius:20px;padding:3rem;position:relative;overflow:hidden">
@@ -130,42 +133,82 @@
     <div class="team-grid">
       <!-- Emiel Maes -->
       <div class="team-card reveal delay-1">
-        <div class="team-card-img">
-          <div style="width:100%;height:220px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--c-light),var(--c-muted));font-family:var(--font-display);font-size:3rem;color:var(--c-forest)">EM</div>
+        <div class="team-card-img" style="aspect-ratio:unset;background:none;">
+          <img src="fotos/team-emiel.jpg" alt="Emiel Maes" style="width:100%;height:280px;object-fit:cover;object-position:center top;display:block;">
         </div>
         <div class="team-card-body">
-          <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Emiel Maes</div>
-          <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <div>
+              <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Emiel Maes</div>
+              <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
+            </div>
+            <button onclick="toggleBio(this)" aria-expanded="false" style="background:none;border:none;cursor:pointer;padding:0.25rem;color:var(--c-text-light);display:flex;align-items:center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bio-chevron" style="transition:transform 0.25s cubic-bezier(0.34,1.56,0.64,1)"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+        </div>
+        <div class="team-bio" style="display:none;padding:0.75rem 1rem 1rem;font-size:0.85rem;color:var(--c-text-light);line-height:1.7;border-top:1px solid var(--c-offwhite)">
+          Aangenaam, ik ben Emiel Maes, 20 jaar, student-ondernemer en <a href="https://instagram.com/deejay_mielus" target="_blank" rel="noopener" style="color:var(--c-forest);font-weight:600;text-decoration:underline">DJ</a> met een passie voor beleving. Naast mijn studies geef ik leiding op de scouts en engageer ik me in allerhande projecten binnen de eventwereld. Groetjes
         </div>
       </div>
       <!-- Arnaud Roegiers -->
       <div class="team-card reveal delay-2">
-        <div class="team-card-img">
-          <div style="width:100%;height:220px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--c-sage),var(--c-forest));font-family:var(--font-display);font-size:3rem;color:rgba(255,255,255,.9)">AR</div>
+        <div class="team-card-img" style="aspect-ratio:unset;background:none;">
+          <img src="fotos/team-arnaud.jpeg" alt="Arnaud Roegiers" style="width:100%;height:280px;object-fit:cover;object-position:center top;display:block;">
         </div>
         <div class="team-card-body">
-          <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Arnaud Roegiers</div>
-          <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <div>
+              <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Arnaud Roegiers</div>
+              <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
+            </div>
+            <button onclick="toggleBio(this)" aria-expanded="false" style="background:none;border:none;cursor:pointer;padding:0.25rem;color:var(--c-text-light);display:flex;align-items:center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bio-chevron" style="transition:transform 0.25s cubic-bezier(0.34,1.56,0.64,1)"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+        </div>
+        <div class="team-bio" style="display:none;padding:0.75rem 1rem 1rem;font-size:0.85rem;color:var(--c-text-light);line-height:1.7;border-top:1px solid var(--c-offwhite)">
+          Bio volgt binnenkort.
         </div>
       </div>
       <!-- Louis Roosens -->
       <div class="team-card reveal delay-3">
-        <div class="team-card-img">
-          <div style="width:100%;height:220px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--c-muted),var(--c-light));font-family:var(--font-display);font-size:3rem;color:var(--c-forest)">LR</div>
+        <div class="team-card-img" style="aspect-ratio:unset;background:none;">
+          <img src="fotos/team-louis.jpeg" alt="Louis Roosens" style="width:100%;height:280px;object-fit:cover;object-position:center top;display:block;">
         </div>
         <div class="team-card-body">
-          <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Louis Roosens</div>
-          <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <div>
+              <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Louis Roosens</div>
+              <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
+            </div>
+            <button onclick="toggleBio(this)" aria-expanded="false" style="background:none;border:none;cursor:pointer;padding:0.25rem;color:var(--c-text-light);display:flex;align-items:center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bio-chevron" style="transition:transform 0.25s cubic-bezier(0.34,1.56,0.64,1)"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+        </div>
+        <div class="team-bio" style="display:none;padding:0.75rem 1rem 1rem;font-size:0.85rem;color:var(--c-text-light);line-height:1.7;border-top:1px solid var(--c-offwhite)">
+          Bio volgt binnenkort.
         </div>
       </div>
       <!-- Matteo Van Gulik -->
       <div class="team-card reveal delay-4">
-        <div class="team-card-img">
-          <div style="width:100%;height:220px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--c-muted),var(--c-dark-mid));font-family:var(--font-display);font-size:3rem;color:rgba(255,255,255,.85)">MV</div>
+        <div class="team-card-img" style="aspect-ratio:unset;background:none;">
+          <img src="fotos/team-matteo.jpeg" alt="Matteo Van Gulik" style="width:100%;height:280px;object-fit:cover;object-position:center top;display:block;">
         </div>
         <div class="team-card-body">
-          <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Matteo Van Gulik</div>
-          <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <div>
+              <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Matteo Van Gulik</div>
+              <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
+            </div>
+            <button onclick="toggleBio(this)" aria-expanded="false" style="background:none;border:none;cursor:pointer;padding:0.25rem;color:var(--c-text-light);display:flex;align-items:center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bio-chevron" style="transition:transform 0.25s cubic-bezier(0.34,1.56,0.64,1)"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+        </div>
+        <div class="team-bio" style="display:none;padding:0.75rem 1rem 1rem;font-size:0.85rem;color:var(--c-text-light);line-height:1.7;border-top:1px solid var(--c-offwhite)">
+          Bio volgt binnenkort.
         </div>
       </div>
     </div>
@@ -181,22 +224,18 @@
     </div>
     <div class="values-grid">
       <div class="usp-card reveal delay-1">
-        <div class="usp-icon"></div>
         <h3 style="font-size:1rem" data-i18n="value1_title">Beleving boven proeverij</h3>
         <p class="text-muted body-sm" data-i18n="value1_body">Een avond die je niet vergeet, alle zintuigen aangesproken.</p>
       </div>
       <div class="usp-card reveal delay-2">
-        <div class="usp-icon"></div>
         <h3 style="font-size:1rem" data-i18n="value2_title">Toegankelijk voor elk niveau</h3>
         <p class="text-muted body-sm" data-i18n="value2_body">Van student tot expert, iedereen welkom aan boord.</p>
       </div>
       <div class="usp-card reveal delay-3">
-        <div class="usp-icon"></div>
         <h3 style="font-size:1rem" data-i18n="value3_title">Premium afwerking, warme aanpak</h3>
         <p class="text-muted body-sm" data-i18n="value3_body">Elk detail telt, van de boarding pass tot het smaakprofiel.</p>
       </div>
       <div class="usp-card reveal delay-4">
-        <div class="usp-icon"></div>
         <h3 style="font-size:1rem" data-i18n="value4_title">Persoonlijk en memorabel</h3>
         <p class="text-muted body-sm" data-i18n="value4_body">Jouw eigen smaakprofiel als blijvende herinnering.</p>
       </div>
@@ -223,27 +262,43 @@
       </div>
       <div>
         <div class="footer-label">Navigatie</div>
-        <ul class="footer-links">
-          <li><a href="event.html" data-i18n="nav_event">Event</a></li>
-          <li><a href="route.html" data-i18n="nav_route">Route</a></li>
-          <li><a href="formules.html" data-i18n="nav_formules">Formules</a></li>
-          <li><a href="tickets.html" data-i18n="nav_tickets">Tickets</a></li>
-          <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
-          <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
-          <li><a href="steun-ons.html" data-i18n="nav_steunons">Steun ons</a></li>
-        </ul>
+        <div style="display:flex;gap:2.5rem;">
+          <ul class="footer-links">
+            <li><a href="event.html" data-i18n="nav_event">Event</a></li>
+            <li><a href="route.html" data-i18n="nav_route">Route</a></li>
+            <li><a href="formules.html" data-i18n="nav_formules">Formules</a></li>
+            <li><a href="tickets.html" data-i18n="nav_tickets">Tickets</a></li>
+          </ul>
+          <ul class="footer-links">
+            <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
+            <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+            <li><a href="steun-ons.html" data-i18n="nav_steunons">Steun ons</a></li>
+          </ul>
+        </div>
       </div>
       <div>
         <div class="footer-label" data-i18n="footer_contact">Contact</div>
-        <p style="font-size:0.875rem;color:rgba(255,255,255,.5);margin-bottom:0.75rem">emiel@routesdesvins.com</p>
-        <p style="font-size:0.8rem;color:rgba(255,255,255,.35)" data-i18n="footer_org">Emiel Maes · Arnaud Roegiers · Louis Roosens · Matteo Van Gulik</p>
-        <p style="font-size:0.875rem;margin-top:0.75rem">
-          <a href="https://instagram.com/routes.des.vins" target="_blank" rel="noopener" style="color:rgba(255,255,255,.6);display:inline-flex;align-items:center;gap:0.4rem">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <p style="margin-bottom:0.5rem">
+          <a href="mailto:emiel@routesdesvins.com" style="color:rgba(255,255,255,.6);font-size:0.875rem;display:inline-flex;align-items:center;gap:0.5rem">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            emiel@routesdesvins.com
+          </a>
+        </p>
+        <p style="margin-bottom:0.75rem">
+          <a href="https://instagram.com/routes.des.vins" target="_blank" rel="noopener" style="color:rgba(255,255,255,.6);font-size:0.875rem;display:inline-flex;align-items:center;gap:0.5rem">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             <span data-i18n="footer_instagram">@routes.des.vins</span>
           </a>
         </p>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,.35)" data-i18n="footer_org">Emiel Maes · Arnaud Roegiers · Louis Roosens · Matteo Van Gulik</p>
       </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem;margin-top:0.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:0.25rem">Samenwerken?</div>
+        <div style="font-size:0.9rem;color:rgba(255,255,255,.6)">Word sponsor van Routes Des Vins</div>
+      </div>
+      <a href="mailto:emiel@routesdesvins.com" style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:0.875rem;font-weight:600;padding:0.6rem 1.25rem;border-radius:8px;text-decoration:none">Neem contact op</a>
     </div>
     <div class="footer-bottom">
       <span data-i18n="footer_rights">© 2026 Routes Des Vins</span>
@@ -251,6 +306,17 @@
   </div>
 </footer>
 
+<script>
+function toggleBio(btn) {
+  var card = btn.closest('.team-card');
+  var bio = card.querySelector('.team-bio');
+  var chevron = btn.querySelector('.bio-chevron');
+  var isOpen = bio.style.display !== 'none';
+  bio.style.display = isOpen ? 'none' : 'block';
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+</script>
 <script src="translations.js"></script>
 </body>
 </html>
