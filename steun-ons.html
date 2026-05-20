@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steun Ons — Routes Des Vins</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <style>
+    .cta-banner { background:var(--c-dark);position:relative;overflow:hidden;text-align:center; }
+    .cta-banner::before { content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 25% 50%,rgba(81,111,90,.3) 0%,transparent 70%),radial-gradient(ellipse 50% 60% at 80% 30%,rgba(140,161,128,.15) 0%,transparent 60%); }
+    .cta-banner > .container { position:relative;z-index:1; }
+    .product-card { background:#fff;border:1px solid var(--c-offwhite);border-radius:20px;padding:2.5rem;box-shadow:0 2px 12px rgba(26,46,31,.06); }
+  </style>
+</head>
+<body>
+
+<nav class="nav scrolled">
+  <a href="index.html" class="nav-logo">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+      <path d="M14 3C14 3 8 8 8 16C8 19.314 10.686 22 14 22C17.314 22 20 19.314 20 16C20 8 14 3 14 3Z" stroke="#516F5A" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M14 22V26" stroke="#516F5A" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M10 26H18" stroke="#516F5A" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M11 13C11 13 12 14.5 14 14.5C16 14.5 17 13 17 13" stroke="#8CA180" stroke-width="1.2" stroke-linecap="round"/>
+    </svg>
+    Routes Des Vins
+  </a>
+  <ul class="nav-links">
+    <li><a href="event.html" data-i18n="nav_event">Event</a></li>
+    <li><a href="route.html" data-i18n="nav_route">Route</a></li>
+    <li><a href="formules.html" data-i18n="nav_formules">Formules</a></li>
+    <li><a href="tickets.html" data-i18n="nav_tickets">Tickets</a></li>
+    <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
+    <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+    <li><a href="steun-ons.html" class="active" data-i18n="nav_steunons">Steun ons</a></li>
+  </ul>
+  <div class="nav-lang">
+    <button class="lang-btn" data-lang="nl">NL</button>
+    <button class="lang-btn" data-lang="fr">FR</button>
+  </div>
+  <a href="tickets.html" class="nav-cta" data-i18n="nav_cta">Tickets kopen</a>
+  <button class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile">
+  <a href="event.html" data-i18n="nav_event">Event</a>
+  <a href="route.html" data-i18n="nav_route">Route</a>
+  <a href="formules.html" data-i18n="nav_formules">Formules</a>
+  <a href="tickets.html" data-i18n="nav_tickets">Tickets</a>
+  <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+  <a href="over-ons.html" data-i18n="nav_about">Over Ons</a>
+  <a href="steun-ons.html" data-i18n="nav_steunons">Steun ons</a>
+  <a href="tickets.html" class="mobile-cta" data-i18n="nav_cta">Tickets kopen</a>
+  <div class="mobile-lang">
+    <button class="lang-btn" data-lang="nl">NL</button>
+    <button class="lang-btn" data-lang="fr">FR</button>
+  </div>
+</div>
+
+<header class="page-header">
+  <div class="container page-header-content" style="width:100%">
+    <span class="section-eyebrow" data-i18n="steunons_eyebrow">Steun ons</span>
+    <h1 class="display-lg reveal" style="margin-top:0.5rem" data-i18n="steunons_h1">Jouw steun telt</h1>
+    <p class="reveal delay-1" style="max-width:540px;margin-top:1rem;color:rgba(255,255,255,.65)" data-i18n="steunons_body">Routes Des Vins is een studentenevenement. Met jouw steun helpen we de kosten te dekken en kunnen we er een onvergetelijke avond van maken.</p>
+  </div>
+</header>
+
+<!-- Kurkentrekker Section -->
+<section class="section" style="background:var(--c-cream)">
+  <div class="container" style="max-width:800px">
+    <div class="product-card reveal">
+      <span class="section-eyebrow" style="margin-bottom:1.5rem">Exclusief voor supporters</span>
+      <h2 class="display-md" style="margin-top:0.5rem;margin-bottom:1rem" data-i18n="steunons_item_title">Gepersonaliseerde kurkentrekker</h2>
+      <p style="color:var(--c-text-light);line-height:1.8;margin-bottom:2rem" data-i18n="steunons_item_body">Bestel een kurkentrekker met jouw naam gegraveerd. Een blijvend aandenken en tegelijk een manier om ons financieel te steunen.</p>
+      <div style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;margin-bottom:2rem;padding:1.5rem;background:var(--c-offwhite);border-radius:12px">
+        <div>
+          <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--c-text-light);margin-bottom:0.25rem" data-i18n="steunons_price_label">Prijs op aanvraag</div>
+          <div style="font-family:var(--font-display);font-size:2rem;color:var(--c-dark)">op aanvraag</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.5rem;font-size:0.9rem;color:var(--c-text-light)">
+          <li>Naam naar keuze gegraveerd</li>
+          <li>Kwalitatief materiaal</li>
+          <li>Geleverd voor het event</li>
+        </ul>
+      </div>
+      <a href="mailto:emiel@routesdesvins.com?subject=Bestelling kurkentrekker" class="btn-primary" data-i18n="steunons_order_cta">Bestel via mail</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="section cta-banner">
+  <div class="container" style="display:flex;flex-direction:column;align-items:center;gap:1.5rem">
+    <h2 class="display-md reveal" style="color:#fff;text-align:center">Vragen over jouw bestelling?</h2>
+    <p class="reveal delay-1" style="color:rgba(255,255,255,.6);text-align:center;max-width:480px">Stuur ons een mail en we beantwoorden al jouw vragen zo snel mogelijk.</p>
+    <a href="mailto:emiel@routesdesvins.com" class="btn-primary reveal delay-2">emiel@routesdesvins.com</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Routes Des Vins</div>
+        <div class="footer-tagline" data-i18n="footer_tagline">Not Your Casual Winetasting</div>
+        <p style="margin-top:0.75rem;font-size:0.875rem;color:rgba(255,255,255,.45)" data-i18n="footer_date">20 november 2026 · Gent</p>
+      </div>
+      <div>
+        <div class="footer-label">Navigatie</div>
+        <ul class="footer-links">
+          <li><a href="event.html" data-i18n="nav_event">Event</a></li>
+          <li><a href="route.html" data-i18n="nav_route">Route</a></li>
+          <li><a href="formules.html" data-i18n="nav_formules">Formules</a></li>
+          <li><a href="tickets.html" data-i18n="nav_tickets">Tickets</a></li>
+          <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
+          <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+          <li><a href="steun-ons.html" data-i18n="nav_steunons">Steun ons</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-label" data-i18n="footer_contact">Contact</div>
+        <p style="font-size:0.875rem;color:rgba(255,255,255,.5);margin-bottom:0.75rem">emiel@routesdesvins.com</p>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,.35)" data-i18n="footer_org">Emiel Maes · Arnaud Roegiers · Louis Roosens · Matteo Van Gulik</p>
+        <p style="font-size:0.875rem;margin-top:0.75rem">
+          <a href="https://instagram.com/routes.des.vins" target="_blank" rel="noopener" style="color:rgba(255,255,255,.6);display:inline-flex;align-items:center;gap:0.4rem">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <span data-i18n="footer_instagram">@routes.des.vins</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer_rights">© 2026 Routes Des Vins</span>
+    </div>
+  </div>
+</footer>
+
+<script src="translations.js"></script>
+</body>
+</html>

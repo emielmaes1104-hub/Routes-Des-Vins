@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over Ons — Routes Des Vins</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <style>
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    @media (max-width: 768px) { .story-grid { grid-template-columns: 1fr; gap: 2rem; } }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 1024px) { .team-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .team-grid { grid-template-columns: 1fr; } }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 640px) { .values-grid { grid-template-columns: 1fr; } }
+    .cta-banner {
+      background: var(--c-dark);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 80% at 25% 50%, rgba(81,111,90,.3) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 60% at 80% 30%, rgba(140,161,128,.15) 0%, transparent 60%);
+    }
+    .cta-banner > .container { position: relative; z-index: 1; }
+  </style>
+</head>
+<body>
+
+<nav class="nav scrolled">
+  <a href="index.html" class="nav-logo">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+      <path d="M14 3C14 3 8 8 8 16C8 19.314 10.686 22 14 22C17.314 22 20 19.314 20 16C20 8 14 3 14 3Z" stroke="#516F5A" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M14 22V26" stroke="#516F5A" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M10 26H18" stroke="#516F5A" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M11 13C11 13 12 14.5 14 14.5C16 14.5 17 13 17 13" stroke="#8CA180" stroke-width="1.2" stroke-linecap="round"/>
+    </svg>
+    Routes Des Vins
+  </a>
+  <ul class="nav-links">
+    <li><a href="event.html" data-i18n="nav_event">Event</a></li>
+    <li><a href="route.html" data-i18n="nav_route">Route</a></li>
+    <li><a href="formules.html" data-i18n="nav_formules">Formules</a></li>
+    <li><a href="tickets.html" data-i18n="nav_tickets">Tickets</a></li>
+    <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
+    <li><a href="over-ons.html" class="active" data-i18n="nav_about">Over Ons</a></li>
+    <li><a href="steun-ons.html" data-i18n="nav_steunons">Steun ons</a></li>
+  </ul>
+  <div class="nav-lang">
+    <button class="lang-btn" data-lang="nl">NL</button>
+    <button class="lang-btn" data-lang="fr">FR</button>
+  </div>
+  <a href="tickets.html" class="nav-cta" data-i18n="nav_cta">Tickets kopen</a>
+  <button class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile">
+  <a href="event.html" data-i18n="nav_event">Event</a>
+  <a href="route.html" data-i18n="nav_route">Route</a>
+  <a href="formules.html" data-i18n="nav_formules">Formules</a>
+  <a href="tickets.html" data-i18n="nav_tickets">Tickets</a>
+  <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+  <a href="over-ons.html" data-i18n="nav_about">Over Ons</a>
+  <a href="steun-ons.html" data-i18n="nav_steunons">Steun ons</a>
+  <a href="tickets.html" class="mobile-cta" data-i18n="nav_cta">Tickets kopen</a>
+  <div class="mobile-lang">
+    <button class="lang-btn" data-lang="nl">NL</button>
+    <button class="lang-btn" data-lang="fr">FR</button>
+  </div>
+</div>
+
+<header class="page-header">
+  <div class="container page-header-content" style="width:100%">
+    <span class="section-eyebrow" data-i18n="about_eyebrow">Over Ons</span>
+    <h1 class="display-lg reveal" style="margin-top:0.5rem" data-i18n="about_title">Wie zijn wij?</h1>
+    <p class="body-lg reveal delay-1" style="max-width:640px;margin-top:1rem;color:rgba(255,255,255,.65)" data-i18n="about_body">Routes Des Vins is een project van vier gepassioneerde studenten uit Gent.</p>
+  </div>
+</header>
+
+<!-- Story Section -->
+<section class="section" style="background:var(--c-cream)">
+  <div class="container">
+    <div class="story-grid">
+      <!-- Quote block -->
+      <div class="reveal-scale" style="background:var(--c-forest);border-radius:20px;padding:3rem;position:relative;overflow:hidden">
+        <div style="font-family:var(--font-accent);font-size:7rem;line-height:0.8;color:rgba(255,255,255,.08);position:absolute;top:0.5rem;left:1.25rem;font-style:italic;pointer-events:none;">"</div>
+        <p class="italic-accent" style="font-size:1.25rem;line-height:1.65;color:rgba(255,255,255,.9);position:relative;z-index:1">Een wijnproeverij die anders is, een echte beleving, toegankelijk voor iedereen.</p>
+        <div style="margin-top:1.75rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12);font-size:0.875rem;color:rgba(255,255,255,.45)">— Routes Des Vins Team</div>
+      </div>
+
+      <!-- Text -->
+      <div>
+        <span class="section-eyebrow reveal" data-i18n="about_story_eyebrow">Ons verhaal</span>
+        <h2 class="display-md reveal delay-1" style="margin-top:0.5rem" data-i18n="about_title">Wie zijn wij?</h2>
+        <div class="divider reveal delay-2"></div>
+        <p class="body-lg reveal delay-2" style="color:var(--c-text-light)" data-i18n="about_body">Routes Des Vins is een project van vier gepassioneerde studenten uit Gent. We wilden een wijnproeverij organiseren die anders is, een echte beleving, toegankelijk voor iedereen, van de student die voor het eerst een Bordeaux proeft tot de expert die kan vertellen welk jaar de druiven geplukt werden.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="section" style="background:var(--c-offwhite)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem">
+      <span class="section-eyebrow reveal" style="justify-content:center" data-i18n="about_team_eyebrow">Het team</span>
+      <h2 class="display-md reveal delay-1" data-i18n="team_title">Het team</h2>
+    </div>
+    <div class="team-grid">
+      <!-- Emiel Maes -->
+      <div class="team-card reveal delay-1">
+        <div class="team-card-img">
+          <div style="width:100%;height:220px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--c-light),var(--c-muted));font-family:var(--font-display);font-size:3rem;color:var(--c-forest)">EM</div>
+        </div>
+        <div class="team-card-body">
+          <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Emiel Maes</div>
+          <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
+        </div>
+      </div>
+      <!-- Arnaud Roegiers -->
+      <div class="team-card reveal delay-2">
+        <div class="team-card-img">
+          <div style="width:100%;height:220px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--c-sage),var(--c-forest));font-family:var(--font-display);font-size:3rem;color:rgba(255,255,255,.9)">AR</div>
+        </div>
+        <div class="team-card-body">
+          <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Arnaud Roegiers</div>
+          <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
+        </div>
+      </div>
+      <!-- Louis Roosens -->
+      <div class="team-card reveal delay-3">
+        <div class="team-card-img">
+          <div style="width:100%;height:220px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--c-muted),var(--c-light));font-family:var(--font-display);font-size:3rem;color:var(--c-forest)">LR</div>
+        </div>
+        <div class="team-card-body">
+          <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Louis Roosens</div>
+          <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
+        </div>
+      </div>
+      <!-- Matteo Van Gulik -->
+      <div class="team-card reveal delay-4">
+        <div class="team-card-img">
+          <div style="width:100%;height:220px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--c-muted),var(--c-dark-mid));font-family:var(--font-display);font-size:3rem;color:rgba(255,255,255,.85)">MV</div>
+        </div>
+        <div class="team-card-body">
+          <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Matteo Van Gulik</div>
+          <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values Section -->
+<section class="section" style="background:var(--c-cream)">
+  <div class="container">
+    <div style="margin-bottom:3rem">
+      <span class="section-eyebrow reveal" data-i18n="about_values_eyebrow">Kernwaarden</span>
+      <h2 class="display-md reveal delay-1" data-i18n="about_values_title">Onze kernwaarden</h2>
+    </div>
+    <div class="values-grid">
+      <div class="usp-card reveal delay-1">
+        <div class="usp-icon"></div>
+        <h3 style="font-size:1rem" data-i18n="value1_title">Beleving boven proeverij</h3>
+        <p class="text-muted body-sm" data-i18n="value1_body">Een avond die je niet vergeet, alle zintuigen aangesproken.</p>
+      </div>
+      <div class="usp-card reveal delay-2">
+        <div class="usp-icon"></div>
+        <h3 style="font-size:1rem" data-i18n="value2_title">Toegankelijk voor elk niveau</h3>
+        <p class="text-muted body-sm" data-i18n="value2_body">Van student tot expert, iedereen welkom aan boord.</p>
+      </div>
+      <div class="usp-card reveal delay-3">
+        <div class="usp-icon"></div>
+        <h3 style="font-size:1rem" data-i18n="value3_title">Premium afwerking, warme aanpak</h3>
+        <p class="text-muted body-sm" data-i18n="value3_body">Elk detail telt, van de boarding pass tot het smaakprofiel.</p>
+      </div>
+      <div class="usp-card reveal delay-4">
+        <div class="usp-icon"></div>
+        <h3 style="font-size:1rem" data-i18n="value4_title">Persoonlijk en memorabel</h3>
+        <p class="text-muted body-sm" data-i18n="value4_body">Jouw eigen smaakprofiel als blijvende herinnering.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="section cta-banner">
+  <div class="container" style="display:flex;flex-direction:column;align-items:center;gap:1.5rem">
+    <h2 class="display-md reveal" style="color:#fff;text-align:center" data-i18n="cta_ready_travel">Klaar om mee te reizen?</h2>
+    <p class="reveal delay-1" style="color:rgba(255,255,255,.6);text-align:center;font-size:1.05rem" data-i18n="footer_date">20 november 2026 · Gent</p>
+    <a href="tickets.html" class="btn-primary reveal delay-2" data-i18n="nav_cta">Tickets kopen</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Routes Des Vins</div>
+        <div class="footer-tagline" data-i18n="footer_tagline">Not Your Casual Winetasting</div>
+        <p style="margin-top:0.75rem;font-size:0.875rem;color:rgba(255,255,255,.45)" data-i18n="footer_date">20 november 2026 · Gent</p>
+      </div>
+      <div>
+        <div class="footer-label">Navigatie</div>
+        <ul class="footer-links">
+          <li><a href="event.html" data-i18n="nav_event">Event</a></li>
+          <li><a href="route.html" data-i18n="nav_route">Route</a></li>
+          <li><a href="formules.html" data-i18n="nav_formules">Formules</a></li>
+          <li><a href="tickets.html" data-i18n="nav_tickets">Tickets</a></li>
+          <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
+          <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+          <li><a href="steun-ons.html" data-i18n="nav_steunons">Steun ons</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-label" data-i18n="footer_contact">Contact</div>
+        <p style="font-size:0.875rem;color:rgba(255,255,255,.5);margin-bottom:0.75rem">emiel@routesdesvins.com</p>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,.35)" data-i18n="footer_org">Emiel Maes · Arnaud Roegiers · Louis Roosens · Matteo Van Gulik</p>
+        <p style="font-size:0.875rem;margin-top:0.75rem">
+          <a href="https://instagram.com/routes.des.vins" target="_blank" rel="noopener" style="color:rgba(255,255,255,.6);display:inline-flex;align-items:center;gap:0.4rem">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <span data-i18n="footer_instagram">@routes.des.vins</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer_rights">© 2026 Routes Des Vins</span>
+    </div>
+  </div>
+</footer>
+
+<script src="translations.js"></script>
+</body>
+</html>
