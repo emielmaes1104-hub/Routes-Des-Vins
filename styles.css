@@ -111,6 +111,7 @@ h1, h2, h3, h4 {
 }
 
 .nav-logo svg { width: 32px; height: 32px; }
+.nav-logo img { width: 32px; height: 32px; border-radius: 8px; display: block; flex-shrink: 0; }
 
 .nav-links {
   display: flex;

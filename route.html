@@ -27,7 +27,6 @@
     .card-band { height: 6px; }
     .card-body { padding: 1.75rem; }
     .card-header { display: flex; align-items: center; gap: 0.875rem; margin-bottom: 1.25rem; }
-    .card-flag { font-size: 2.25rem; line-height: 1; }
     .card-name { font-family: var(--font-display); font-size: 1.2rem; color: var(--c-dark); line-height: 1.1; }
     .card-slogan { font-family: var(--font-accent); font-style: italic; font-size: 0.875rem; color: var(--c-text-light); }
     .card-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
@@ -63,7 +62,7 @@
       font-size: 0.9rem;
       box-shadow: 0 4px 12px rgba(81,111,90,.3);
     }
-    .route-stop-flag { font-size: 1.25rem; }
+    .route-stop-label { font-size: 0.7rem; font-weight:600; color: var(--c-text-light); text-align:center; }
     .route-line {
       flex: 1;
       height: 2px;
@@ -95,12 +94,7 @@
 
 <nav class="nav">
   <a href="index.html" class="nav-logo">
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-      <path d="M14 3C14 3 8 8 8 16C8 19.314 10.686 22 14 22C17.314 22 20 19.314 20 16C20 8 14 3 14 3Z" stroke="#516F5A" stroke-width="1.5" stroke-linejoin="round"/>
-      <path d="M14 22V26" stroke="#516F5A" stroke-width="1.5" stroke-linecap="round"/>
-      <path d="M10 26H18" stroke="#516F5A" stroke-width="1.5" stroke-linecap="round"/>
-      <path d="M11 13C11 13 12 14.5 14 14.5C16 14.5 17 13 17 13" stroke="#8CA180" stroke-width="1.2" stroke-linecap="round"/>
-    </svg>
+    <img src="fotos/logo-mark.png" alt="Routes Des Vins" width="32" height="32">
     Routes Des Vins
   </a>
   <ul class="nav-links">
@@ -139,8 +133,8 @@
 <header class="page-header">
   <div class="container page-header-content" style="width:100%">
     <span class="section-eyebrow" data-i18n="route_eyebrow">De Route</span>
-    <h1 class="display-lg reveal" style="margin-top:0.5rem;max-width:700px" data-i18n="route_title">Jouw reis langs 5 continenten</h1>
-    <p class="body-lg reveal delay-1" style="max-width:540px;margin-top:1rem;color:rgba(255,255,255,.65)" data-i18n="route_intro">Elke ruimte vertelt een ander verhaal.</p>
+    <h1 class="display-lg reveal" style="margin-top:0.5rem;max-width:700px" data-i18n="route_title">Jouw reis langs 3 wijnhandelaars</h1>
+    <p class="body-lg reveal delay-1" style="max-width:540px;margin-top:1rem;color:rgba(255,255,255,.65)" data-i18n="route_intro">Elke handelaar vertelt een ander verhaal. Kies je tijdslot, ontdek hun wereld.</p>
   </div>
 </header>
 
@@ -150,172 +144,107 @@
     <div class="route-map reveal">
       <div class="route-stop">
         <div class="route-stop-circle">1</div>
-        <div class="route-stop-flag">🇫🇷</div>
+        <div class="route-stop-label" data-i18n="classic_name">Handelaar 1</div>
       </div>
       <div class="route-line"></div>
       <div class="route-stop">
         <div class="route-stop-circle">2</div>
-        <div class="route-stop-flag">🇮🇹</div>
+        <div class="route-stop-label" data-i18n="sunset_name">Handelaar 2</div>
       </div>
       <div class="route-line"></div>
       <div class="route-stop">
         <div class="route-stop-circle">3</div>
-        <div class="route-stop-flag">🇺🇸</div>
-      </div>
-      <div class="route-line"></div>
-      <div class="route-stop">
-        <div class="route-stop-circle">4</div>
-        <div class="route-stop-flag">🇨🇱</div>
-      </div>
-      <div class="route-line"></div>
-      <div class="route-stop">
-        <div class="route-stop-circle">5</div>
-        <div class="route-stop-flag">🇱🇧</div>
+        <div class="route-stop-label" data-i18n="grandcru_name">Handelaar 3</div>
       </div>
     </div>
 
-    <!-- Country cards -->
+    <!-- Handelaar cards -->
     <div class="country-grid">
-      <!-- France -->
+      <!-- Handelaar 1 -->
       <div class="country-card-new reveal delay-1">
-        <div style="height:180px;overflow:hidden;position:relative;"><img src="fotos/land-frankrijk.avif" alt="Frankrijk" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;"><div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(20,35,24,.45) 100%);"></div></div>
+        <div style="height:180px;overflow:hidden;position:relative;"><img src="https://placehold.co/640x360/2d3f32/f1f4ec?text=Foto+volgt" alt="Handelaar 1" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;"><div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(20,35,24,.45) 100%);"></div></div>
         <div class="card-body">
           <div class="card-header">
-            <div class="card-flag">🇫🇷</div>
+            <div style="width:2.25rem;height:2.25rem;border-radius:50%;background:var(--c-forest);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:0.95rem;flex-shrink:0;">1</div>
             <div>
-              <div class="card-name" data-i18n="country_france">Frankrijk</div>
-              <div class="card-slogan" data-i18n="france_slogan">L'art de vivre</div>
+              <div class="card-name" data-i18n="classic_name">Handelaar 1</div>
+              <div class="card-slogan" data-i18n="classic_slogan">Regio volgt binnenkort</div>
             </div>
           </div>
           <div class="card-info-grid">
             <div class="card-info-item">
               <div class="card-info-label" data-i18n="card_sfeer">Sfeer</div>
-              <div class="card-info-value" data-i18n="france_sfeer">Elegant, kaarslicht, zachte verlichting</div>
+              <div class="card-info-value" data-i18n="classic_guide">Laagdrempelig en sociaal</div>
             </div>
             <div class="card-info-item">
               <div class="card-info-label" data-i18n="card_hapje">Hapje</div>
-              <div class="card-info-value" data-i18n="france_hapje">Kaasplankje (brie, comté, camembert)</div>
+              <div class="card-info-value" data-i18n="classic_food">Geen hapjes bij deze formule</div>
             </div>
           </div>
           <div class="card-wine">
             <div class="card-info-label" data-i18n="card_wijn">Wijn</div>
-            <div class="card-info-value" data-i18n="france_wijn">Franse rode of witte wijn</div>
+            <div class="card-info-value" data-i18n="classic_wines">Aantal wijnen volgt</div>
           </div>
         </div>
       </div>
 
-      <!-- Italy -->
+      <!-- Handelaar 2 -->
       <div class="country-card-new reveal delay-2">
-        <div style="height:180px;overflow:hidden;position:relative;"><img src="fotos/land-italie.jpg" alt="Italië" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;"><div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(20,35,24,.45) 100%);"></div></div>
+        <div style="height:180px;overflow:hidden;position:relative;"><img src="https://placehold.co/640x360/2d3f32/f1f4ec?text=Foto+volgt" alt="Handelaar 2" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;"><div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(20,35,24,.45) 100%);"></div></div>
         <div class="card-body">
           <div class="card-header">
-            <div class="card-flag">🇮🇹</div>
+            <div style="width:2.25rem;height:2.25rem;border-radius:50%;background:var(--c-forest);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:0.95rem;flex-shrink:0;">2</div>
             <div>
-              <div class="card-name" data-i18n="country_italy">Italië</div>
-              <div class="card-slogan" data-i18n="italie_slogan">La dolce vita</div>
+              <div class="card-name" data-i18n="sunset_name">Handelaar 2</div>
+              <div class="card-slogan" data-i18n="sunset_slogan">Regio volgt binnenkort</div>
             </div>
           </div>
           <div class="card-info-grid">
             <div class="card-info-item">
               <div class="card-info-label" data-i18n="card_sfeer">Sfeer</div>
-              <div class="card-info-value" data-i18n="italie_sfeer">Warm geel licht, mediterrane warmte</div>
+              <div class="card-info-value" data-i18n="sunset_guide">Leren en beleven</div>
             </div>
             <div class="card-info-item">
               <div class="card-info-label" data-i18n="card_hapje">Hapje</div>
-              <div class="card-info-value" data-i18n="italie_hapje">Bruschetta of pizza (kleine hapjes)</div>
+              <div class="card-info-value" data-i18n="sunset_food">Uitgebreide hapjes</div>
             </div>
           </div>
           <div class="card-wine">
             <div class="card-info-label" data-i18n="card_wijn">Wijn</div>
-            <div class="card-info-value" data-i18n="italie_wijn">Italiaanse wijn</div>
+            <div class="card-info-value" data-i18n="sunset_wines">Meer wijnen dan Handelaar 1 (aantal volgt)</div>
           </div>
         </div>
       </div>
 
-      <!-- USA -->
+      <!-- Handelaar 3 -->
       <div class="country-card-new reveal delay-3">
-        <div style="height:180px;overflow:hidden;position:relative;"><img src="fotos/land-vs.jpg" alt="Verenigde Staten" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;"><div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(20,35,24,.45) 100%);"></div></div>
+        <div style="height:180px;overflow:hidden;position:relative;"><img src="https://placehold.co/640x360/2d3f32/f1f4ec?text=Foto+volgt" alt="Handelaar 3" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;"><div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(20,35,24,.45) 100%);"></div></div>
         <div class="card-body">
           <div class="card-header">
-            <div class="card-flag">🇺🇸</div>
+            <div style="width:2.25rem;height:2.25rem;border-radius:50%;background:var(--c-forest);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:0.95rem;flex-shrink:0;">3</div>
             <div>
-              <div class="card-name" data-i18n="country_usa">Verenigde Staten</div>
-              <div class="card-slogan" data-i18n="usa_slogan">New World, Bold Flavors</div>
+              <div class="card-name" data-i18n="grandcru_name">Handelaar 3</div>
+              <div class="card-slogan" data-i18n="grandcru_slogan">Met live muziek</div>
             </div>
           </div>
           <div class="card-info-grid">
             <div class="card-info-item">
               <div class="card-info-label" data-i18n="card_sfeer">Sfeer</div>
-              <div class="card-info-value" data-i18n="usa_sfeer">Bruisend, kleurrijk, eigentijds Amerikaans</div>
+              <div class="card-info-value" data-i18n="grandcru_guide">Met live muziek</div>
             </div>
             <div class="card-info-item">
               <div class="card-info-label" data-i18n="card_hapje">Hapje</div>
-              <div class="card-info-value" data-i18n="usa_hapje">Nachos en dips</div>
+              <div class="card-info-value" data-i18n="grandcru_food">Uitgebreide hapjes</div>
             </div>
           </div>
           <div class="card-wine">
             <div class="card-info-label" data-i18n="card_wijn">Wijn</div>
-            <div class="card-info-value" data-i18n="usa_wijn">Californische Zinfandel of Chardonnay</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Chile -->
-      <div class="country-card-new reveal delay-1">
-        <div style="height:180px;overflow:hidden;position:relative;"><img src="fotos/land-chili.jpg" alt="Chili" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;"><div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(20,35,24,.45) 100%);"></div></div>
-        <div class="card-body">
-          <div class="card-header">
-            <div class="card-flag">🇨🇱</div>
-            <div>
-              <div class="card-name" data-i18n="country_chile">Chili</div>
-              <div class="card-slogan" data-i18n="chili_slogan">Entre la montaña y el mar</div>
-            </div>
-          </div>
-          <div class="card-info-grid">
-            <div class="card-info-item">
-              <div class="card-info-label" data-i18n="card_sfeer">Sfeer</div>
-              <div class="card-info-value" data-i18n="chili_sfeer">Aards, avontuurlijk, Andes-geïnspireerd</div>
-            </div>
-            <div class="card-info-item">
-              <div class="card-info-label" data-i18n="card_hapje">Hapje</div>
-              <div class="card-info-value" data-i18n="chili_hapje">Empanadas</div>
-            </div>
-          </div>
-          <div class="card-wine">
-            <div class="card-info-label" data-i18n="card_wijn">Wijn</div>
-            <div class="card-info-value" data-i18n="chili_wijn">Chileense Carménère of Cabernet Sauvignon</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Lebanon -->
-      <div class="country-card-new reveal delay-2">
-        <div style="height:180px;overflow:hidden;position:relative;"><img src="fotos/land-libanon.webp" alt="Libanon" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;"><div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(20,35,24,.45) 100%);"></div></div>
-        <div class="card-body">
-          <div class="card-header">
-            <div class="card-flag">🇱🇧</div>
-            <div>
-              <div class="card-name" data-i18n="country_liban">Libanon</div>
-              <div class="card-slogan" data-i18n="liban_slogan">Oud als de beschaving zelf</div>
-            </div>
-          </div>
-          <div class="card-info-grid">
-            <div class="card-info-item">
-              <div class="card-info-label" data-i18n="card_sfeer">Sfeer</div>
-              <div class="card-info-value" data-i18n="liban_sfeer">Mysterieus, aromatisch, oud als de beschaving</div>
-            </div>
-            <div class="card-info-item">
-              <div class="card-info-label" data-i18n="card_hapje">Hapje</div>
-              <div class="card-info-value" data-i18n="liban_hapje">Hummus en pita</div>
-            </div>
-          </div>
-          <div class="card-wine">
-            <div class="card-info-label" data-i18n="card_wijn">Wijn</div>
-            <div class="card-info-value" data-i18n="liban_wijn">Libanese wijn, Chateau Musar stijl</div>
+            <div class="card-info-value" data-i18n="grandcru_wines">Aantal wijnen volgt</div>
           </div>
         </div>
       </div>
     </div>
+    <p class="reveal" style="text-align:center;margin-top:1.5rem;color:var(--c-text-light);font-size:0.9rem" data-i18n="dealers_soon">Regio en handelaar worden binnenkort bekendgemaakt.</p>
   </div>
 </section>
 
