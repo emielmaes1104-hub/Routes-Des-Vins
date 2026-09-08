@@ -104,7 +104,7 @@
       <div class="reveal-scale" style="background:var(--c-forest);border-radius:20px;padding:3rem;position:relative;overflow:hidden">
         <div style="font-family:var(--font-accent);font-size:7rem;line-height:0.8;color:rgba(255,255,255,.08);position:absolute;top:0.5rem;left:1.25rem;font-style:italic;pointer-events:none;">"</div>
         <p class="italic-accent" style="font-size:1.25rem;line-height:1.65;color:rgba(255,255,255,.9);position:relative;z-index:1">Een wijnproeverij die anders is, een echte beleving, toegankelijk voor iedereen.</p>
-        <div style="margin-top:1.75rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12);font-size:0.875rem;color:rgba(255,255,255,.45)">— Routes Des Vins Team</div>
+        <div style="margin-top:1.75rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12);font-size:0.875rem;color:rgba(255,255,255,.6)">— Routes Des Vins Team</div>
       </div>
 
       <!-- Text -->
@@ -137,7 +137,7 @@
               <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Emiel Maes</div>
               <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
             </div>
-            <button onclick="toggleBio(this)" aria-expanded="false" style="background:none;border:none;cursor:pointer;padding:0.25rem;color:var(--c-text-light);display:flex;align-items:center;">
+            <button class="bio-toggle" onclick="toggleBio(this)" aria-expanded="false" style="background:none;border:none;cursor:pointer;padding:0.25rem;color:var(--c-text-light);display:flex;align-items:center;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bio-chevron" style="transition:transform 0.25s cubic-bezier(0.34,1.56,0.64,1)"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </button>
           </div>
@@ -157,7 +157,7 @@
               <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Arnaud Roegiers</div>
               <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
             </div>
-            <button onclick="toggleBio(this)" aria-expanded="false" style="background:none;border:none;cursor:pointer;padding:0.25rem;color:var(--c-text-light);display:flex;align-items:center;">
+            <button class="bio-toggle" onclick="toggleBio(this)" aria-expanded="false" style="background:none;border:none;cursor:pointer;padding:0.25rem;color:var(--c-text-light);display:flex;align-items:center;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bio-chevron" style="transition:transform 0.25s cubic-bezier(0.34,1.56,0.64,1)"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </button>
           </div>
@@ -177,7 +177,7 @@
               <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Louis Roosens</div>
               <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
             </div>
-            <button onclick="toggleBio(this)" aria-expanded="false" style="background:none;border:none;cursor:pointer;padding:0.25rem;color:var(--c-text-light);display:flex;align-items:center;">
+            <button class="bio-toggle" onclick="toggleBio(this)" aria-expanded="false" style="background:none;border:none;cursor:pointer;padding:0.25rem;color:var(--c-text-light);display:flex;align-items:center;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bio-chevron" style="transition:transform 0.25s cubic-bezier(0.34,1.56,0.64,1)"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </button>
           </div>
@@ -197,7 +197,7 @@
               <div style="font-family:var(--font-display);font-size:1rem;color:var(--c-dark)">Matteo Van Gulik</div>
               <div style="font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem" data-i18n="about_role">Organisatie</div>
             </div>
-            <button onclick="toggleBio(this)" aria-expanded="false" style="background:none;border:none;cursor:pointer;padding:0.25rem;color:var(--c-text-light);display:flex;align-items:center;">
+            <button class="bio-toggle" onclick="toggleBio(this)" aria-expanded="false" style="background:none;border:none;cursor:pointer;padding:0.25rem;color:var(--c-text-light);display:flex;align-items:center;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bio-chevron" style="transition:transform 0.25s cubic-bezier(0.34,1.56,0.64,1)"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </button>
           </div>
@@ -253,7 +253,7 @@
       <div>
         <div class="footer-brand">Routes Des Vins</div>
         <div class="footer-tagline" data-i18n="footer_tagline">Not Your Casual Winetasting</div>
-        <p style="margin-top:0.75rem;font-size:0.875rem;color:rgba(255,255,255,.45)" data-i18n="footer_date">20 november 2026 · Gent</p>
+        <p style="margin-top:0.75rem;font-size:0.875rem;color:rgba(255,255,255,.6)" data-i18n="footer_date">20 november 2026 · Gent</p>
       </div>
       <div>
         <div class="footer-label">Navigatie</div>
@@ -285,18 +285,23 @@
             <span data-i18n="footer_instagram">@routes.des.vins</span>
           </a>
         </p>
-        <p style="font-size:0.8rem;color:rgba(255,255,255,.35)" data-i18n="footer_org">Emiel Maes · Arnaud Roegiers · Louis Roosens · Matteo Van Gulik</p>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,.6)" data-i18n="footer_org">Emiel Maes · Arnaud Roegiers · Louis Roosens · Matteo Van Gulik</p>
       </div>
     </div>
     <div style="border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem;margin-top:0.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
       <div>
-        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:0.25rem">Samenwerken?</div>
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:0.25rem">Samenwerken?</div>
         <div style="font-size:0.9rem;color:rgba(255,255,255,.6)">Word sponsor van Routes Des Vins</div>
       </div>
       <a href="mailto:emiel@routesdesvins.com" style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:0.875rem;font-weight:600;padding:0.6rem 1.25rem;border-radius:8px;text-decoration:none">Neem contact op</a>
     </div>
     <div class="footer-bottom">
       <span data-i18n="footer_rights">© 2026 Routes Des Vins</span>
+      <nav style="display:flex;gap:1.25rem;flex-wrap:wrap">
+        <a href="privacybeleid.html" style="color:rgba(255,255,255,.6);font-size:0.8rem">Privacybeleid</a>
+        <a href="voorwaarden.html" style="color:rgba(255,255,255,.6);font-size:0.8rem">Voorwaarden</a>
+        <a href="cookiebeleid.html" style="color:rgba(255,255,255,.6);font-size:0.8rem">Cookiebeleid</a>
+      </nav>
     </div>
   </div>
 </footer>

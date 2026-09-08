@@ -90,20 +90,17 @@
   <div class="container page-header-content" style="width:100%">
     <span class="section-eyebrow" data-i18n="event_eyebrow">Het Event</span>
     <h1 class="display-lg reveal" style="margin-top:0.5rem;max-width:700px" data-i18n="event_title">Wat is Routes Des Vins?</h1>
-    <p class="body-lg reveal delay-1" style="max-width:600px;margin-top:1rem;color:rgba(255,255,255,.65)" data-i18n="event_body">Routes Des Vins is een wijnbeleving zoals je er nog geen gezien hebt. Geen saai staan met een glas in de hand, maar een echte reis. Je kiest een tijdslot bij één van onze 3 wijnhandelaars. Elke handelaar brengt zijn eigen regio mee: eigen muziek, eigen licht, eigen verhaal. Een sommelier begeleidt je door de smaken, de verhalen en de tradities.</p>
+    <p class="body-lg reveal delay-1" style="max-width:600px;margin-top:1rem;color:rgba(255,255,255,.65);font-size:1rem" data-i18n="event_body">Routes Des Vins is een wijnbeleving zoals je nog niet eerder meemaakte. Je kiest een tijdslot bij één van onze drie wijnhandelaars, elk met hun eigen sfeer, muziek en verhaal. Een sommelier neemt je mee doorheen de smaken en tradities van die regio. Geen saai geroezemoes met een glas in de hand, maar een echte ontdekking.</p>
   </div>
 </header>
-
-<!-- Sfeer foto -->
-<div class="container" style="padding-top:0;padding-bottom:2.5rem">
-  <div style="border-radius:20px;overflow:hidden;">
-    <img src="fotos/sfeer2.jpg" alt="Routes Des Vins sfeer" style="width:100%;max-height:480px;object-fit:cover;object-position:center;display:block;">
-  </div>
-</div>
 
 <!-- How It Works -->
 <section class="section" style="background:var(--c-cream)">
   <div class="container">
+    <!-- Sfeer foto -->
+    <div style="width:100%;margin-bottom:3.5rem;border-radius:20px;overflow:hidden;">
+      <img src="fotos/sfeer2.jpg" alt="Routes Des Vins sfeer" style="width:100%;max-height:480px;object-fit:cover;object-position:center;display:block;">
+    </div>
     <div class="how-grid">
       <!-- Steps -->
       <div>
@@ -146,7 +143,15 @@
           <div class="step-number">5</div>
           <div>
             <h4 style="font-size:1rem;margin-bottom:0.35rem" data-i18n="step5_title">Smaakprofiel</h4>
-            <p class="text-muted body-sm" data-i18n="step5_body">De dag erna ontvang je je persoonlijk profiel + top 3 aanbevelingen per mail</p>
+            <p class="text-muted body-sm" data-i18n="step5_body">Kort na het evenement ontvang je je persoonlijk profiel + top 3 aanbevelingen per mail</p>
+          </div>
+        </div>
+
+        <div class="step-item reveal delay-6">
+          <div class="step-number">6</div>
+          <div>
+            <h4 style="font-size:1rem;margin-bottom:0.35rem" data-i18n="step6_title">Nagenieten</h4>
+            <p class="text-muted body-sm" data-i18n="step6_body">Alle geproefde wijnen verschijnen nadien op onze website, met de beoordelingen uit de wijnpaspoorten. Zo ontdek je wat andere bezoekers vonden en bestel je gemakkelijk een extra fles.</p>
           </div>
         </div>
       </div>
@@ -184,7 +189,7 @@
               <circle cx="16" cy="16" r="12" stroke="rgba(255,255,255,.4)" stroke-width="1.5"/>
               <path d="M16 8C16 8 10 13 10 18C10 21.314 12.686 24 16 24" stroke="rgba(255,255,255,.7)" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
-            <div style="writing-mode:vertical-rl;font-size:0.7rem;color:rgba(255,255,255,.4);letter-spacing:0.12em;font-weight:600">20·11·2026</div>
+            <div style="writing-mode:vertical-rl;font-size:0.7rem;color:rgba(255,255,255,.6);letter-spacing:0.12em;font-weight:600">20·11·2026</div>
           </div>
         </div>
       </div>
@@ -200,13 +205,13 @@
       <div class="reveal-scale">
         <div class="passport-cover" style="max-width:280px">
           <div>
-            <div class="label" style="color:rgba(255,255,255,.35);font-size:0.62rem;letter-spacing:0.18em">WIJNPASPOORT</div>
+            <div class="label" style="color:rgba(255,255,255,.6);font-size:0.62rem;letter-spacing:0.18em">WIJNPASPOORT</div>
             <div style="font-family:var(--font-display);color:#fff;font-size:2.25rem;line-height:1.1;margin-top:0.75rem">Routes<br>Des Vins</div>
           </div>
           <div>
             <div style="width:32px;height:2px;background:rgba(255,255,255,.2);margin-bottom:1rem"></div>
-            <div style="font-family:var(--font-accent);font-style:italic;color:rgba(255,255,255,.45);font-size:0.95rem">Not your casual winetasting</div>
-            <div style="margin-top:0.75rem;font-size:0.75rem;color:rgba(255,255,255,.25);letter-spacing:0.06em">20 NOVEMBER 2026 · GENT</div>
+            <div style="font-family:var(--font-accent);font-style:italic;color:rgba(255,255,255,.6);font-size:0.95rem">Not your casual winetasting</div>
+            <div style="margin-top:0.75rem;font-size:0.75rem;color:rgba(255,255,255,.6);letter-spacing:0.06em">20 NOVEMBER 2026 · GENT</div>
           </div>
         </div>
       </div>
@@ -215,24 +220,24 @@
       <div>
         <span class="section-eyebrow reveal">Jouw souvenir</span>
         <h2 class="display-md reveal delay-1" style="margin-top:0.5rem" data-i18n="passport_title">Boarding Pass en Wijnpaspoort</h2>
-        <p class="body-lg reveal delay-2" style="margin-top:1rem;color:var(--c-text-light)" data-i18n="passport_body">Bij aankomst ontvang je een boarding pass met jouw tijdslot en groepsnummer, en een wijnpaspoort waarin je jouw notities en indrukken kwijt kan. Het paspoort is jouw persoonlijk souvenir van de avond.</p>
+        <p class="body-lg reveal delay-2" style="margin-top:1rem;color:var(--c-text-light)" data-i18n="passport_body">Bij aankomst ontvang je een boarding pass met jouw tijdslot, groepsnummer en persoonlijke QR-code, en een wijnpaspoort waarin je jouw notities en indrukken kwijt kan. Het paspoort is jouw persoonlijk souvenir van de avond.</p>
         <div class="reveal delay-3" style="margin-top:2rem;display:flex;flex-direction:column;gap:0.75rem">
           <div style="display:flex;align-items:flex-start;gap:0.75rem">
             <div>
               <div style="font-weight:600;font-size:0.9rem;color:var(--c-dark)">Boarding Pass</div>
-              <div style="font-size:0.85rem;color:var(--c-text-light)">Met tijdslot, groepsnummer en QR-code</div>
+              <div style="font-size:0.85rem;color:var(--c-text-light)" data-i18n="passport_qr">Voor check-in aan de deur en om je beoordelingen aan jouw smaakprofiel te koppelen</div>
             </div>
           </div>
           <div style="display:flex;align-items:flex-start;gap:0.75rem">
             <div>
               <div style="font-weight:600;font-size:0.9rem;color:var(--c-dark)">Wijnpaspoort</div>
-              <div style="font-size:0.85rem;color:var(--c-text-light)">Jouw persoonlijk smaakdagboek, één stempel per land</div>
+              <div style="font-size:0.85rem;color:var(--c-text-light)" data-i18n="passport_book">Jouw persoonlijk smaakdagboek: beoordeel elke wijn die je proeft</div>
             </div>
           </div>
           <div style="display:flex;align-items:flex-start;gap:0.75rem">
             <div>
               <div style="font-weight:600;font-size:0.9rem;color:var(--c-dark)">Persoonlijk smaakprofiel</div>
-              <div style="font-size:0.85rem;color:var(--c-text-light)">De dag erna in je mailbox, met top 3 aanbevelingen</div>
+              <div style="font-size:0.85rem;color:var(--c-text-light)" data-i18n="passport_profile">Kort na het evenement in je mailbox. Alle wijnen verschijnen ook op onze website, mét beoordelingen van andere bezoekers.</div>
             </div>
           </div>
         </div>
@@ -249,7 +254,7 @@
     <p class="reveal delay-2" style="color:rgba(255,255,255,.6);text-align:center;max-width:480px;font-family:var(--font-accent);font-style:italic;font-size:1.1rem" data-i18n="cta_event_sub">Jouw boarding pass wacht op je.</p>
     <div class="reveal delay-3" style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center">
       <a href="tickets.html" class="btn-primary" data-i18n="nav_cta">Tickets kopen</a>
-      <a href="formules.html" class="btn-secondary" style="border-color:rgba(255,255,255,.35);color:#fff" data-i18n="nav_formules">Formules</a>
+      <a href="formules.html" class="btn-secondary" style="border-color:rgba(255,255,255,.6);color:#fff" data-i18n="nav_formules">Formules</a>
     </div>
   </div>
 </section>
@@ -260,7 +265,7 @@
       <div>
         <div class="footer-brand">Routes Des Vins</div>
         <div class="footer-tagline" data-i18n="footer_tagline">Not Your Casual Winetasting</div>
-        <p style="margin-top:0.75rem;font-size:0.875rem;color:rgba(255,255,255,.45)" data-i18n="footer_date">20 november 2026 · Gent</p>
+        <p style="margin-top:0.75rem;font-size:0.875rem;color:rgba(255,255,255,.6)" data-i18n="footer_date">20 november 2026 · Gent</p>
       </div>
       <div>
         <div class="footer-label">Navigatie</div>
@@ -292,18 +297,23 @@
             <span data-i18n="footer_instagram">@routes.des.vins</span>
           </a>
         </p>
-        <p style="font-size:0.8rem;color:rgba(255,255,255,.35)" data-i18n="footer_org">Emiel Maes · Arnaud Roegiers · Louis Roosens · Matteo Van Gulik</p>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,.6)" data-i18n="footer_org">Emiel Maes · Arnaud Roegiers · Louis Roosens · Matteo Van Gulik</p>
       </div>
     </div>
     <div style="border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem;margin-top:0.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
       <div>
-        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:0.25rem">Samenwerken?</div>
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:0.25rem">Samenwerken?</div>
         <div style="font-size:0.9rem;color:rgba(255,255,255,.6)">Word sponsor van Routes Des Vins</div>
       </div>
       <a href="mailto:emiel@routesdesvins.com" style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:0.875rem;font-weight:600;padding:0.6rem 1.25rem;border-radius:8px;text-decoration:none">Neem contact op</a>
     </div>
     <div class="footer-bottom">
       <span data-i18n="footer_rights">© 2026 Routes Des Vins</span>
+      <nav style="display:flex;gap:1.25rem;flex-wrap:wrap">
+        <a href="privacybeleid.html" style="color:rgba(255,255,255,.6);font-size:0.8rem">Privacybeleid</a>
+        <a href="voorwaarden.html" style="color:rgba(255,255,255,.6);font-size:0.8rem">Voorwaarden</a>
+        <a href="cookiebeleid.html" style="color:rgba(255,255,255,.6);font-size:0.8rem">Cookiebeleid</a>
+      </nav>
     </div>
   </div>
 </footer>
