@@ -29,6 +29,11 @@
     }
     .pricing-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
     .pricing-card.featured { border: 2px solid var(--c-forest); }
+    @media (max-width: 480px) {
+      .pricing-card { flex-direction: column; align-items: stretch; gap: 0.9rem; }
+      .pricing-card > div:last-child { text-align: left; }
+      .pricing-card > div:last-child a { width: 100%; justify-content: center; }
+    }
     .stat-box {
       background: var(--c-offwhite);
       border-radius: 12px;
