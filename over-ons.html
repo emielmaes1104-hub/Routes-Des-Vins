@@ -19,9 +19,26 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1.5rem;
+      align-items: start;
     }
     @media (max-width: 1024px) { .team-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 480px) { .team-grid { grid-template-columns: 1fr; } }
+    .team-bio {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .team-bio.open { grid-template-rows: 1fr; }
+    .team-bio-inner { overflow: hidden; }
+    .team-bio-inner p {
+      margin: 0;
+      padding: 0.85rem 1rem 1rem;
+      font-size: 0.85rem;
+      color: var(--c-text-light);
+      line-height: 1.7;
+      border-top: 1px solid var(--c-offwhite);
+    }
+    .team-bio-inner a { color: var(--c-forest); font-weight: 600; text-decoration: underline; }
     .values-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -97,7 +114,7 @@
 <section class="section" style="background:var(--c-cream)">
   <div class="container">
     <div style="width:100%;margin-bottom:3rem;border-radius:20px;overflow:hidden;">
-      <img src="fotos/sfeer2.jpg" alt="Routes Des Vins sfeer" style="width:100%;height:320px;object-fit:cover;object-position:50% 30%;display:block;">
+      <img src="fotos/sfeer3.jpg" alt="Twee glazen wijn die klinken bij avondlicht" style="width:100%;height:320px;object-fit:cover;object-position:50% 45%;display:block;">
     </div>
     <div class="story-grid">
       <!-- Quote block -->
@@ -142,8 +159,8 @@
             </button>
           </div>
         </div>
-        <div class="team-bio" style="display:none;padding:0.75rem 1rem 1rem;font-size:0.85rem;color:var(--c-text-light);line-height:1.7;border-top:1px solid var(--c-offwhite)">
-          Aangenaam, ik ben Emiel Maes, 20 jaar, student-ondernemer en <a href="https://instagram.com/deejay_mielus" target="_blank" rel="noopener" style="color:var(--c-forest);font-weight:600;text-decoration:underline">DJ</a> met een passie voor beleving. Naast mijn studies geef ik leiding op de scouts en engageer ik me in allerhande projecten binnen de eventwereld. Groetjes
+        <div class="team-bio">
+          <div class="team-bio-inner"><p>Aangenaam, ik ben Emiel Maes, 20 jaar, student-ondernemer en <a href="https://instagram.com/deejay_mielus" target="_blank" rel="noopener">DJ</a> met een passie voor beleving. Naast mijn studies geef ik leiding op de scouts en engageer ik me in allerhande projecten binnen de eventwereld. Groetjes</p></div>
         </div>
       </div>
       <!-- Arnaud Roegiers -->
@@ -162,8 +179,8 @@
             </button>
           </div>
         </div>
-        <div class="team-bio" style="display:none;padding:0.75rem 1rem 1rem;font-size:0.85rem;color:var(--c-text-light);line-height:1.7;border-top:1px solid var(--c-offwhite)">
-          Bio volgt binnenkort.
+        <div class="team-bio">
+          <div class="team-bio-inner"><p>Hallo, ik ben Arnaud, 19 jaar, met een passie voor events die bijblijven. Naast mijn studies ben ik scoutsleider en grijp ik elke kans om ervaring op te doen in de eventwereld. Ciao</p></div>
         </div>
       </div>
       <!-- Louis Roosens -->
@@ -182,8 +199,8 @@
             </button>
           </div>
         </div>
-        <div class="team-bio" style="display:none;padding:0.75rem 1rem 1rem;font-size:0.85rem;color:var(--c-text-light);line-height:1.7;border-top:1px solid var(--c-offwhite)">
-          Bio volgt binnenkort.
+        <div class="team-bio">
+          <div class="team-bio-inner"><p>Hallo! Ik ben Louis, 21 jaar en een doener in hart en nieren. Ik hou van werken en ga uitdagingen aan, ook al liggen ze niet binnen handbereik. Mijn motto: al doende leert men. Cheers</p></div>
         </div>
       </div>
       <!-- Matteo Van Gulik -->
@@ -202,8 +219,8 @@
             </button>
           </div>
         </div>
-        <div class="team-bio" style="display:none;padding:0.75rem 1rem 1rem;font-size:0.85rem;color:var(--c-text-light);line-height:1.7;border-top:1px solid var(--c-offwhite)">
-          Bio volgt binnenkort.
+        <div class="team-bio">
+          <div class="team-bio-inner"><p>Salut, ik ben Matteo, 19 jaar, scoutsleider en actief bij de Student Kick-off in Gent. Naast mijn studies ben ik graag bezig met evenementen, altijd op zoek naar een nieuwe uitdaging om bij te leren. À bientôt</p></div>
         </div>
       </div>
     </div>
@@ -242,7 +259,7 @@
 <section class="section cta-banner">
   <div class="container" style="display:flex;flex-direction:column;align-items:center;gap:1.5rem">
     <h2 class="display-md reveal" style="color:#fff;text-align:center" data-i18n="cta_ready_travel">Klaar om mee te reizen?</h2>
-    <p class="reveal delay-1" style="color:rgba(255,255,255,.6);text-align:center;font-size:1.05rem" data-i18n="footer_date">20 november 2026 · Gent</p>
+    <p class="reveal delay-1" style="color:rgba(255,255,255,.6);text-align:center;font-size:1.05rem" data-i18n="footer_date">20 november 2026 · Villa Anamma, Gent</p>
     <a href="tickets.html" class="btn-primary reveal delay-2" data-i18n="nav_cta">Tickets kopen</a>
   </div>
 </section>
@@ -253,7 +270,7 @@
       <div>
         <div class="footer-brand">Routes Des Vins</div>
         <div class="footer-tagline" data-i18n="footer_tagline">Not Your Casual Winetasting</div>
-        <p style="margin-top:0.75rem;font-size:0.875rem;color:rgba(255,255,255,.6)" data-i18n="footer_date">20 november 2026 · Gent</p>
+        <p style="margin-top:0.75rem;font-size:0.875rem;color:rgba(255,255,255,.6)" data-i18n="footer_date">20 november 2026 · Villa Anamma, Gent</p>
       </div>
       <div>
         <div class="footer-label">Navigatie</div>
@@ -310,11 +327,25 @@
 function toggleBio(btn) {
   var card = btn.closest('.team-card');
   var bio = card.querySelector('.team-bio');
-  var chevron = btn.querySelector('.bio-chevron');
-  var isOpen = bio.style.display !== 'none';
-  bio.style.display = isOpen ? 'none' : 'block';
-  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
-  btn.setAttribute('aria-expanded', String(!isOpen));
+  var willOpen = !bio.classList.contains('open');
+
+  // Close every bio (accordion: only one open at a time)
+  document.querySelectorAll('.team-card').forEach(function(c) {
+    var b = c.querySelector('.team-bio');
+    var t = c.querySelector('.bio-toggle');
+    var ch = t && t.querySelector('.bio-chevron');
+    if (b) b.classList.remove('open');
+    if (t) t.setAttribute('aria-expanded', 'false');
+    if (ch) ch.style.transform = '';
+  });
+
+  // Open the clicked one if it was closed
+  if (willOpen) {
+    bio.classList.add('open');
+    btn.setAttribute('aria-expanded', 'true');
+    var chevron = btn.querySelector('.bio-chevron');
+    if (chevron) chevron.style.transform = 'rotate(180deg)';
+  }
 }
 </script>
 <script src="translations.js"></script>

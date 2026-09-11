@@ -107,7 +107,7 @@
       position: relative;
       z-index: 1;
     }
-    @media (max-width: 768px) { .teaser-grid { grid-template-columns: 1fr; } .teaser-svg { display:none; } }
+    @media (max-width: 768px) { .teaser-grid { grid-template-columns: 1fr; } .teaser-svg { margin-top: 0.5rem; } }
     .formula-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -132,6 +132,56 @@
     .teaser-route-cta:hover {
       border-color: rgba(255,255,255,.7);
       background: rgba(255,255,255,.06);
+    }
+    /* Partner logo carousel */
+    .partner-carousel { width: 100%; max-width: 340px; margin: 0 auto; }
+    .pc-frame {
+      position: relative;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 20px 56px rgba(0,0,0,.35);
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+    }
+    .pc-slide {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.25rem 2rem;
+      opacity: 0;
+      transform: translateY(10px) scale(0.97);
+      transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+      pointer-events: none;
+    }
+    .pc-slide.is-active { opacity: 1; transform: none; pointer-events: auto; }
+    .pc-slide img { width: 100%; height: auto; max-height: 100%; object-fit: contain; display: block; }
+    .pc-soon { display: flex; flex-direction: column; align-items: center; gap: 0.85rem; text-align: center; }
+    .pc-soon-num {
+      width: 2.75rem; height: 2.75rem;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--c-cream);
+      color: var(--c-forest);
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+    }
+    .pc-soon-txt { font-size: 0.8rem; font-weight: 600; color: var(--c-text-light); letter-spacing: 0.02em; }
+    .pc-dots { display: flex; gap: 0.5rem; justify-content: center; margin-top: 1.25rem; }
+    .pc-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      border: none; padding: 0;
+      cursor: pointer;
+      background: rgba(255,255,255,.25);
+      transition: background 0.3s var(--ease-out), transform 0.3s var(--ease-spring);
+    }
+    .pc-dot.is-active { background: #fff; transform: scale(1.3); }
+    .pc-dot:hover:not(.is-active) { background: rgba(255,255,255,.5); }
+    .pc-dot:focus-visible { outline: 2px solid var(--c-sage); outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) {
+      .pc-slide { transition: opacity 0.2s linear; transform: none; }
     }
   </style>
 </head>
@@ -183,11 +233,11 @@
   </div>
   <div class="hero-inner">
     <div class="hero-date-pill reveal">
-      <span data-i18n="hero_date">20 november 2026 · Gent</span>
+      <span data-i18n="hero_date">20 november 2026 · Villa Anamma</span>
     </div>
     <h1 class="display-xl reveal delay-1" style="color:#fff;margin-bottom:0.5rem" data-i18n="hero_title">Routes Des Vins</h1>
     <p class="italic-accent reveal delay-2" style="font-size:clamp(1.25rem,3vw,2.25rem);color:var(--c-muted)" data-i18n="hero_subtitle">Not your casual winetasting</p>
-    <p class="hero-body-text reveal delay-3" data-i18n="hero_body">Doe je rugzak dicht. Vanavond vertrek je op een reis langs drie wijnhandelaars, elk met hun eigen regio, zonder vliegticket maar met een boarding pass.</p>
+    <p class="hero-body-text reveal delay-3" data-i18n="hero_body">Doe je rugzak dicht. Vanavond vertrek je op een reis langs drie wijnpartners, elk met hun eigen verhaal, zonder vliegticket maar met een boarding pass.</p>
     <div class="hero-ctas reveal delay-4">
       <a href="tickets.html" class="btn-primary" style="font-size:1.05rem;padding:0.95rem 2rem" data-i18n="hero_cta">Tickets kopen</a>
       <a href="event.html" class="hero-ghost" data-i18n="hero_event_cta">Event →</a>
@@ -237,11 +287,11 @@
     <div class="usp-grid">
       <div class="usp-card reveal delay-1">
         <h3 style="font-size:1.05rem" data-i18n="usp1_title">Jouw boarding pass</h3>
-        <p class="text-muted body-sm" data-i18n="usp1_body">Geen gewone avond. Jij checkt in bij jouw favoriete wijnhandelaar en hun regio.</p>
+        <p class="text-muted body-sm" data-i18n="usp1_body">Geen gewone avond. Jij checkt in bij een van onze drie wijnpartners en hun verhaal.</p>
       </div>
       <div class="usp-card reveal delay-2">
-        <h3 style="font-size:1.05rem" data-i18n="usp2_title">Op jouw niveau</h3>
-        <p class="text-muted body-sm" data-i18n="usp2_body">Handelaar 1, 2 of 3. Elk tijdslot is afgestemd op jouw wijnervaring.</p>
+        <h3 style="font-size:1.05rem" data-i18n="usp2_title">Op jouw moment</h3>
+        <p class="text-muted body-sm" data-i18n="usp2_body">Drie tijdsloten, drie wijnpartners. Kies het moment dat bij jou past.</p>
       </div>
       <div class="usp-card reveal delay-3">
         <h3 style="font-size:1.05rem" data-i18n="usp3_title">Blijvende herinnering</h3>
@@ -257,20 +307,36 @@
     <div class="teaser-grid">
       <div>
         <span class="section-eyebrow reveal" style="color:var(--c-light)">La Route</span>
-        <h2 class="display-md reveal delay-1" style="color:#fff;margin-top:0.5rem" data-i18n="home_route_h2">3 wijnhandelaars,<br>3 werelden</h2>
-        <p class="reveal delay-2" style="margin-top:1rem;color:rgba(255,255,255,.58);font-size:1.05rem;line-height:1.8;max-width:460px" data-i18n="teaser_body">Elke wijnhandelaar brengt zijn eigen regio, sfeer en verhaal mee. Welke landen dat worden, ontdek je binnenkort.</p>
-        <div class="reveal delay-3" style="display:flex;gap:0.875rem;flex-wrap:wrap;margin-top:1.5rem;align-items:center">
-          <span style="display:inline-flex;align-items:center;justify-content:center;width:2.25rem;height:2.25rem;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-family:var(--font-display);font-size:0.85rem;" title="Handelaar 1">1</span>
-          <span style="display:inline-flex;align-items:center;justify-content:center;width:2.25rem;height:2.25rem;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-family:var(--font-display);font-size:0.85rem;" title="Handelaar 2">2</span>
-          <span style="display:inline-flex;align-items:center;justify-content:center;width:2.25rem;height:2.25rem;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-family:var(--font-display);font-size:0.85rem;" title="Handelaar 3">3</span>
-        </div>
+        <h2 class="display-md reveal delay-1" style="color:#fff;margin-top:0.5rem" data-i18n="home_route_h2">3 wijnpartners,<br>3 verhalen</h2>
+        <p class="reveal delay-2" style="margin-top:1rem;color:rgba(255,255,255,.58);font-size:1.05rem;line-height:1.8;max-width:460px" data-i18n="teaser_body">Elke wijnpartner brengt zijn eigen verhaal mee. De eerste is bekend: Wijndomein Waes.</p>
         <a href="route.html"
-           class="teaser-route-cta reveal delay-4"
+           class="teaser-route-cta reveal delay-3"
            data-i18n="teaser_cta">Ontdek de route →</a>
       </div>
       <div class="teaser-svg reveal-scale delay-2" style="display:flex;justify-content:center;align-items:center">
-        <div style="width:100%;max-width:380px;aspect-ratio:4/5;border-radius:20px;overflow:hidden;box-shadow:0 20px 56px rgba(0,0,0,.35);">
-          <img src="https://placehold.co/640x800/2d3f32/f1f4ec?text=Foto+volgt" alt="Drie wijnhandelaars, drie werelden" style="width:100%;height:100%;object-fit:cover;display:block;">
+        <div class="partner-carousel">
+          <div class="pc-frame">
+            <div class="pc-slide is-active">
+              <img src="fotos/waes-logo.png" alt="Wijndomein Waes" loading="lazy">
+            </div>
+            <div class="pc-slide">
+              <div class="pc-soon">
+                <span class="pc-soon-num">2</span>
+                <span class="pc-soon-txt" data-i18n="partner_soon_name">Wordt binnenkort onthuld</span>
+              </div>
+            </div>
+            <div class="pc-slide">
+              <div class="pc-soon">
+                <span class="pc-soon-num">3</span>
+                <span class="pc-soon-txt" data-i18n="partner_soon_name">Wordt binnenkort onthuld</span>
+              </div>
+            </div>
+          </div>
+          <div class="pc-dots">
+            <button type="button" class="pc-dot is-active" aria-label="Wijndomein Waes"></button>
+            <button type="button" class="pc-dot" aria-label="Wijnpartner 2"></button>
+            <button type="button" class="pc-dot" aria-label="Wijnpartner 3"></button>
+          </div>
         </div>
       </div>
     </div>
@@ -289,25 +355,25 @@
     <div class="formula-grid">
       <!-- Classic -->
       <div class="formula-card reveal" style="background:#fff;border:1px solid var(--c-offwhite)">
-        <span class="formula-badge" style="background:var(--c-light);color:var(--c-forest)"><span data-i18n="classic_name">Handelaar 1</span></span>
+        <span class="formula-badge" style="background:var(--c-light);color:var(--c-forest)"><span data-i18n="classic_name">Wijnpartner 1</span></span>
         <div class="price-display" style="margin-bottom:1.25rem" data-i18n="classic_price">€39</div>
-        <p style="font-size:0.875rem;color:var(--c-text-light);margin-bottom:1.5rem;line-height:1.7" data-i18n="classic_body">Je houdt van een goed glas, maar wil er meer over weten. Bij Handelaar 1 combineer je beleving met kennis.</p>
-        <a href="formules.html" class="btn-secondary" style="width:100%;justify-content:center" data-i18n="classic_cta">Bestel bij Handelaar 1</a>
+        <p style="font-size:0.875rem;color:var(--c-text-light);margin-bottom:1.5rem;line-height:1.7" data-i18n="classic_body">Je houdt van een goed glas, maar wil er meer over weten. In dit tijdslot combineer je beleving met kennis.</p>
+        <a href="formules.html" class="btn-secondary" style="width:100%;justify-content:center" data-i18n="classic_cta">Reserveer dit tijdslot</a>
       </div>
       <!-- Sunset (featured) -->
       <div class="formula-card featured reveal delay-1" style="position:relative;overflow:hidden">
         <div style="position:absolute;top:1.25rem;right:1.25rem;background:rgba(255,255,255,.15);border-radius:100px;padding:0.3rem 0.75rem;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#fff">Populair</div>
-        <span class="formula-badge" style="background:rgba(255,255,255,.15);color:#fff"><span data-i18n="sunset_name">Handelaar 2</span></span>
+        <span class="formula-badge" style="background:rgba(255,255,255,.15);color:#fff"><span data-i18n="sunset_name">Wijndomein Waes</span></span>
         <div class="price-display on-dark" style="margin-bottom:1.25rem" data-i18n="sunset_price">€45</div>
-        <p style="font-size:0.875rem;color:rgba(255,255,255,.75);margin-bottom:1.5rem;line-height:1.7" data-i18n="sunset_body">Deze sessie draait om beleving met karakter: goede wijnen, gezelligheid en live muziek op de achtergrond.</p>
-        <a href="formules.html" class="btn-primary" style="width:100%;justify-content:center;background:#fff;color:var(--c-forest)" data-i18n="sunset_cta">Bestel bij Handelaar 2</a>
+        <p style="font-size:0.875rem;color:rgba(255,255,255,.75);margin-bottom:1.5rem;line-height:1.7" data-i18n="sunset_body">Je proeft bij Wijndomein Waes, het eerste commerciële wijndomein van Gent. Bekroonde Vlaamse wijn: wit, rood en bubbels, met live muziek op de achtergrond.</p>
+        <a href="formules.html" class="btn-primary" style="width:100%;justify-content:center;background:#fff;color:var(--c-forest)" data-i18n="sunset_cta">Reserveer dit tijdslot</a>
       </div>
       <!-- Grand Cru -->
       <div class="formula-card reveal delay-2" style="background:var(--c-offwhite);border:1px solid var(--c-light)">
-        <span class="formula-badge" style="background:#F5EFD6;color:#7A5F1A"><span data-i18n="grandcru_name">Handelaar 3</span></span>
+        <span class="formula-badge" style="background:#F5EFD6;color:#7A5F1A"><span data-i18n="grandcru_name">Wijnpartner 3</span></span>
         <div class="price-display" style="margin-bottom:1.25rem" data-i18n="grandcru_price">€29</div>
-        <p style="font-size:0.875rem;color:var(--c-text-light);margin-bottom:1.5rem;line-height:1.7" data-i18n="grandcru_body">Wijn hoeft niet ingewikkeld te zijn. Bij Handelaar 3 stap je laagdrempelig en sociaal de wereld van wijn binnen.</p>
-        <a href="formules.html" class="btn-secondary" style="width:100%;justify-content:center" data-i18n="grandcru_cta">Bestel bij Handelaar 3</a>
+        <p style="font-size:0.875rem;color:var(--c-text-light);margin-bottom:1.5rem;line-height:1.7" data-i18n="grandcru_body">Wijn hoeft niet ingewikkeld te zijn. In dit tijdslot stap je laagdrempelig en sociaal de wereld van wijn binnen.</p>
+        <a href="formules.html" class="btn-secondary" style="width:100%;justify-content:center" data-i18n="grandcru_cta">Reserveer dit tijdslot</a>
       </div>
     </div>
     <div style="text-align:center;margin-top:2rem" class="reveal">
@@ -333,7 +399,7 @@
       <div>
         <div class="footer-brand">Routes Des Vins</div>
         <div class="footer-tagline" data-i18n="footer_tagline">Not Your Casual Winetasting</div>
-        <p style="margin-top:0.75rem;font-size:0.875rem;color:rgba(255,255,255,.6)" data-i18n="footer_date">20 november 2026 · Gent</p>
+        <p style="margin-top:0.75rem;font-size:0.875rem;color:rgba(255,255,255,.6)" data-i18n="footer_date">20 november 2026 · Villa Anamma, Gent</p>
       </div>
       <div>
         <div class="footer-label">Navigatie</div>
@@ -380,5 +446,35 @@
 </footer>
 
 <script src="translations.js"></script>
+<script>
+(function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    var car = document.querySelector('.partner-carousel');
+    if (!car) return;
+    var slides = car.querySelectorAll('.pc-slide');
+    var dots = car.querySelectorAll('.pc-dot');
+    if (slides.length < 2) return;
+    var idx = 0, timer = null;
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function show(n) {
+      idx = (n + slides.length) % slides.length;
+      slides.forEach(function (s, i) { s.classList.toggle('is-active', i === idx); });
+      dots.forEach(function (d, i) { d.classList.toggle('is-active', i === idx); });
+    }
+    function start() { if (reduce) return; stop(); timer = setInterval(function () { show(idx + 1); }, 4000); }
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+
+    dots.forEach(function (d, i) {
+      d.addEventListener('click', function () { show(i); start(); });
+    });
+    car.addEventListener('mouseenter', stop);
+    car.addEventListener('mouseleave', start);
+    car.addEventListener('focusin', stop);
+    car.addEventListener('focusout', start);
+    start();
+  });
+})();
+</script>
 </body>
 </html>
