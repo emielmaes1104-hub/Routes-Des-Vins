@@ -5,7 +5,7 @@
 <title>Routes Des Vins — Social</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
@@ -227,6 +227,92 @@
     background: linear-gradient(to bottom, rgba(36,56,44,.5), rgba(36,56,44,.15)); mix-blend-mode: multiply; }
   .sb-url { position: absolute; z-index: 3; left: 84px; bottom: 54px;
     font-family: var(--display); color: var(--cream); font-size: 30px; letter-spacing: .02em; }
+
+  /* ═══════  WIJNFEITJE WOENSDAG · terugkerende reeks  ═══════ */
+  .series-tag {
+    display: inline-flex; align-items: center; gap: 16px; align-self: flex-start;
+    background: var(--forest); color: var(--cream);
+    border-radius: 100px; padding: 16px 32px 16px 26px;
+    font-family: var(--display); text-transform: uppercase; letter-spacing: .09em;
+  }
+  .card.feed .series-tag { font-size: 27px; }
+  .series-tag .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--sage); flex: none; }
+  .card.cream .top .count { color: #5c7663; }
+
+  .sponsor-plate {
+    width: 100%; max-width: 820px; min-height: 320px;
+    border: 3px solid var(--forest); border-radius: 22px;
+    background: rgba(255,255,255,.4);
+    padding: 64px 70px; display: flex; align-items: center; justify-content: center;
+  }
+  .sponsor-plate img { width: 100%; max-width: 620px; mix-blend-mode: multiply; }
+  .sponsor-plate.placeholder { border-style: dashed; background: rgba(255,255,255,.22); }
+  .sponsor-plate-label {
+    font-family: var(--body); font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+    font-size: 22px; line-height: 1.7; text-align: center; color: #8a9a8f;
+  }
+
+  /* ═══════  WIJNETIKET · Wijnfeitje Woensdag (oldskool wijnlabel-stijl)  ═══════
+     Zwaar geleend van klassieke etiket-typografie (Didone-serif titel + cursieve
+     ondertitel + gearceerde info-cassette), maar in RDV-inkt: bosgroen op crème,
+     nooit bordeaux/goud — dát is waar het merk in dit ontwerp in zit. */
+  .card.label { background: #F1F4EC; color: var(--forest); }
+  .card.label::before { opacity: .28; mix-blend-mode: multiply; }
+  .card.label::after {
+    content: ''; position: absolute; inset: 46px; z-index: 1; pointer-events: none;
+    border: 2px solid rgba(81,111,90,.5); background: none; box-shadow: none;
+  }
+  .card.label .inner { align-items: center; text-align: center; justify-content: center; gap: 44px; }
+  .card.feed.label .inner { padding: 90px 104px 78px; }
+
+  .lbl-eyebrow {
+    font-family: var(--body); font-weight: 600; letter-spacing: .4em; text-transform: uppercase;
+    font-size: 19px; color: var(--sage);
+  }
+
+  .seal { color: var(--forest); margin: 36px 0 30px; overflow: visible; }
+  .seal text { font-family: var(--body); font-weight: 600; fill: var(--forest); }
+  .seal .ring { stroke: rgba(81,111,90,.4); fill: none; }
+
+  .lbl-headline { display: flex; flex-direction: column; align-items: center; }
+
+  .lbl-num {
+    font-family: var(--accent); font-style: normal; font-weight: 700; text-transform: uppercase;
+    font-size: 104px; line-height: .96; letter-spacing: .005em; color: var(--forest);
+  }
+  .lbl-word {
+    font-family: var(--accent); font-style: italic; font-weight: 600;
+    font-size: 66px; line-height: 1.05; color: var(--forest); margin: 2px 0 22px;
+  }
+  .lbl-sub {
+    font-family: var(--body); font-weight: 600; letter-spacing: .24em; text-transform: uppercase;
+    font-size: 20px; color: var(--sage); max-width: 34ch;
+  }
+
+  .lbl-rule { width: 220px; height: 2px; background: rgba(81,111,90,.5); margin: 42px 0 38px; }
+
+  .lbl-box {
+    display: grid; grid-template-columns: 1fr 1px 1fr; align-items: stretch;
+    border: 2px solid rgba(81,111,90,.5); width: 100%; max-width: 800px;
+  }
+  .lbl-box.single { grid-template-columns: 1fr; }
+  .lbl-box .col { padding: 28px 32px; display: flex; flex-direction: column; justify-content: center; gap: 8px; text-align: left; }
+  .lbl-box .col.center { align-items: center; text-align: center; }
+  .lbl-box .divider { background: rgba(81,111,90,.4); }
+  .lbl-box .col-label { font-family: var(--body); font-weight: 600; letter-spacing: .2em; text-transform: uppercase; font-size: 14px; color: var(--sage); }
+  .lbl-box .col-text { font-family: var(--accent); font-style: italic; font-size: 21px; line-height: 1.4; color: var(--forest); }
+  .lbl-box .col-num { font-family: var(--accent); font-style: normal; font-weight: 700; font-size: 32px; color: var(--forest); }
+
+  .lbl-logo-frame {
+    width: 100%; max-width: 600px; min-height: 210px;
+    border: 2px dashed rgba(81,111,90,.5);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .lbl-logo-frame img { max-width: 76%; max-height: 76%; mix-blend-mode: multiply; }
+  .lbl-logo-placeholder {
+    font-family: var(--body); font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
+    font-size: 17px; color: rgba(81,111,90,.55); line-height: 1.7;
+  }
 </style>
 </head>
 <body>
@@ -466,6 +552,664 @@
         <circle cx="50" cy="35" r="9"/><circle cx="38" cy="45" r="9"/><circle cx="62" cy="45" r="9"/>
         <circle cx="44" cy="59" r="9"/><circle cx="56" cy="59" r="9"/><circle cx="50" cy="73" r="9"/>
       </svg>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · slide 1, het feit (wijnetiket-stijl)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · etiket (feit)</span>
+<div class="card feed label" id="wfw-fact">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArc1" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArc1" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-headline">
+      <div class="lbl-num">600 tot 800</div>
+      <div class="lbl-word">druiven</div>
+      <div class="lbl-sub">in elke fles wijn</div>
+    </div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box">
+      <div class="col">
+        <span class="col-label">Wist je dat</span>
+        <span class="col-text">Goed voor zowat 1,2 kilogram druiven, geperst tot dat ene glas.</span>
+      </div>
+      <div class="divider"></div>
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°01</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · slide 2, partner van de week (wijnetiket-stijl)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · etiket (partner, template)</span>
+<div class="card feed label" id="wfw-sponsor">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArc2" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArc2" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-sub">mede mogelijk gemaakt door</div>
+    <div class="lbl-logo-frame placeholder"><span class="lbl-logo-placeholder">Logo van de<br>wijnpartner hier</span></div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box single">
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°01</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°02, het feit (wijnetiket-stijl)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°02 (feit)</span>
+<div class="card feed label" id="wfw-fact-02">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcF02" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcF02" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-headline">
+      <div class="lbl-num">8.000 JAAR</div>
+      <div class="lbl-word">geschiedenis</div>
+      <div class="lbl-sub">OUDSTE BEWIJS: GEORGIË</div>
+    </div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box">
+      <div class="col">
+        <span class="col-label">Wist je dat</span>
+        <span class="col-text">Het oudste bewijs van wijnbereiding komt uit Georgië, het land aan de Zwarte Zee. Niet de Amerikaanse staat.</span>
+      </div>
+      <div class="divider"></div>
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°02</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°02, partner van de week (wijnetiket-stijl, template)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°02 (partner, template)</span>
+<div class="card feed label" id="wfw-sponsor-02">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcS02" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcS02" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-sub">mede mogelijk gemaakt door</div>
+    <div class="lbl-logo-frame placeholder"><span class="lbl-logo-placeholder">Logo van de<br>wijnpartner hier</span></div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box single">
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°02</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°03, het feit (wijnetiket-stijl)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°03 (feit)</span>
+<div class="card feed label" id="wfw-fact-03">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcF03" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcF03" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-headline">
+      <div class="lbl-num">1.700 JAAR</div>
+      <div class="lbl-word">oud</div>
+      <div class="lbl-sub">DE OUDSTE FLES WIJN TER WERELD</div>
+    </div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box">
+      <div class="col">
+        <span class="col-label">Wist je dat</span>
+        <span class="col-text">De Romeinse ‘Wijn van Speyer’ staat al bijna 1.700 jaar, nog steeds vloeibaar, in een Duits museum.</span>
+      </div>
+      <div class="divider"></div>
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°03</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°03, partner van de week (wijnetiket-stijl, template)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°03 (partner, template)</span>
+<div class="card feed label" id="wfw-sponsor-03">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcS03" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcS03" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-sub">mede mogelijk gemaakt door</div>
+    <div class="lbl-logo-frame placeholder"><span class="lbl-logo-placeholder">Logo van de<br>wijnpartner hier</span></div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box single">
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°03</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°04, het feit (wijnetiket-stijl)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°04 (feit)</span>
+<div class="card feed label" id="wfw-fact-04">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcF04" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcF04" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-headline">
+      <div class="lbl-num">10.000</div>
+      <div class="lbl-word">druivenrassen</div>
+      <div class="lbl-sub">BESTAAN ER WERELDWIJD</div>
+    </div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box">
+      <div class="col">
+        <span class="col-label">Wist je dat</span>
+        <span class="col-text">Amper 1.300 daarvan gebruiken we ooit voor een fles wijn. De rest groeit ergens, ongezien.</span>
+      </div>
+      <div class="divider"></div>
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°04</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°04, partner van de week (wijnetiket-stijl, template)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°04 (partner, template)</span>
+<div class="card feed label" id="wfw-sponsor-04">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcS04" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcS04" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-sub">mede mogelijk gemaakt door</div>
+    <div class="lbl-logo-frame placeholder"><span class="lbl-logo-placeholder">Logo van de<br>wijnpartner hier</span></div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box single">
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°04</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°05, het feit (wijnetiket-stijl)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°05 (feit)</span>
+<div class="card feed label" id="wfw-fact-05">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcF05" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcF05" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-headline">
+      <div class="lbl-num">225 LITER</div>
+      <div class="lbl-word">in één vat</div>
+      <div class="lbl-sub">GOED VOOR ZOWAT 300 FLESSEN</div>
+    </div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box">
+      <div class="col">
+        <span class="col-label">Wist je dat</span>
+        <span class="col-text">Een klassieke eikenhouten barrique van 225 liter levert genoeg wijn voor ongeveer 300 flessen.</span>
+      </div>
+      <div class="divider"></div>
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°05</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°05, partner van de week (wijnetiket-stijl, template)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°05 (partner, template)</span>
+<div class="card feed label" id="wfw-sponsor-05">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcS05" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcS05" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-sub">mede mogelijk gemaakt door</div>
+    <div class="lbl-logo-frame placeholder"><span class="lbl-logo-placeholder">Logo van de<br>wijnpartner hier</span></div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box single">
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°05</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°06, het feit (wijnetiket-stijl)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°06 (feit)</span>
+<div class="card feed label" id="wfw-fact-06">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcF06" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcF06" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-headline">
+      <div class="lbl-num">5</div>
+      <div class="lbl-word">smaken</div>
+      <div class="lbl-sub">DE REST RUIK JE, NIET PROEF JE</div>
+    </div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box">
+      <div class="col">
+        <span class="col-label">Wist je dat</span>
+        <span class="col-text">Je tong onderscheidt maar vijf smaken. Dat hele universum aan aroma’s ontdek je via je neus.</span>
+      </div>
+      <div class="divider"></div>
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°06</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°06, partner van de week (wijnetiket-stijl, template)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°06 (partner, template)</span>
+<div class="card feed label" id="wfw-sponsor-06">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcS06" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcS06" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-sub">mede mogelijk gemaakt door</div>
+    <div class="lbl-logo-frame placeholder"><span class="lbl-logo-placeholder">Logo van de<br>wijnpartner hier</span></div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box single">
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°06</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°07, het feit (wijnetiket-stijl)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°07 (feit)</span>
+<div class="card feed label" id="wfw-fact-07">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcF07" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcF07" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-headline">
+      <div class="lbl-num">WIJNBENEN</div>
+      <div class="lbl-word">een misverstand</div>
+      <div class="lbl-sub">ZEGGEN IETS OVER ALCOHOL, NIET KWALITEIT</div>
+    </div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box">
+      <div class="col">
+        <span class="col-label">Wist je dat</span>
+        <span class="col-text">Die druppels tegen het glas verklappen het alcoholpercentage. Niet of de wijn goed is.</span>
+      </div>
+      <div class="divider"></div>
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°07</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°07, partner van de week (wijnetiket-stijl, template)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°07 (partner, template)</span>
+<div class="card feed label" id="wfw-sponsor-07">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcS07" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcS07" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-sub">mede mogelijk gemaakt door</div>
+    <div class="lbl-logo-frame placeholder"><span class="lbl-logo-placeholder">Logo van de<br>wijnpartner hier</span></div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box single">
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°07</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°08, het feit (wijnetiket-stijl)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°08 (feit)</span>
+<div class="card feed label" id="wfw-fact-08">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcF08" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcF08" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-headline">
+      <div class="lbl-num">16 À 18°C</div>
+      <div class="lbl-word">kamertemperatuur</div>
+      <div class="lbl-sub">NIET DE 21°C VAN JE WOONKAMER</div>
+    </div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box">
+      <div class="col">
+        <span class="col-label">Wist je dat</span>
+        <span class="col-text">‘Kamertemperatuur’ voor rode wijn dateert uit een tijd zonder centrale verwarming. Bedoeld wordt 16 à 18°C.</span>
+      </div>
+      <div class="divider"></div>
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°08</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°08, partner van de week (wijnetiket-stijl, template)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°08 (partner, template)</span>
+<div class="card feed label" id="wfw-sponsor-08">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcS08" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcS08" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-sub">mede mogelijk gemaakt door</div>
+    <div class="lbl-logo-frame placeholder"><span class="lbl-logo-placeholder">Logo van de<br>wijnpartner hier</span></div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box single">
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°08</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°09, het feit (wijnetiket-stijl)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°09 (feit)</span>
+<div class="card feed label" id="wfw-fact-09">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcF09" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcF09" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-headline">
+      <div class="lbl-num">40 KM/U</div>
+      <div class="lbl-word">bij het ontkurken</div>
+      <div class="lbl-sub">ZO SNEL KAN EEN KURK VLIEGEN</div>
+    </div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box">
+      <div class="col">
+        <span class="col-label">Wist je dat</span>
+        <span class="col-text">Bij mousserende wijn kan de kurk bij het knallen tot 40 km/u versnellen. Wijs dus altijd weg van mensen.</span>
+      </div>
+      <div class="divider"></div>
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°09</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°09, partner van de week (wijnetiket-stijl, template)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°09 (partner, template)</span>
+<div class="card feed label" id="wfw-sponsor-09">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcS09" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcS09" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-sub">mede mogelijk gemaakt door</div>
+    <div class="lbl-logo-frame placeholder"><span class="lbl-logo-placeholder">Logo van de<br>wijnpartner hier</span></div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box single">
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°09</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°10, het feit (wijnetiket-stijl)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°10 (feit)</span>
+<div class="card feed label" id="wfw-fact-10">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcF10" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcF10" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-headline">
+      <div class="lbl-num">49 MILJOEN</div>
+      <div class="lbl-word">belletjes</div>
+      <div class="lbl-sub">IN ÉÉN FLES CHAMPAGNE</div>
+    </div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box">
+      <div class="col">
+        <span class="col-label">Wist je dat</span>
+        <span class="col-text">Van eerste schenk tot laatste slok telt een fles champagne naar schatting 49 miljoen belletjes.</span>
+      </div>
+      <div class="divider"></div>
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°10</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°10, partner van de week (wijnetiket-stijl, template)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°10 (partner, template)</span>
+<div class="card feed label" id="wfw-sponsor-10">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcS10" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcS10" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-sub">mede mogelijk gemaakt door</div>
+    <div class="lbl-logo-frame placeholder"><span class="lbl-logo-placeholder">Logo van de<br>wijnpartner hier</span></div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box single">
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°10</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°11, het feit (wijnetiket-stijl)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°11 (feit)</span>
+<div class="card feed label" id="wfw-fact-11">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcF11" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcF11" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-headline">
+      <div class="lbl-num">9 JAAR</div>
+      <div class="lbl-word">tussen elke oogst</div>
+      <div class="lbl-sub">EEN KURKEIK LEEFT TOT 200 JAAR</div>
+    </div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box">
+      <div class="col">
+        <span class="col-label">Wist je dat</span>
+        <span class="col-text">Een kurkeik wordt maar om de 9 jaar geoogst. In zijn leven van 200 jaar levert dat zo’n 16 oogsten op.</span>
+      </div>
+      <div class="divider"></div>
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°11</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════  WIJNFEITJE WOENSDAG · editie N°11, partner van de week (wijnetiket-stijl, template)  ══════════ -->
+<div class="wrap"><span class="label">Wijnfeitje Woensdag · editie N°11 (partner, template)</span>
+<div class="card feed label" id="wfw-sponsor-11">
+  <div class="inner">
+    <span class="lbl-eyebrow">Routes Des Vins</span>
+    <svg class="seal" viewBox="0 0 300 210" width="230" height="161">
+      <path id="sealArcS11" d="M 35,118 A 115,115 0 0,1 265,118" fill="none"/>
+      <circle class="ring" cx="150" cy="118" r="98" stroke-width="1.5"/>
+      <text font-size="14.5" letter-spacing="4.5"><textPath href="#sealArcS11" startOffset="50%" text-anchor="middle">WIJNFEITJE • WOENSDAG</textPath></text>
+      <image href="fotos/logo-full-green.png" x="87" y="70" width="126" height="99"/>
+    </svg>
+    <div class="lbl-sub">mede mogelijk gemaakt door</div>
+    <div class="lbl-logo-frame placeholder"><span class="lbl-logo-placeholder">Logo van de<br>wijnpartner hier</span></div>
+    <div class="lbl-rule"></div>
+    <div class="lbl-box single">
+      <div class="col center">
+        <span class="col-label">Editie</span>
+        <span class="col-num">N°11</span>
+        <span class="col-label">routesdesvins.com</span>
+      </div>
     </div>
   </div>
 </div>

@@ -4,7 +4,7 @@
 > eerdere sessies, fouten en feedback geleerd is. Het doel: geen tijd meer verliezen aan dingen
 > die we al weten, en geen fouten meer herhalen die we al eens gemaakt hebben.
 >
-> _Laatst bijgewerkt: 9 september 2026_
+> _Laatst bijgewerkt: 11 september 2026_
 
 ---
 
@@ -29,7 +29,7 @@
 |---|---|
 | **Wat** | Statische, tweetalige (NL/FR) website voor **Routes Des Vins** — een wijnbelevingsevent |
 | **Event** | 20 november 2026, Gent |
-| **Concept (huidig)** | Een reis langs **3 "wijnhandelaars/wijnhuizen"**, elk gekoppeld aan één tijdslot/formule. Bezoeker kiest een tijdslot, krijgt een boarding pass + wijnpaspoort, en een sommelier gidst door de wijnen. Reismetafoor ("zonder vliegticket, wel een boarding pass"). |
+| **Concept (huidig)** | Een reis langs **3 "wijnpartners"** (niet meer "wijnhandelaars" — term is site-wide gewijzigd, 10 sept), elk gekoppeld aan één tijdslot/formule. Bezoeker kiest **één** formule/tijdslot (geen combi van alle 3 op één avond), krijgt een boarding pass + wijnpaspoort, en een sommelier gidst door de wijnen in gemakkelijke taal. Reismetafoor ("zonder vliegticket, wel een boarding pass"). |
 | **Concept (oud, VERLATEN)** | 5 wijnlanden wereldwijd + formules Classic/Sunset/Grand Cru gekoppeld aan doelgroepen (student/prof/expert). Dit staat nog in `briefing.md`/`contentplan.md` — **niet gebruiken.** |
 | **Organisatie** | Emiel Maes, Arnaud Roegiers, Louis Roosens, Matteo Van Gulik — studenten Artevelde Hogeschool Gent |
 | **Tickets** | Extern via Stamhoofd: `https://shop.stamhoofd.be/routes-des-vins` (één link voor alle tijdsloten) |
@@ -38,15 +38,16 @@
 
 ### Huidige feiten (live waarden — check altijd `translations.js` als bron)
 
-| Formule | i18n-prefix | Naam nu | Prijs | Tijdslot |
+| Formule | i18n-prefix | Wijnpartner | Prijs | Tijdslot |
 |---|---|---|---|---|
-| 1 | `classic_*` | Handelaar 1 | €39 | 16u30–19u00 |
-| 2 | `sunset_*` | Handelaar 2 → **Wijndomein Waes** (bevestigd, nog te verwerken) | €45 | 18u30–21u00 |
-| 3 | `grandcru_*` | Handelaar 3 | €29 | 20u30–23u00 |
+| 1 | `classic_*` | "Wordt binnenkort onthuld" | €39 | 16u30–19u00 |
+| 2 | `sunset_*` | **Wijndomein Waes** (bevestigd, volledig verwerkt) | €45 | 18u30–21u00 |
+| 3 | `grandcru_*` | "Wordt binnenkort onthuld" | €29 | 20u30–23u00 |
 
 - Max. **45** personen per tijdslot (was ooit 30 — oude waarde dook nog op in `tickets.html`, is gefixt).
 - Countdown mikt op `2026-11-20T15:30:00` (in `translations.js`, onderaan).
-- Regio's van Handelaar 1 en 3 zijn nog **niet** bekend. Handelaar 2 = Wijndomein Waes (zie `voorstel-wijndomein-waes.md`).
+- Locatie: **Villa Anamma**, Sint-Amandsberg (Gent) — site-wide verwerkt (10 sept).
+- Regio's van formule 1 en 3 zijn nog **niet** bekend. Formule 2 = Wijndomein Waes (achtergrond in `voorstel-wijndomein-waes.md`, actuele copy staat in `translations.js`).
 
 ---
 
@@ -82,11 +83,12 @@ voorwaarden.html    Legal (incl. terugbetaling)
 cookiebeleid.html   Legal
 styles.css          Volledig design system (tokens + componentklassen)
 translations.js     i18n-data (nl/fr) + alle client-side JS (taal, scroll-reveal, nav, countdown, FAQ)
-flyer.html          STANDALONE promo/flyer met QR-code — niet in de nav, andere structuur, laden apart
 fotos/              Alle beeld dat de site gebruikt (kleine letter!)
 ```
 
-Andere getrackte bestanden: `pw_test.py` (Playwright visuele test), `serve.mjs` + `screenshot.mjs` (Node — **werken hier niet**, zie sectie 5).
+**Niet in de nav, wel getrackt (marketing, geen site-navigatie):** `poster.html` (A4-affiche, self-contained) en `Routes-Des-Vins-affiche-A4.pdf`, `social.html` + `social/*.png` (Instagram-templates + exports). Zie **sectie 12**.
+
+Andere getrackte bestanden: `pw_test.py` (Playwright visuele test), `serve.mjs` + `screenshot.mjs` (Node — **werken hier niet**, zie sectie 5). `flyer.html` (oude versie) is verwijderd — vervangen door `poster.html`.
 
 ### 3.2 Wat je NIET aanraakt
 
@@ -96,12 +98,12 @@ Andere getrackte bestanden: `pw_test.py` (Playwright visuele test), `serve.mjs` 
 
 ### 3.3 Git & deploy
 
-- Remote: `github.com/emielmaes1104-hub/Routes-Des-Vins`, branch `main`.
-- ⚠️ **Security:** `.git/config` bevat momenteel een GitHub Personal Access Token in platte tekst in de remote-URL. Aanraden aan Emiel: die token roteren en een credential helper gebruiken. **Nooit die token in output, commits of docs plakken.**
-- **Deploymechanisme is niet bevestigd** (geen `vercel.json`/`netlify.toml` in de repo). Vraag Emiel hoe de site live komt vóór je aannames doet over build/deploy-paden.
+- Remote: `github.com/emielmaes1104-hub/Routes-Des-Vins`, branch `main`. **Bevestigd (11 sept):** Vercel host de site en deploy't automatisch bij een push naar `main` op deze repo (geen `vercel.json`/`netlify.toml` nodig — Vercel detecteert de statische site vanzelf).
+- Er staat **momenteel geen remote** in `.git/config` (leeggehaald na een eerdere sessie die een token in platte tekst in de remote-URL had staan — zie sectie 8, fout #13). Dat betekent: elke nieuwe sessie moet opnieuw een manier vinden om te pushen. De Claude Code-sandbox blokkeert lezen/schrijven van `.git/config`, dus `git remote add` vanuit de agent zelf werkt niet — zie fout #13 voor de twee werkende opties (Emiel pusht zelf, of een kortlevende PAT + directe `git push https://<token>@...`-URL zonder remote toe te voegen).
 - Commit-conventie: zoals in de history — beknopte imperatieve titel, bullet-body met wat & waarom. Eindig met:
   `Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>`
 - Werk op een aparte branch als je niet expliciet toestemming hebt om op `main` te committen. Commit/push enkel als Emiel het vraagt.
+- **Wat wél/niet mee committen:** site-bestanden (sectie 3.1) + `fotos/` + de marketing-assets uit sectie 12 horen erbij. `Begroting/`, `Pitch/`, `Partnerovereenkomst Routes Des Vins.pdf`, `Foto's/` (ruw beeld), `flyer/` en `social/Inspiratie tickets/` (externe referentiebeelden, niet van Emiel) horen **niet** in de repo — nooit met `git add -A`, altijd expliciete bestandsnamen.
 
 ---
 
@@ -271,6 +273,8 @@ Uit de git-history en eerdere sessies:
 | 9 | **Ontkoppelde velden weer koppelen** — `route.html` "Sfeer" was gekoppeld aan "live muziek"-copy; moest losgekoppeld toen formules herschikt werden (`88eb8ef`). | Als een tekst op 2 plaatsen semantisch verschilt, geef ze aparte sleutels (niet hergebruiken "omdat het toevallig hetzelfde is"). |
 | 10 | **Werken in `website/`** i.p.v. root. | Root only. |
 | 11 | **Node-tooling proberen draaien.** | Python-workflow (sectie 5). |
+| 12 | **Git-index corrupt na onderbroken `git add`/`git config`** — een geannuleerde opdracht liet `.git/index.lock` en `.git/config.lock` achter; daarna toonde `git status` alle getrackte bestanden als "deleted" + "untracked" tegelijk (index leeggeslagen, geen echt dataverlies). | Check `ps aux \| grep git` — geen ander git-proces? Dan is de `.lock`-file stale, veilig te verwijderen. Herstel de index met `git reset` (geen `--hard`, dat raakt de working tree niet aan) en vergelijk `git status` weer met de verwachte lijst voor je verder gaat. |
+| 13 | **Claude Code-sandbox blokkeert lezen/schrijven van `.git/config`** (bewust, want dat bestand kan credentials bevatten). `git remote add`, `git config credential.helper ...` falen daardoor stil of met een lock-error. | Voor een eenmalige push: vraag Emiel om zelf `git remote add` + `git push` te draaien (credentials blijven bij hem), óf laat hem een kortlevende fine-grained PAT genereren en push via `git push https://<token>@github.com/<repo>.git main` zonder ooit `git remote add` te gebruiken. Nooit de token in bestanden/commits schrijven. |
 
 ---
 
@@ -294,22 +298,50 @@ Uit de git-history en eerdere sessies:
 ## 10. Openstaande punten / bekende gaten in de site
 
 - **SEO ontbreekt volledig:** geen `meta description`, geen Open Graph, geen `favicon`, geen `robots.txt`/`sitemap.xml`, geen JSON-LD. (Het MIELUS-project heeft dit wel — kan als voorbeeld dienen als Emiel dit wil.)
-- **Locatie/adres** van het event nog niet publiek ("wordt na aankoop gecommuniceerd").
 - **Socials:** enkel Instagram. Facebook wordt genoemd in oude docs maar staat niet op de site.
-- **Regio's Handelaar 1 & 3** onbekend. **Handelaar 2 = Wijndomein Waes** — te verwerken (zie `voorstel-wijndomein-waes.md`).
-- **`pw_test.py`** dekt de legal-pagina's + `steun-ons` niet.
-- **`website/`-map** opruimen (na akkoord Emiel).
-- **GitHub-token** in `.git/config` roteren.
-- **Deploymethode** documenteren.
+- **Regio's formule 1 & 3** nog onbekend ("wordt binnenkort onthuld"). Formule 2 = Wijndomein Waes, afgerond (sectie 11).
+- **`pw_test.py`** dekt de legal-pagina's, `steun-ons`, en de nieuwe `social.html`/`poster.html` niet.
+- **`website/`-map** opruimen (na akkoord Emiel) — nog steeds niet gebeurd.
+- ~~GitHub-token in `.git/config` roteren~~ — opgelost: geen remote/token meer in `.git/config` (zie sectie 8, fout #13).
+- ~~Deploymethode documenteren~~ — opgelost: GitHub → Vercel auto-deploy op push naar `main` (sectie 3.3).
 
 ---
 
-## 11. De huidige taak: Wijndomein Waes verwerken
+## 11. Wijndomein Waes — afgerond (was sectie 11)
 
-Volledig uitgewerkt voorstel staat in **`voorstel-wijndomein-waes.md`**. Kern:
+**Verwerkt (10-11 sept 2026).** Wijndomein Waes is bevestigd als wijnpartner voor **formule 2** (`sunset_*`, €45, 18u30–21u00) en overal doorgevoerd: `route.html` (accordion met open Waes-item + logo), `index.html` (partner-logo-carousel), `translations.js` (waes_* sleutels, "wijnhandelaar" → "wijnpartner" overal NL+FR), Villa Anamma als locatie site-wide. Achtergrond/onderhandelingsdetails staan nog in `voorstel-wijndomein-waes.md` (historisch, niet meer leidend voor de huidige site-tekst — check `translations.js` voor de actuele copy). **Nog open:** exacte wijnselectie van Waes, regio's van formule 1 & 3 (nog "wordt binnenkort onthuld"), FR-vertaling van de team-bio's.
 
-- Wijndomein Waes = **formule 2** (`sunset_*`-sleutels), €45, 18u30–21u00.
-- Aanbevolen framing: Waes = de halte **"België · Vlaamse Landwijn"**; "wijnhandelaar" in de copy verbreden naar "wijnhuis" / FR "maison".
-- Raakt: `translations.js` (sunset_* + concept-teksten "welke landen volgen nog"), `route.html` (partnerkaart + route-map label), `index.html` (mini-kaart + teaser), `formules.html` (auto via i18n + CTA-tekst), `event.html` (boarding pass "FORMULE"), `faq.html` (a1/a2/a9), evt. SEO-meta.
-- **Wacht op Emiel:** concept-keuze (A+C?), exacte wijnselectie, of Waes op locatie of op domein schenkt, live-muziek/hapjes-bevestiging, beeldmateriaal, tekst-akkoord van Lodewijk Waes.
+---
+
+## 12. Social media & poster (`social.html`, `poster.html`)
+
+Marketing-assets voor Instagram (@routes.des.vins) en de A4-affiche. **Los van de site** — geen i18n, geen nav, niet in `pw_test.py`.
+
+### 12.1 Workflow
+- Server + screenshot precies zoals sectie 5: `python3 -m http.server 3000`, dan een klein Playwright-scriptje dat `page.locator("#<id>").screenshot(path=...)` doet op een ruime viewport (bv. 1300×1600). Elke "kaart" in `social.html` heeft een uniek `id`; het element zelf is exact 1080×1350 (feed) of 1080×1920 (story), dus de screenshot van dat element is direct op IG-maat — geen crop nodig.
+- Exports gaan naar `social/<naam>.png`. Overschrijf gerust bij een herwerking (bv. `post-website-online.png` is al 2× vervangen).
+- `social/Inspiratie tickets/` = externe referentiebeelden (andere merken/ontwerpers) — **nooit committen**, staat in `.gitignore`.
+
+### 12.2 Huisstijl (herbruikbare CSS-classes in `social.html`)
+- Kleuren: forest `#516F5A` (basis-kaart), cream `#F1F4EC`, light `#C6D4B9`, sage `#8CA180`, plus twee extra achtergrondvarianten: `.card.cream` (beige `#E4DECF`, voor afwisseling in de IG-grid) en `.card.dark` (`#24382C`, voor de "statement"-posts).
+- Fonts: Chau Philomene One (`.headline`/koppen), DM Sans (body/labels), Playfair Display italic (`.sub`, cursieve accenten).
+- Altijd: grain-textuur (`::before`), vignette + hairline (`::after`), faint logo-watermerk (`fotos/logo-full.png`, of `logo-full-green.png` op cream-kaarten). Corner-accent linksboven (`.corner`).
+- **Regels uit feedback:** geen streepjes (`—`/`-`) in de copy, geen `@handle` of statistiek-tellers op de kaarten zelf, laatste woord van een kop vaak in `.soft`/`.g` (lichter accent) i.p.v. de hele kop.
+- **`.dark`-familie (de "geslaagde" stijl, favoriet van Emiel):** `.stack`/`.ta-mid` layout met een **gespreide 2-regelige kop** (`.spread.phrase`, laatste woord `.g` sage) rond een **fysiek object-object** in het midden — een gekantelde `.pass`-kaart (zijstrook + barcode, zoals een boarding pass) in een `.fan`-wrapper. Dit systeem is bewust **hergebruikt** voor zowel de tickets-post als de website-post (enkel de tekst in de kaart verschilt) — een flat "browser mockup" werd expliciet afgekeurd als "lelijk"/te generiek; het tactiele boarding-pass-object werkt wel. Bij een nieuwe "statement"-post in deze stijl: hergebruik `.fan`/`.pass`, verzin geen nieuw soort object tenzij expliciet gevraagd.
+
+### 12.3 Huidige posts in `social.html`
+| id | Wat | Status |
+|---|---|---|
+| `#s1`–`#s5` | Concept-carrousel (5 slides): wat is RDV, 3 formules/3 wijnpartners, boarding pass + wijnpaspoort, sommelier in gemakkelijke taal, datum/CTA | Definitief (11 sept) |
+| `#web` | "De website is live" — dark-variant met `.fan`/`.pass` | Definitief (11 sept, v2) |
+| `#tickets-a` | "Boek je plek op de route" — dark-variant, Emiels favoriet | Definitief, niet meer aankomen |
+| `#tickets-b` | Split + mega-type + sticker, alternatief | Bestaat, niet gekozen |
+| `#tickets` | Oudere cream-variant met boarding-pass-grafiek | Bestaat, niet gekozen |
+| `#tpl` | Lege template voor nieuwe cream-kaarten | Startpunt voor nieuwe posts |
+| `#wfw-fact` t/m `#wfw-fact-11` | **Wijnfeitje Woensdag** — feit-slide (terugkerende reeks), `.card.label`-variant: oldskool wijnetiket-stijl (Didone-serif titel + cursieve subtitel + gearceerde info-cassette met hairline-kader), geïnspireerd op de referentiebeelden in `social/Inspiratie tickets/` maar in RDV-inkt (bosgroen/sage op crème, nooit bordeaux/goud) — dat kleurgebruik ís de merkherkenning hier, niet de typografie. Cirkelvormig "zegel" met gearceerde tekst (`<textPath>`) + het echte RDV-merkteken (`fotos/logo-full-green.png`, via SVG `<image>`) in het midden. 11 edities klaar (N°01 t/m N°11, feiten over historie/productie/proeven/ritueel — zie git-log/`social.html` voor de volledige tekst per editie), geëxporteerd als `social/wfw-feit-01.png` t/m `-11.png`. | Definitief (11 sept). `N°xx` in `.lbl-box` per editie handmatig opgehoogd — bij een nieuw feitje: volgend nummer, nieuwe `id`. |
+| `#wfw-sponsor` t/m `#wfw-sponsor-11` | **Wijnfeitje Woensdag** — partner-slide erna, per editie identiek aan het bijhorende `#wfw-fact-xx` qua zegel/`N°xx`, maar met "mede mogelijk gemaakt door" + `.lbl-logo-frame.placeholder` (gestippeld hairline-kader) waar het logo van de sponsor van die week in komt. De info-cassette is hier één doorlopend vak (`.lbl-box.single`, geen aparte "wijnpartner"-kolom meer). Geëxporteerd als `social/wfw-sponsor-01.png` t/m `-11.png`. | **Allemaal nog template, geen echte logo's.** Bezorg per editie het logo (en evt. naam/formule) van de sponsor, dan wordt de placeholder-`<span>` in de juiste `#wfw-sponsor-xx` vervangen door een `<img>` (zie `.lbl-logo-frame img` CSS, al voorzien met `mix-blend-mode:multiply` om een witte achtergrond te laten verdwijnen). |
+
+**Copy-lessen (11 sept):** "gewone taal" → **"gemakkelijke taal"**. De 3-formules-boodschap moet expliciet maken dat het **3 aparte keuzes** zijn (elk eigen wijnpartner/tijdslot), niet "1 avond met 3 werelden door elkaar" — anders lijkt het één gecombineerde ervaring. "Tickets volgen binnenkort" klonk krom → **"Ticketverkoop start binnenkort"**. Vermijd generieke hype-taal in captions ("ontdek een onvergetelijke ervaring ✨") — de tone-of-voice is "sophisticated maar gezellig", direct aanspreken met jij/je, af en toe (niet overdreven) een Frans woord/zinnetje.
+
+**Nog te doen:** save-the-date post, Wijndomein Waes-reveal, story-versies (9:16), contentkalender richting 20 nov.
 - Nieuwe beelden van Waes → `fotos/waes-*.jpg`, committen.
