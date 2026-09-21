@@ -42,7 +42,7 @@ window.RDV.translations = {
     usp2_title: 'Op jouw moment',
     usp2_body:  'Drie tijdsloten, drie wijnpartners. Kies het moment dat bij jou past.',
     usp3_title: 'Blijvende herinnering',
-    usp3_body:  'Na afloop ontvang je je persoonlijk smaakprofiel per mail.',
+    usp3_body:  'Na afloop ontvang je je persoonlijke smaakprofiel per mail.',
 
     /* ── Home Teaser ── */
     teaser_body: 'Elke wijnpartner brengt zijn eigen verhaal mee. De eerste is bekend: Wijndomein Waes.',
@@ -63,13 +63,13 @@ window.RDV.translations = {
     step4_title:     'Aankopen',
     step4_body:      'Na de proeverij kan je jouw favorieten meteen meenemen',
     step5_title:     'Smaakprofiel',
-    step5_body:      'Kort na het evenement ontvang je je persoonlijk profiel + top 3 aanbevelingen per mail',
+    step5_body:      'Kort na het evenement ontvang je je persoonlijke profiel + top 3 aanbevelingen per mail',
     step6_title:     'Nagenieten',
     step6_body:      'Alle geproefde wijnen verschijnen nadien op onze website, met de beoordelingen uit de wijnpaspoorten. Zo ontdek je wat andere bezoekers vonden en bestel je gemakkelijk een extra fles.',
     passport_title:  'Boarding Pass en Wijnpaspoort',
-    passport_body:   'Bij aankomst ontvang je een boarding pass met jouw tijdslot, groepsnummer en persoonlijke QR-code, en een wijnpaspoort waarin je jouw notities en indrukken kwijt kan. Het paspoort is jouw persoonlijk souvenir van de avond.',
+    passport_body:   'Bij aankomst ontvang je een boarding pass met jouw tijdslot, groepsnummer en persoonlijke QR-code, en een wijnpaspoort waarin je jouw notities en indrukken kwijt kan. Het paspoort is jouw persoonlijke souvenir van de avond.',
     passport_qr:     'Voor check-in aan de deur en om je beoordelingen aan jouw smaakprofiel te koppelen',
-    passport_book:   'Jouw persoonlijk smaakdagboek: beoordeel elke wijn die je proeft',
+    passport_book:   'Jouw persoonlijke smaakdagboek: beoordeel elke wijn die je proeft',
     passport_profile:'Kort na het evenement in je mailbox. Alle wijnen verschijnen ook op onze website, mét beoordelingen van andere bezoekers.',
 
     /* ── Route Page ── */
@@ -121,7 +121,7 @@ window.RDV.translations = {
     /* ── Tickets Page ── */
     tickets_eyebrow:  'Tickets',
     tickets_title:    'Boek jouw reis',
-    tickets_body:     'Tickets zijn beschikbaar via Stamhoofd. Selecteer het gewenste tijdslot en zeker jouw plek. Het aantal plaatsen per tijdslot is beperkt tot 45 personen.',
+    tickets_body:     'Tickets zijn beschikbaar via Stamhoofd. Selecteer het gewenste tijdslot en verzeker je van jouw plek. Het aantal plaatsen per tijdslot is beperkt tot 45 personen.',
     tickets_cta:      'Koop tickets via Stamhoofd',
     tickets_urgency:  'Beperkt aantal plaatsen, wees er snel bij!',
 
@@ -137,7 +137,7 @@ window.RDV.translations = {
     faq_q4:  'Kan ik wijnen meenemen naar huis?',
     faq_a4:  'Ja! Na de proeverij kan je de geproefde wijnen meteen aankopen bij je wijnpartner.',
     faq_q5:  'Ontvang ik iets na het event?',
-    faq_a5:  'Kort na het evenement ontvang je per mail je persoonlijk smaakprofiel, je top 3 aanbevolen wijnen en een aankooplink.',
+    faq_a5:  'Kort na het evenement ontvang je per mail je persoonlijke smaakprofiel, je top 3 aanbevolen wijnen en een aankooplink.',
     faq_q6:  'Wat is een wijnpaspoort?',
     faq_a6:  'Een persoonlijk boekje dat je bij aankomst ontvangt. Je noteert er je indrukken en smaaknotities in. Het is jouw souvenir van de avond.',
     faq_q7:  'Is er een dresscode?',
@@ -175,7 +175,7 @@ window.RDV.translations = {
     /* ── Route page ── */
     eyebrow_depart:   'Klaar om te vertrekken?',
     cta_route_title:  'Boek jouw plek op de route',
-    cta_route_body:   'Kies de formule die bij jou past en zeker jouw plek.',
+    cta_route_body:   'Kies de formule die bij jou past en verzeker je van jouw plek.',
 
     /* ── Formules page ── */
     eyebrow_overview:   'Overzicht',
