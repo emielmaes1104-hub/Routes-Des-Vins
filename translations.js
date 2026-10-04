@@ -1,4 +1,12 @@
 /* Routes Des Vins — NL/FR Translations */
+/* LIVE MUZIEK tijdelijk weggelaten (okt 2026, nog niet geregeld). Originele teksten om terug te zetten:
+   NL sunset_guide: 'Met live muziek'
+   NL sunset_extra: 'Live muziek tijdens deze sessie'
+   NL sunset_body (einde): '…wit, rood en bubbels, met live muziek op de achtergrond.'
+   FR sunset_guide: 'Avec musique live'
+   FR sunset_extra: 'Musique live pendant cette session'
+   FR sunset_body (einde): '…blanc, rouge et bulles, avec de la musique live en fond.'
+   HTML: formules.html sunset-kaart (vinkje-item + .extra-highlight) en tabelrij "Extra" (Waes-cel, nu "–"). */
 window.RDV = window.RDV || {};
 
 window.RDV.translations = {
@@ -19,7 +27,7 @@ window.RDV.translations = {
     footer_contact:   'Contact',
     footer_org:       'Emiel Maes · Arnaud Roegiers · Louis Roosens · Matteo Van Gulik',
     footer_school:    '',
-    footer_tickets:   'Tickets via Stamhoofd',
+    footer_tickets:   'Ticketverkoop start binnenkort',
     footer_rights:    '© 2026 Routes Des Vins',
 
     /* ── Home Hero ── */
@@ -79,7 +87,7 @@ window.RDV.translations = {
     waes_name:        'Wijndomein Waes',
     waes_meta:        'Zwijnaarde · sinds 2005 · Vlaamse Landwijn',
     waes_story_1:     '<a href="https://www.wijndomeinwaes.be/" target="_blank" rel="noopener">Wijndomein Waes</a> ligt in Zwijnaarde, op een boogscheut van Gent. Sinds 2005 maakt Lodewijk Waes hier wijn op vier hectare langs de Schelde, de eerste commerciële wijngaard in Gent sinds de 16de eeuw.',
-    waes_story_2:     'Hij werkt met duurzame druivenrassen en oogst alles met de hand. Zijn witte, rode en mousserende wijnen vielen al meermaals in de prijzen, met in 2026 een Belgian Wine Award voor zijn Cabernet Blanc Brut. Normaal is het domein gesloten voor bezoek, maar op Routes Des Vins schenkt Lodewijk zijn wijnen zelf uit.',
+    waes_story_2:     'Hij werkt met duurzame druivenrassen en oogst alles met de hand. Zijn witte, rode en mousserende wijnen vielen al meermaals in de prijzen, met in 2026 een Belgian Wine Award voor zijn Cabernet Blanc Brut. Normaal is het domein gesloten voor bezoek, maar op Routes Des Vins proef je zijn wijnen gewoon in Gent.',
     waes_slot:        'Je proeft de wijnen van Wijndomein Waes in het tijdslot van 18u30 tot 21u00.',
     waes_slot_cta:    'Bekijk deze formule →',
     partner_soon_name: 'Wordt binnenkort onthuld',
@@ -104,9 +112,7 @@ window.RDV.translations = {
     sunset_time:      '18u30–21u00',
     sunset_wines:     'Wijnen van Wijndomein Waes',
     sunset_food:      'Uitgebreide hapjes',
-    sunset_guide:     'Met live muziek',
-    sunset_extra:     'Live muziek tijdens deze sessie',
-    sunset_body:      'Je proeft bij Wijndomein Waes, het eerste commerciële wijndomein van Gent. Bekroonde Vlaamse wijn: wit, rood en bubbels, met live muziek op de achtergrond.',
+    sunset_body:      'Je proeft de wijnen van Wijndomein Waes, het eerste commerciële wijndomein van Gent. Bekroonde Vlaamse wijn: wit, rood en bubbels.',
     sunset_cta:       'Reserveer dit tijdslot',
     grandcru_name:    'Wijnpartner 3',
     grandcru_price:   '€29',
@@ -121,8 +127,8 @@ window.RDV.translations = {
     /* ── Tickets Page ── */
     tickets_eyebrow:  'Tickets',
     tickets_title:    'Boek jouw reis',
-    tickets_body:     'Tickets zijn beschikbaar via Stamhoofd. Selecteer het gewenste tijdslot en verzeker je van jouw plek. Het aantal plaatsen per tijdslot is beperkt tot 45 personen.',
-    tickets_cta:      'Koop tickets via Stamhoofd',
+    tickets_body:     'Ticketverkoop start binnenkort. Kies dan het tijdslot dat bij jou past en verzeker je van jouw plek. Het aantal plaatsen per tijdslot is beperkt tot 45 personen.',
+    tickets_cta:      'Tickets binnenkort beschikbaar',
     tickets_urgency:  'Beperkt aantal plaatsen, wees er snel bij!',
 
     /* ── FAQ Page ── */
@@ -181,11 +187,11 @@ window.RDV.translations = {
     eyebrow_overview:   'Overzicht',
     h2_comparison:      'Vergelijking op een rij',
     cta_formula_title:  'Klaar voor jouw formule?',
-    cta_formula_body:   'Tickets zijn beschikbaar via Stamhoofd.',
+    cta_formula_body:   'Ticketverkoop start binnenkort.',
 
     /* ── Tickets page ── */
     tickets_h2:           'Koop jouw ticket',
-    tickets_note:         'Link opent in nieuw tabblad · Betaling via Stamhoofd',
+    tickets_note:         'Volg ons op Instagram om te weten wanneer de verkoop start.',
     tickets_faq_h2:       'Snel antwoord',
     stat_date_val:        '20 nov',
     stat_date_label:      'Eventdatum',
@@ -259,7 +265,7 @@ window.RDV.translations = {
     footer_contact:   'Contact',
     footer_org:       'Emiel Maes · Arnaud Roegiers · Louis Roosens · Matteo Van Gulik',
     footer_school:    '',
-    footer_tickets:   'Billets via Stamhoofd',
+    footer_tickets:   'Billetterie bientôt ouverte',
     footer_rights:    '© 2026 Routes Des Vins',
 
     /* ── Home Hero ── */
@@ -319,7 +325,7 @@ window.RDV.translations = {
     waes_name:        'Wijndomein Waes',
     waes_meta:        'Zwijnaarde · depuis 2005 · Vin de Pays Flamand',
     waes_story_1:     'Le <a href="https://www.wijndomeinwaes.be/" target="_blank" rel="noopener">Wijndomein Waes</a> se situe à Zwijnaarde, à deux pas de Gand. Depuis 2005, Lodewijk Waes y cultive la vigne sur quatre hectares le long de l\'Escaut, le premier vignoble commercial de Gand depuis le 16e siècle.',
-    waes_story_2:     'Il travaille avec des cépages durables et vendange tout à la main. Ses vins blancs, rouges et effervescents ont déjà été primés à plusieurs reprises, dont un Belgian Wine Award 2026 pour son Cabernet Blanc Brut. Le domaine est normalement fermé au public, mais lors de Routes Des Vins, Lodewijk sert ses vins lui-même.',
+    waes_story_2:     'Il travaille avec des cépages durables et vendange tout à la main. Ses vins blancs, rouges et effervescents ont déjà été primés à plusieurs reprises, dont un Belgian Wine Award 2026 pour son Cabernet Blanc Brut. Le domaine est normalement fermé au public, mais lors de Routes Des Vins, vous dégustez ses vins tout simplement à Gand.',
     waes_slot:        'Vous dégustez les vins du Wijndomein Waes dans le créneau de 18h30 à 21h00.',
     waes_slot_cta:    'Voir cette formule →',
     partner_soon_name: 'Bientôt dévoilé',
@@ -344,9 +350,7 @@ window.RDV.translations = {
     sunset_time:      '18h30–21h00',
     sunset_wines:     'Vins du Wijndomein Waes',
     sunset_food:      'Amuse-bouches élaborés',
-    sunset_guide:     'Avec musique live',
-    sunset_extra:     'Musique live pendant cette session',
-    sunset_body:      'Vous dégustez au Wijndomein Waes, le premier domaine viticole commercial de Gand. Des vins flamands primés : blanc, rouge et bulles, avec de la musique live en fond.',
+    sunset_body:      'Vous dégustez les vins du Wijndomein Waes, le premier domaine viticole commercial de Gand. Des vins flamands primés : blanc, rouge et bulles.',
     sunset_cta:       'Réserver ce créneau',
     grandcru_name:    'Partenaire 3',
     grandcru_price:   '€29',
@@ -361,8 +365,8 @@ window.RDV.translations = {
     /* ── Tickets Page ── */
     tickets_eyebrow:  'Billets',
     tickets_title:    'Réservez votre voyage',
-    tickets_body:     'Les billets sont disponibles via Stamhoofd. Sélectionnez le créneau souhaité et réservez votre place. Le nombre de places par créneau est limité à 45 personnes.',
-    tickets_cta:      'Acheter via Stamhoofd',
+    tickets_body:     'La billetterie ouvre bientôt. Choisissez alors le créneau qui vous convient et réservez votre place. Le nombre de places par créneau est limité à 45 personnes.',
+    tickets_cta:      'Billets bientôt disponibles',
     tickets_urgency:  'Places limitées, réservez vite !',
 
     /* ── FAQ Page ── */
@@ -421,11 +425,11 @@ window.RDV.translations = {
     eyebrow_overview:   'Aperçu',
     h2_comparison:      'Comparaison en un coup d\'œil',
     cta_formula_title:  'Prêt pour votre formule?',
-    cta_formula_body:   'Les billets sont disponibles via Stamhoofd.',
+    cta_formula_body:   'La billetterie ouvre bientôt.',
 
     /* ── Tickets page ── */
     tickets_h2:           'Achetez votre billet',
-    tickets_note:         'Lien s\'ouvre dans un nouvel onglet · Paiement via Stamhoofd',
+    tickets_note:         'Suivez-nous sur Instagram pour savoir quand la billetterie ouvre.',
     tickets_faq_h2:       'Réponse rapide',
     stat_date_val:        '20 nov',
     stat_date_label:      'Date de l\'événement',
