@@ -40,14 +40,14 @@
 
 | Formule | i18n-prefix | Wijnpartner | Prijs | Tijdslot |
 |---|---|---|---|---|
-| 1 | `classic_*` | "Wordt binnenkort onthuld" | €39 | 16u30–19u00 |
+| 1 | `classic_*` | **Wijnhuis Tinto** (bevestigd okt 2026, `tinto_*`-sleutels) | €39 | 16u30–19u00 |
 | 2 | `sunset_*` | **Wijndomein Waes** (bevestigd, volledig verwerkt) | €45 | 18u30–21u00 |
 | 3 | `grandcru_*` | "Wordt binnenkort onthuld" | €29 | 20u30–23u00 |
 
 - Max. **45** personen per tijdslot (was ooit 30 — oude waarde dook nog op in `tickets.html`, is gefixt).
 - Countdown mikt op `2026-11-20T15:30:00` (in `translations.js`, onderaan).
 - Locatie: **Villa Anamma**, Sint-Amandsberg (Gent) — site-wide verwerkt (10 sept).
-- Regio's van formule 1 en 3 zijn nog **niet** bekend. Formule 2 = Wijndomein Waes (achtergrond in `voorstel-wijndomein-waes.md`, actuele copy staat in `translations.js`).
+- Formule 1 = Wijnhuis Tinto (Heusden/Destelbergen, importeur sinds 2008, eigenaar-sommelier Steven Van De Woestyne; logo `fotos/tinto-logo.png` = hun officiële SVG met witte tekst donker gemaakt voor witte kaarten). Formule 3 is nog **niet** bekend. Formule 2 = Wijndomein Waes (achtergrond in `voorstel-wijndomein-waes.md`, actuele copy staat in `translations.js`).
 
 ---
 
@@ -299,7 +299,8 @@ Uit de git-history en eerdere sessies:
 
 - **SEO ontbreekt volledig:** geen `meta description`, geen Open Graph, geen `favicon`, geen `robots.txt`/`sitemap.xml`, geen JSON-LD. (Het MIELUS-project heeft dit wel — kan als voorbeeld dienen als Emiel dit wil.)
 - **Socials:** enkel Instagram. Facebook wordt genoemd in oude docs maar staat niet op de site.
-- **Regio's formule 1 & 3** nog onbekend ("wordt binnenkort onthuld"). Formule 2 = Wijndomein Waes, afgerond (sectie 11).
+- **Formule 3** nog onbekend ("wordt binnenkort onthuld"). Formule 1 = Wijnhuis Tinto, formule 2 = Wijndomein Waes (sectie 11).
+- **Partners nooit "zelf aanwezig" noemen** tenzij expliciet afgesproken (okt 2026: Waes-tekst moest aangepast worden).
 - **`pw_test.py`** dekt de legal-pagina's, `steun-ons`, en de nieuwe `social.html`/`poster.html` niet.
 - **`website/`-map** opruimen (na akkoord Emiel) — nog steeds niet gebeurd.
 - ~~GitHub-token in `.git/config` roteren~~ — opgelost: geen remote/token meer in `.git/config` (zie sectie 8, fout #13).
