@@ -27,7 +27,7 @@ window.RDV.translations = {
     footer_contact:   'Contact',
     footer_org:       'Emiel Maes · Arnaud Roegiers · Louis Roosens · Matteo Van Gulik',
     footer_school:    '',
-    footer_tickets:   'Ticketverkoop start binnenkort',
+    footer_tickets:   'Tickets via Stamhoofd',
     footer_rights:    '© 2026 Routes Des Vins',
 
     /* ── Home Hero ── */
@@ -133,8 +133,9 @@ window.RDV.translations = {
     /* ── Tickets Page ── */
     tickets_eyebrow:  'Tickets',
     tickets_title:    'Boek jouw reis',
-    tickets_body:     'Ticketverkoop start binnenkort. Kies dan het tijdslot dat bij jou past en verzeker je van jouw plek. Het aantal plaatsen per tijdslot is beperkt tot 45 personen.',
-    tickets_cta:      'Tickets binnenkort beschikbaar',
+    tickets_body:     'Tickets zijn beschikbaar via Stamhoofd. Selecteer het gewenste tijdslot en verzeker je van jouw plek. Het aantal plaatsen per tijdslot is beperkt tot 45 personen. De ticketverkoop voor wijnpartner 3 start later.',
+    tickets_cta:      'Koop tickets via Stamhoofd',
+    tickets_soon:     'Tickets binnenkort beschikbaar',
     tickets_urgency:  'Beperkt aantal plaatsen, wees er snel bij!',
 
     /* ── FAQ Page ── */
@@ -193,11 +194,11 @@ window.RDV.translations = {
     eyebrow_overview:   'Overzicht',
     h2_comparison:      'Vergelijking op een rij',
     cta_formula_title:  'Klaar voor jouw formule?',
-    cta_formula_body:   'Ticketverkoop start binnenkort.',
+    cta_formula_body:   'Tickets zijn beschikbaar via Stamhoofd. De verkoop voor wijnpartner 3 start later.',
 
     /* ── Tickets page ── */
     tickets_h2:           'Koop jouw ticket',
-    tickets_note:         'Volg ons op Instagram om te weten wanneer de verkoop start.',
+    tickets_note:         'Link opent in nieuw tabblad · Betaling via Stamhoofd',
     tickets_faq_h2:       'Snel antwoord',
     stat_date_val:        '20 nov',
     stat_date_label:      'Eventdatum',
@@ -271,7 +272,7 @@ window.RDV.translations = {
     footer_contact:   'Contact',
     footer_org:       'Emiel Maes · Arnaud Roegiers · Louis Roosens · Matteo Van Gulik',
     footer_school:    '',
-    footer_tickets:   'Billetterie bientôt ouverte',
+    footer_tickets:   'Billets via Stamhoofd',
     footer_rights:    '© 2026 Routes Des Vins',
 
     /* ── Home Hero ── */
@@ -377,8 +378,9 @@ window.RDV.translations = {
     /* ── Tickets Page ── */
     tickets_eyebrow:  'Billets',
     tickets_title:    'Réservez votre voyage',
-    tickets_body:     'La billetterie ouvre bientôt. Choisissez alors le créneau qui vous convient et réservez votre place. Le nombre de places par créneau est limité à 45 personnes.',
-    tickets_cta:      'Billets bientôt disponibles',
+    tickets_body:     'Les billets sont disponibles via Stamhoofd. Sélectionnez le créneau souhaité et réservez votre place. Le nombre de places par créneau est limité à 45 personnes. La billetterie pour le partenaire 3 ouvrira plus tard.',
+    tickets_cta:      'Acheter via Stamhoofd',
+    tickets_soon:     'Billets bientôt disponibles',
     tickets_urgency:  'Places limitées, réservez vite !',
 
     /* ── FAQ Page ── */
@@ -437,11 +439,11 @@ window.RDV.translations = {
     eyebrow_overview:   'Aperçu',
     h2_comparison:      'Comparaison en un coup d\'œil',
     cta_formula_title:  'Prêt pour votre formule?',
-    cta_formula_body:   'La billetterie ouvre bientôt.',
+    cta_formula_body:   'Les billets sont disponibles via Stamhoofd. La vente pour le partenaire 3 ouvrira plus tard.',
 
     /* ── Tickets page ── */
     tickets_h2:           'Achetez votre billet',
-    tickets_note:         'Suivez-nous sur Instagram pour savoir quand la billetterie ouvre.',
+    tickets_note:         'Lien s\'ouvre dans un nouvel onglet · Paiement via Stamhoofd',
     tickets_faq_h2:       'Réponse rapide',
     stat_date_val:        '20 nov',
     stat_date_label:      'Date de l\'événement',
