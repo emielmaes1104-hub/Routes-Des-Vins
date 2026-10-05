@@ -25,6 +25,35 @@
       font-size: 0.825rem;
       font-weight: 500;
     }
+    .choose-line {
+      margin: -0.5rem 0 1.5rem;
+      padding-left: 0.875rem;
+      border-left: 2px solid var(--c-sage);
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--c-dark);
+    }
+    .formula-card.featured .choose-line { color: #fff; border-left-color: rgba(255,255,255,.5); }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; padding-right: 6rem; margin-bottom: 0.5rem; }
+    .belgian-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: 100px;
+      background: #fff;
+      color: var(--c-forest);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .be-flag { display: inline-flex; width: 15px; height: 11px; border-radius: 2px; overflow: hidden; flex-shrink: 0; }
+    .be-flag i { flex: 1; }
+    .be-flag i:nth-child(1) { background: #1a1a1a; }
+    .be-flag i:nth-child(2) { background: #FDDA24; }
+    .be-flag i:nth-child(3) { background: #EF3340; }
     .table-wrapper { overflow-x: auto; border-radius: 16px; box-shadow: var(--shadow-md); -webkit-overflow-scrolling: touch; }
     .comparison-section { display: block; }
     @media (max-width: 600px) { .comparison-section { display: none; } }
@@ -103,10 +132,12 @@
         <span class="formula-badge" style="background:var(--c-light);color:var(--c-forest)"><span data-i18n="classic_name">Wijnhuis Tinto</span></span>
         <div class="price-display" style="margin-bottom:1.5rem" data-i18n="classic_price">€39</div>
         <p style="font-size:0.875rem;color:var(--c-text-light);margin-bottom:1.5rem;line-height:1.7" data-i18n="classic_body">Je proeft de wijnen van Wijnhuis Tinto: eigenzinnige terroirwijnen uit minder bekende Europese streken. In dit tijdslot combineer je beleving met kennis.</p>
+        <p class="choose-line" data-i18n="classic_choose">Kies deze als je graag bijleert over wijn en wil ontdekken welke wijn bij welk gerecht past.</p>
         <ul class="check-list">
           <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="classic_time">16u30–19u00</span></li>
-          <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="classic_wines">Wijnen van Wijnhuis Tinto</span></li>
-          <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="classic_food">Uitgebreide hapjes</span></li>
+          <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="classic_wines">4 wijnen van Wijnhuis Tinto</span></li>
+          <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="seated_included">Zittende proeverij aan tafel</span></li>
+          <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="classic_food">Uitgebreide hapjes (menu volgt binnenkort)</span></li>
           <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="classic_guide">Leren en beleven</span></li>
           <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="profile_included">Persoonlijk smaakprofiel</span></li>
         </ul>
@@ -119,15 +150,23 @@
       <!-- Sunset (featured) -->
       <div class="formula-card featured reveal delay-1" style="position:relative">
         <div style="position:absolute;top:1.25rem;right:1.25rem;background:rgba(255,255,255,.15);border-radius:100px;padding:0.3rem 0.75rem;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#fff">Populair</div>
-        <span class="formula-badge" style="background:rgba(255,255,255,.15);color:#fff"><span data-i18n="sunset_name">Wijndomein Waes</span></span>
+        <div class="badge-row">
+          <span class="formula-badge" style="background:rgba(255,255,255,.15);color:#fff"><span data-i18n="sunset_name">Wijndomein Waes</span></span>
+          <span class="belgian-pill"><span class="be-flag" aria-hidden="true"><i></i><i></i><i></i></span><span data-i18n="belgian_badge">100% Belgisch</span></span>
+        </div>
         <div class="price-display on-dark" style="margin-bottom:1.5rem" data-i18n="sunset_price">€45</div>
-        <p style="font-size:0.875rem;color:rgba(255,255,255,.75);margin-bottom:1.5rem;line-height:1.7" data-i18n="sunset_body">Je proeft de wijnen van Wijndomein Waes, het eerste commerciële wijndomein van Gent. Bekroonde Vlaamse wijn: wit, rood en bubbels.</p>
+        <p style="font-size:0.875rem;color:rgba(255,255,255,.75);margin-bottom:1.5rem;line-height:1.7" data-i18n="sunset_body">Je proeft 100% Belgische wijn van Wijndomein Waes, het eerste commerciële wijndomein van Gent. Bekroonde wijn van eigen bodem: wit, rood en bubbels.</p>
+        <p class="choose-line" data-i18n="sunset_choose">Kies deze als je wil proeven hoe goed Belgische wijn vandaag is, gemaakt om de hoek in Gent.</p>
         <ul class="check-list">
           <li class="check-item"><span class="check-tick" style="color:rgba(255,255,255,.7)">✓</span><span data-i18n="sunset_time">18u30–21u00</span></li>
-          <li class="check-item"><span class="check-tick" style="color:rgba(255,255,255,.7)">✓</span><span data-i18n="sunset_wines">Wijnen van Wijndomein Waes</span></li>
-          <li class="check-item"><span class="check-tick" style="color:rgba(255,255,255,.7)">✓</span><span data-i18n="sunset_food">Uitgebreide hapjes</span></li>
+          <li class="check-item"><span class="check-tick" style="color:rgba(255,255,255,.7)">✓</span><span data-i18n="sunset_wines">4 Belgische wijnen van Wijndomein Waes</span></li>
+          <li class="check-item"><span class="check-tick" style="color:rgba(255,255,255,.7)">✓</span><span data-i18n="seated_included">Zittende proeverij aan tafel</span></li>
+          <li class="check-item"><span class="check-tick" style="color:rgba(255,255,255,.7)">✓</span><span data-i18n="sunset_food">Uitgebreide hapjes (menu volgt binnenkort)</span></li>
           <li class="check-item"><span class="check-tick" style="color:rgba(255,255,255,.7)">✓</span><span data-i18n="profile_included">Persoonlijk smaakprofiel</span></li>
         </ul>
+        <div class="extra-highlight" style="background:rgba(255,255,255,.12);color:#fff;border-left:3px solid #fff">
+          <span data-i18n="sunset_belgian">Wijn van eigen bodem, met een Belgian Wine Award 2026</span>
+        </div>
         <a href="tickets.html" class="btn-primary" style="width:100%;justify-content:center;background:#fff;color:var(--c-forest)" data-i18n="sunset_cta">Reserveer dit tijdslot</a>
       </div>
 
@@ -136,9 +175,11 @@
         <span class="formula-badge" style="background:#F5EFD6;color:#7A5F1A"><span data-i18n="grandcru_name">Wijnpartner 3</span></span>
         <div class="price-display" style="margin-bottom:1.5rem" data-i18n="grandcru_price">€29</div>
         <p style="font-size:0.875rem;color:var(--c-text-light);margin-bottom:1.5rem;line-height:1.7" data-i18n="grandcru_body">Wijn hoeft niet ingewikkeld te zijn. In dit tijdslot stap je laagdrempelig en sociaal de wereld van wijn binnen.</p>
+        <p class="choose-line" data-i18n="grandcru_choose">Kies deze als je wijn wil ontdekken zonder poespas, gewoon gezellig met vrienden op een late avond.</p>
         <ul class="check-list">
           <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="grandcru_time">20u30–23u00</span></li>
-          <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="grandcru_wines">Wijnen van wijnpartner 3</span></li>
+          <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="grandcru_wines">4 wijnen van wijnpartner 3</span></li>
+          <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="seated_included">Zittende proeverij aan tafel</span></li>
           <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="grandcru_food">Geen hapjes bij deze formule</span></li>
           <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="grandcru_guide">Laagdrempelig en sociaal</span></li>
           <li class="check-item"><span class="check-tick" style="color:var(--c-forest)">✓</span><span data-i18n="profile_included">Persoonlijk smaakprofiel</span></li>
@@ -181,20 +222,26 @@
           </tr>
           <tr>
             <td style="font-weight:500;color:var(--c-dark)">Wijnen</td>
-            <td data-i18n="classic_wines">Wijnen van Wijnhuis Tinto</td>
-            <td style="background:rgba(81,111,90,.05)" data-i18n="sunset_wines">Wijnen van Wijndomein Waes</td>
-            <td data-i18n="grandcru_wines">Wijnen van wijnpartner 3</td>
+            <td data-i18n="classic_wines">4 wijnen van Wijnhuis Tinto</td>
+            <td style="background:rgba(81,111,90,.05);font-weight:600;color:var(--c-forest)" data-i18n="sunset_wines">4 Belgische wijnen van Wijndomein Waes</td>
+            <td data-i18n="grandcru_wines">4 wijnen van wijnpartner 3</td>
           </tr>
           <tr>
             <td style="font-weight:500;color:var(--c-dark)">Hapjes</td>
-            <td data-i18n="classic_food">Uitgebreide hapjes</td>
-            <td style="background:rgba(81,111,90,.05)" data-i18n="sunset_food">Uitgebreide hapjes</td>
+            <td data-i18n="classic_food">Uitgebreide hapjes (menu volgt binnenkort)</td>
+            <td style="background:rgba(81,111,90,.05)" data-i18n="sunset_food">Uitgebreide hapjes (menu volgt binnenkort)</td>
             <td data-i18n="grandcru_food">Geen hapjes bij deze formule</td>
+          </tr>
+          <tr>
+            <td style="font-weight:500;color:var(--c-dark)" data-i18n="row_setting">Proeverij</td>
+            <td data-i18n="seated_included">Zittende proeverij aan tafel</td>
+            <td style="background:rgba(81,111,90,.05)" data-i18n="seated_included">Zittende proeverij aan tafel</td>
+            <td data-i18n="seated_included">Zittende proeverij aan tafel</td>
           </tr>
           <tr>
             <td style="font-weight:500;color:var(--c-dark)">Extra</td>
             <td data-i18n="classic_extra">Praktische kennis en foodpairing</td>
-            <td style="background:rgba(81,111,90,.05);color:var(--c-text-light)">–</td>
+            <td style="background:rgba(81,111,90,.05);font-weight:600;color:var(--c-forest)" data-i18n="belgian_badge">100% Belgisch</td>
             <td style="color:var(--c-text-light)">–</td>
           </tr>
           <tr>
