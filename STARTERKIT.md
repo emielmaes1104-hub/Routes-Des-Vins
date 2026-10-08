@@ -16,7 +16,7 @@
 4. **Alle tekst loopt via `translations.js`** (NL + FR, ~190 sleutels). Elke tekstwijziging = daar, in BEIDE talen.
 5. **Anti-FOUC regel:** de hardgecodeerde tekst in de HTML van een `data-i18n`-element moet exact de NL-vertaling zijn. Wijzig je de NL-sleutel, wijzig dan mee de fallback-tekst in élke HTML-pagina waar die sleutel voorkomt.
 6. **NL/FR-pariteit is heilig.** Elke nieuwe sleutel bestaat in `nl:` én `fr:`. Geen enkele mag ontbreken.
-7. **Nav + footer staan hardgecodeerd in elke pagina** (geen includes). Wijzig je er één, wijzig ze overal (11 pagina's).
+7. **Nav + footer staan hardgecodeerd in elke pagina** (geen includes). Wijzig je er één, wijzig ze overal (11 pagina's; nav-item 'Partners' = `nav_partners`, was `nav_steunons`).
 8. **Mobiel overflow is de #1 terugkerende bug.** Test elke wijziging op 390px breed. Geen horizontale scroll, niets buiten de kaart.
 9. **Nieuwe afbeeldingen → in `fotos/` (kleine letter) én committen.** Anders breken ze op deploy (is al eens gebeurd).
 10. **Kleuren: enkel de tokens uit `styles.css`.** Nooit standaard Tailwind-kleuren, nooit bordeaux/goud.
@@ -42,12 +42,12 @@
 |---|---|---|---|---|
 | 1 | `classic_*` | **Wijnhuis Tinto** (bevestigd okt 2026, `tinto_*`-sleutels) | €39 | 16u30–19u00 |
 | 2 | `sunset_*` | **Wijndomein Waes** (bevestigd, volledig verwerkt) | €45 | 18u30–21u00 |
-| 3 | `grandcru_*` | "Wordt binnenkort onthuld" | €29 | 20u30–23u00 |
+| 3 | `grandcru_*` | **CellAR** (bevestigd okt 2026, `cellar_*`-sleutels; ticketverkoop nog dicht) | €29 | 20u30–23u00 |
 
 - Max. **45** personen per tijdslot (was ooit 30 — oude waarde dook nog op in `tickets.html`, is gefixt).
 - Countdown mikt op `2026-11-20T15:30:00` (in `translations.js`, onderaan).
 - Locatie: **Villa Anamma**, Sint-Amandsberg (Gent) — site-wide verwerkt (10 sept).
-- Formule 1 = Wijnhuis Tinto (Heusden/Destelbergen, importeur sinds 2008, eigenaar-sommelier Steven Van De Woestyne; logo `fotos/tinto-logo.png` = hun officiële SVG met witte tekst donker gemaakt voor witte kaarten). Formule 3 is nog **niet** bekend. Formule 2 = Wijndomein Waes (achtergrond in `voorstel-wijndomein-waes.md`, actuele copy staat in `translations.js`).
+- Formule 1 = Wijnhuis Tinto (Heusden/Destelbergen, importeur sinds 2008, eigenaar-sommelier Steven Van De Woestyne; logo `fotos/tinto-logo.png` = hun officiële SVG met witte tekst donker gemaakt voor witte kaarten). Formule 3 = CellAR (Bachte-Maria-Leerne/Deinze, importeur met Oregon/Washington State als specialiteit, Jef Pinxteren, WSET Diploma; bron cellar.pro; logo `fotos/cellar-logo.png` = hun website-logo op wit 1040×620-canvas, lage bronresolutie). Formule 2 = Wijndomein Waes (achtergrond in `voorstel-wijndomein-waes.md`, actuele copy staat in `translations.js`).
 
 ---
 
@@ -77,7 +77,8 @@ formules.html       Formules: 3 formulekaarten + vergelijkingstabel
 tickets.html        Tickets: Stamhoofd-CTA, prijskaarten, stats
 faq.html            FAQ: accordion, 4 categorieën
 over-ons.html       Over Ons: verhaal, team (4 leden, klikbare bio's), kernwaarden
-steun-ons.html      Steun ons: gepersonaliseerde kurkentrekker, sponsor-oproep
+partners.html       Partners (okt 2026, vervangt Steun ons): logo's met link naar hun site + uitklapbare uitleg (O'Learys Gent, Euro Tap Rent), oproep om partner te worden
+steun-ons.html      Enkel nog een redirect naar partners.html (oude links blijven werken)
 privacybeleid.html  Legal
 voorwaarden.html    Legal (incl. terugbetaling)
 cookiebeleid.html   Legal

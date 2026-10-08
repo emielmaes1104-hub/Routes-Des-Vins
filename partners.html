@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partners — Routes Des Vins</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <style>
+    .cta-banner { background:var(--c-dark);position:relative;overflow:hidden;text-align:center; }
+    .cta-banner::before { content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 25% 50%,rgba(81,111,90,.3) 0%,transparent 70%),radial-gradient(ellipse 50% 60% at 80% 30%,rgba(140,161,128,.15) 0%,transparent 60%); }
+    .cta-banner > .container { position:relative;z-index:1; }
+    .sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
+    .partner-grid { display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;max-width:880px;margin:0 auto;align-items:start; }
+    @media (max-width: 640px) { .partner-grid { grid-template-columns:1fr; } }
+    .partner-card { background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-md);transition:transform 0.3s var(--ease-spring),box-shadow 0.3s; }
+    .partner-card:hover { transform:translateY(-4px);box-shadow:var(--shadow-xl); }
+    .partner-logo-link { display:flex;align-items:center;justify-content:center;height:200px;padding:2rem 2.5rem;background:var(--c-cream);border-bottom:1px solid var(--c-offwhite); }
+    .partner-logo-link img { max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;transition:transform 0.35s var(--ease-spring); }
+    .partner-logo-link:hover img { transform:scale(1.05); }
+    .partner-logo-link:active img { transform:scale(0.98); }
+    .partner-logo-link:focus-visible { outline:2px solid var(--c-sage);outline-offset:-4px;border-radius:12px; }
+    .partner-card-body { padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem; }
+    .partner-name { font-family:var(--font-display);font-size:1.15rem;color:var(--c-dark); }
+    .partner-meta { font-size:0.8rem;color:var(--c-text-light);margin-top:0.2rem; }
+    .bio-toggle { background:none;border:none;cursor:pointer;padding:0.25rem;color:var(--c-text-light);display:flex;align-items:center;flex-shrink:0; }
+    .bio-toggle:hover { color:var(--c-forest); }
+    .bio-toggle:active .bio-chevron { opacity:0.6; }
+    .bio-chevron { transition:transform 0.25s var(--ease-spring); }
+    .bio-toggle[aria-expanded="true"] .bio-chevron { transform:rotate(180deg); }
+    .partner-bio { display:grid;grid-template-rows:0fr;transition:grid-template-rows 0.35s cubic-bezier(0.22, 1, 0.36, 1); }
+    .partner-bio.open { grid-template-rows:1fr; }
+    .partner-bio-inner { overflow:hidden; }
+    .partner-bio-inner > div { padding:0.85rem 1.5rem 1.25rem;border-top:1px solid var(--c-offwhite); }
+    .partner-bio-inner p { margin:0 0 0.75rem;font-size:0.875rem;color:var(--c-text-light);line-height:1.7; }
+    .partner-visit { font-size:0.85rem;font-weight:600;color:var(--c-forest);text-decoration:none;display:inline-block;transition:transform 0.25s var(--ease-spring); }
+    .partner-visit:hover { transform:translateX(3px);text-decoration:underline; }
+    .partner-visit:active { opacity:0.7; }
+    .partner-visit:focus-visible { outline:2px solid var(--c-sage);outline-offset:2px;border-radius:4px; }
+  </style>
+</head>
+<body>
+
+<nav class="nav scrolled">
+  <a href="index.html" class="nav-logo">
+    <img src="fotos/logo-mark.png" alt="Routes Des Vins" width="32" height="32">
+    Routes Des Vins
+  </a>
+  <ul class="nav-links">
+    <li><a href="event.html" data-i18n="nav_event">Event</a></li>
+    <li><a href="route.html" data-i18n="nav_route">Route</a></li>
+    <li><a href="formules.html" data-i18n="nav_formules">Formules</a></li>
+    <li><a href="tickets.html" data-i18n="nav_tickets">Tickets</a></li>
+    <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
+    <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+    <li><a href="partners.html" class="active" data-i18n="nav_partners">Partners</a></li>
+  </ul>
+  <div class="nav-lang">
+    <button class="lang-btn" data-lang="nl">NL</button>
+    <button class="lang-btn" data-lang="fr">FR</button>
+  </div>
+  <a href="tickets.html" class="nav-cta" data-i18n="nav_cta">Tickets kopen</a>
+  <button class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile">
+  <a href="event.html" data-i18n="nav_event">Event</a>
+  <a href="route.html" data-i18n="nav_route">Route</a>
+  <a href="formules.html" data-i18n="nav_formules">Formules</a>
+  <a href="tickets.html" data-i18n="nav_tickets">Tickets</a>
+  <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+  <a href="over-ons.html" data-i18n="nav_about">Over Ons</a>
+  <a href="partners.html" data-i18n="nav_partners">Partners</a>
+  <a href="tickets.html" class="mobile-cta" data-i18n="nav_cta">Tickets kopen</a>
+  <div class="mobile-lang">
+    <button class="lang-btn" data-lang="nl">NL</button>
+    <button class="lang-btn" data-lang="fr">FR</button>
+  </div>
+</div>
+
+<header class="page-header">
+  <div class="container page-header-content" style="width:100%">
+    <span class="section-eyebrow" data-i18n="partners_eyebrow">Partners</span>
+    <h1 class="display-lg reveal" style="margin-top:0.5rem" data-i18n="partners_h1">Onze partners</h1>
+    <p class="reveal delay-1" style="max-width:540px;margin-top:1rem;color:rgba(255,255,255,.65)" data-i18n="partners_body">Mede dankzij deze partners kunnen we Routes Des Vins op poten zetten. Klik op een logo om hun website te bezoeken.</p>
+  </div>
+</header>
+
+<!-- Partners -->
+<section class="section" style="background:var(--c-cream)">
+  <div class="container">
+    <div class="partner-grid">
+      <!-- O'Learys Gent -->
+      <div class="partner-card reveal delay-1">
+        <a class="partner-logo-link" href="https://olearys.com/en-be/gent/" target="_blank" rel="noopener">
+          <img src="fotos/logo-olearys-green.png" alt="O'Learys Gent" loading="lazy">
+        </a>
+        <div class="partner-card-body">
+          <div>
+            <div class="partner-name">O'Learys Gent</div>
+            <div class="partner-meta" data-i18n="olearys_meta">Sportsbar en restaurant · Gent</div>
+          </div>
+          <button class="bio-toggle" type="button" aria-expanded="false" aria-controls="bio-olearys" onclick="togglePartner(this)">
+            <span class="sr-only" data-i18n="partners_more">Meer over deze partner</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bio-chevron" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+        <div class="partner-bio" id="bio-olearys">
+          <div class="partner-bio-inner"><div>
+            <p data-i18n="olearys_body">O'Learys aan Dok Noord is de grootste bar van Gent: een sportsbar en restaurant in Bostonstijl op 3800 m². Je kan er bowlen op 18 banen, curlen, minigolfen en samen naar de grote matchen kijken.</p>
+            <a class="partner-visit" href="https://olearys.com/en-be/gent/" target="_blank" rel="noopener" data-i18n="partners_visit">Bezoek de website →</a>
+          </div></div>
+        </div>
+      </div>
+      <!-- Euro Tap Rent -->
+      <div class="partner-card reveal delay-2">
+        <a class="partner-logo-link" href="https://eurotaprent.be/" target="_blank" rel="noopener">
+          <img src="fotos/logo-eurotaprent-green.png" alt="Euro Tap Rent" loading="lazy">
+        </a>
+        <div class="partner-card-body">
+          <div>
+            <div class="partner-name">Euro Tap Rent</div>
+            <div class="partner-meta" data-i18n="eurotap_meta">Verhuur tapmateriaal · Sint-Niklaas</div>
+          </div>
+          <button class="bio-toggle" type="button" aria-expanded="false" aria-controls="bio-eurotap" onclick="togglePartner(this)">
+            <span class="sr-only" data-i18n="partners_more">Meer over deze partner</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bio-chevron" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+        <div class="partner-bio" id="bio-eurotap">
+          <div class="partner-bio-inner"><div>
+            <p data-i18n="eurotap_body">Euro Tap Rent uit Sint-Niklaas verhuurt sinds 1998 tapinstallaties, koeltogen, frigo's, glazen en evenemententanks. Ze leveren en installeren alles voor bedrijfsfeesten, festivals en evenementen, zodat de organisatoren aan niets meer hoeven te denken.</p>
+            <a class="partner-visit" href="https://eurotaprent.be/" target="_blank" rel="noopener" data-i18n="partners_visit">Bezoek de website →</a>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="section cta-banner">
+  <div class="container" style="display:flex;flex-direction:column;align-items:center;gap:1.5rem">
+    <h2 class="display-md reveal" style="color:#fff;text-align:center" data-i18n="partners_cta_h2">Ook partner worden?</h2>
+    <p class="reveal delay-1" style="color:rgba(255,255,255,.6);text-align:center;max-width:480px" data-i18n="partners_cta_body">Wil je met jouw bedrijf mee bouwen aan Routes Des Vins? Stuur ons een mail, dan bekijken we samen wat mogelijk is.</p>
+    <a href="mailto:emiel@routesdesvins.com" class="btn-primary reveal delay-2">emiel@routesdesvins.com</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Routes Des Vins</div>
+        <div class="footer-tagline" data-i18n="footer_tagline">Not Your Casual Winetasting</div>
+        <p style="margin-top:0.75rem;font-size:0.875rem;color:rgba(255,255,255,.6)" data-i18n="footer_date">20 november 2026 · Villa Anamma, Gent</p>
+      </div>
+      <div>
+        <div class="footer-label">Navigatie</div>
+        <div style="display:flex;gap:2.5rem;">
+          <ul class="footer-links">
+            <li><a href="event.html" data-i18n="nav_event">Event</a></li>
+            <li><a href="route.html" data-i18n="nav_route">Route</a></li>
+            <li><a href="formules.html" data-i18n="nav_formules">Formules</a></li>
+            <li><a href="tickets.html" data-i18n="nav_tickets">Tickets</a></li>
+          </ul>
+          <ul class="footer-links">
+            <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
+            <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+            <li><a href="partners.html" data-i18n="nav_partners">Partners</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="footer-label" data-i18n="footer_contact">Contact</div>
+        <p style="margin-bottom:0.5rem">
+          <a href="mailto:emiel@routesdesvins.com" style="color:rgba(255,255,255,.6);font-size:0.875rem;display:inline-flex;align-items:center;gap:0.5rem">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            emiel@routesdesvins.com
+          </a>
+        </p>
+        <p style="margin-bottom:0.75rem">
+          <a href="https://instagram.com/routes.des.vins" target="_blank" rel="noopener" style="color:rgba(255,255,255,.6);font-size:0.875rem;display:inline-flex;align-items:center;gap:0.5rem">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <span data-i18n="footer_instagram">@routes.des.vins</span>
+          </a>
+        </p>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,.6)" data-i18n="footer_org">Emiel Maes · Arnaud Roegiers · Louis Roosens · Matteo Van Gulik</p>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem;margin-top:0.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:0.25rem">Samenwerken?</div>
+        <div style="font-size:0.9rem;color:rgba(255,255,255,.6)">Word sponsor van Routes Des Vins</div>
+      </div>
+      <a href="mailto:emiel@routesdesvins.com" style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:0.875rem;font-weight:600;padding:0.6rem 1.25rem;border-radius:8px;text-decoration:none">Neem contact op</a>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer_rights">© 2026 Routes Des Vins</span>
+      <nav style="display:flex;gap:1.25rem;flex-wrap:wrap">
+        <a href="privacybeleid.html" style="color:rgba(255,255,255,.6);font-size:0.8rem">Privacybeleid</a>
+        <a href="voorwaarden.html" style="color:rgba(255,255,255,.6);font-size:0.8rem">Voorwaarden</a>
+        <a href="cookiebeleid.html" style="color:rgba(255,255,255,.6);font-size:0.8rem">Cookiebeleid</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+function togglePartner(btn) {
+  var card = btn.closest('.partner-card');
+  var bio = card.querySelector('.partner-bio');
+  var willOpen = !bio.classList.contains('open');
+
+  // Accordion: only one open at a time
+  document.querySelectorAll('.partner-card').forEach(function(c) {
+    c.querySelector('.partner-bio').classList.remove('open');
+    c.querySelector('.bio-toggle').setAttribute('aria-expanded', 'false');
+  });
+
+  if (willOpen) {
+    bio.classList.add('open');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+}
+</script>
+<script src="translations.js"></script>
+</body>
+</html>

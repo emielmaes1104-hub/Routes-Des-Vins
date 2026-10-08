@@ -19,7 +19,7 @@ window.RDV.translations = {
     nav_faq:       'FAQ',
     nav_about:     'Over Ons',
     nav_cta:       'Tickets kopen',
-    nav_steunons:  'Steun ons',
+    nav_partners:  'Partners',
 
     /* ── Footer ── */
     footer_tagline:   'Not Your Casual Winetasting',
@@ -53,7 +53,7 @@ window.RDV.translations = {
     usp3_body:  'Na afloop ontvang je je persoonlijke smaakprofiel per mail.',
 
     /* ── Home Teaser ── */
-    teaser_body: 'Elke wijnpartner brengt zijn eigen verhaal mee. Twee zijn al bekend: Wijnhuis Tinto en Wijndomein Waes.',
+    teaser_body: 'Elke wijnpartner brengt zijn eigen verhaal mee: Wijnhuis Tinto, Wijndomein Waes en CellAR.',
     teaser_cta:  'Ontdek de route →',
     hero_event_cta: 'Event →',
 
@@ -83,7 +83,7 @@ window.RDV.translations = {
     /* ── Route Page ── */
     route_eyebrow:   'De Route',
     route_title:     'Onze wijnpartners',
-    route_intro:     'Drie wijnhuizen, drie verhalen. Wijnhuis Tinto en Wijndomein Waes zijn bekend, de derde onthullen we binnenkort.',
+    route_intro:     'Drie wijnhuizen, drie verhalen: Wijnhuis Tinto, Wijndomein Waes en CellAR.',
     waes_name:        'Wijndomein Waes',
     waes_meta:        'Zwijnaarde · sinds 2005 · Vlaamse Landwijn',
     waes_story_1:     '<a href="https://www.wijndomeinwaes.be/" target="_blank" rel="noopener">Wijndomein Waes</a> ligt in Zwijnaarde, op een boogscheut van Gent. Sinds 2005 maakt Lodewijk Waes hier wijn op vier hectare langs de Schelde, de eerste commerciële wijngaard in Gent sinds de 16de eeuw.',
@@ -96,8 +96,12 @@ window.RDV.translations = {
     tinto_story_2:    'Tinto zoekt eigenzinnige wijnen uit minder bekende streken, rechtstreeks bij de wijnmakers: van de Portugese Dão tot Galicië, de Jura en Slovenië. Veel van die wijnmakers werken biologisch of biodynamisch, zodat het terroir echt spreekt. Op Routes Des Vins proef je een selectie uit dat gamma.',
     tinto_slot:       'Je proeft de wijnen van Wijnhuis Tinto in het tijdslot van 16u30 tot 19u00.',
     tinto_slot_cta:   'Bekijk deze formule →',
-    partner_soon_name: 'Wordt binnenkort onthuld',
-    partner_soon_body: 'We stellen onze volgende wijnpartner binnenkort voor. Volg ons op Instagram om het als eerste te weten.',
+    cellar_name:      'CellAR',
+    cellar_meta:      'Bachte-Maria-Leerne (Deinze) · WSET Diploma · Oregon en Washington State',
+    cellar_story_1:   '<a href="https://cellar.pro/" target="_blank" rel="noopener">CellAR</a> is een wijnimporteur uit Bachte-Maria-Leerne, bij Deinze. Erachter staat Jef Pinxteren: Weinakademiker, houder van het WSET Diploma in Wines and Spirits (Level 4) en zelf WSET-trainer bij WineWise.',
+    cellar_story_2:   'CellAR importeert zelf wijnen, met Oregon en Washington State in de Verenigde Staten als specialiteit. Daarnaast vind je er onder meer wijnen uit Friuli, Piemonte en Toscane, de Loire en de Minervois. Jef werkt vaak met kleine producenten, en hun wijnen vind je niet in de supermarkt. Op Routes Des Vins proef je een selectie uit dat gamma.',
+    cellar_slot:      'Je proeft de wijnen van CellAR in het tijdslot van 20u30 tot 23u00.',
+    cellar_slot_cta:  'Bekijk deze formule →',
 
     /* ── Formules Page ── */
     formules_eyebrow: 'Formules',
@@ -120,13 +124,13 @@ window.RDV.translations = {
     sunset_food:      'Uitgebreide hapjes (menu volgt binnenkort)',
     sunset_body:      'Je proeft 100% Belgische wijn van Wijndomein Waes, het eerste commerciële wijndomein van Gent. Bekroonde wijn van eigen bodem: wit, rood en bubbels.',
     sunset_cta:       'Reserveer dit tijdslot',
-    grandcru_name:    'Wijnpartner 3',
+    grandcru_name:    'CellAR',
     grandcru_price:   '€29',
     grandcru_time:    '20u30–23u00',
-    grandcru_wines:   '4 wijnen van wijnpartner 3',
+    grandcru_wines:   '4 wijnen van CellAR',
     grandcru_food:    'Geen hapjes bij deze formule',
     grandcru_guide:   'Laagdrempelig en sociaal',
-    grandcru_body:    'Wijn hoeft niet ingewikkeld te zijn. In dit tijdslot stap je laagdrempelig en sociaal de wereld van wijn binnen.',
+    grandcru_body:    'Je proeft de wijnen van CellAR, importeur met Oregon en Washington State als specialiteit. Wijn hoeft niet ingewikkeld te zijn: in dit tijdslot stap je laagdrempelig en sociaal de wereld van wijn binnen.',
     grandcru_cta:     'Reserveer dit tijdslot',
     profile_included:  'Persoonlijk smaakprofiel',
     seated_included:   'Zittende proeverij aan tafel',
@@ -140,7 +144,7 @@ window.RDV.translations = {
     /* ── Tickets Page ── */
     tickets_eyebrow:  'Tickets',
     tickets_title:    'Boek jouw reis',
-    tickets_body:     'Tickets zijn beschikbaar via Stamhoofd. Selecteer het gewenste tijdslot en verzeker je van jouw plek. Het aantal plaatsen per tijdslot is beperkt tot 45 personen. De ticketverkoop voor wijnpartner 3 start later.',
+    tickets_body:     'Tickets zijn beschikbaar via Stamhoofd. Selecteer het gewenste tijdslot en verzeker je van jouw plek. Het aantal plaatsen per tijdslot is beperkt tot 45 personen. De ticketverkoop voor CellAR start later.',
     tickets_cta:      'Koop tickets via Stamhoofd',
     tickets_soon:     'Tickets binnenkort beschikbaar',
     tickets_urgency:  'Beperkt aantal plaatsen, wees er snel bij!',
@@ -165,7 +169,7 @@ window.RDV.translations = {
     faq_q8:  'Waar vindt het event plaats?',
     faq_a8:  'In Villa Anamma, een kasteeltje met tuin in Sint-Amandsberg (Gent). Het volledige adres en de route krijg je samen met je ticket.',
     faq_q9:  'Hoe laat moet ik er zijn?',
-    faq_a9:  'Wijnhuis Tinto: 16u30–19u00 · Wijndomein Waes: 18u30–21u00 · Tijdslot 3: 20u30–23u00. We vragen je op tijd aanwezig te zijn voor de check-in.',
+    faq_a9:  'Wijnhuis Tinto: 16u30–19u00 · Wijndomein Waes: 18u30–21u00 · CellAR: 20u30–23u00. We vragen je op tijd aanwezig te zijn voor de check-in.',
     faq_q10: 'Zijn er vegetarische hapjes?',
     faq_a10: 'Info over vegetarische en allergenenopties volgt. Contacteer ons voor specifieke vragen.',
 
@@ -201,7 +205,7 @@ window.RDV.translations = {
     eyebrow_overview:   'Overzicht',
     h2_comparison:      'Vergelijking op een rij',
     cta_formula_title:  'Klaar voor jouw formule?',
-    cta_formula_body:   'Tickets zijn beschikbaar via Stamhoofd. De verkoop voor wijnpartner 3 start later.',
+    cta_formula_body:   'Tickets zijn beschikbaar via Stamhoofd. De verkoop voor CellAR start later.',
 
     /* ── Tickets page ── */
     tickets_h2:           'Koop jouw ticket',
@@ -245,13 +249,17 @@ window.RDV.translations = {
     cta_ready_travel: 'Klaar om mee te reizen?',
 
     /* ── Steun Ons page ── */
-    steunons_eyebrow: 'Steun ons',
-    steunons_h1: 'Jouw steun telt',
-    steunons_body: 'Routes Des Vins is een studentenevenement. Met jouw steun helpen we de kosten te dekken en kunnen we er een onvergetelijke avond van maken.',
-    steunons_item_title: 'Gepersonaliseerde kurkentrekker',
-    steunons_item_body: 'Bestel een kurkentrekker met jouw naam gegraveerd. Een blijvend aandenken en tegelijk een manier om ons financieel te steunen.',
-    steunons_order_cta: 'Bestel via mail',
-    steunons_price_label: 'Prijs op aanvraag',
+    partners_eyebrow: 'Partners',
+    partners_h1: 'Onze partners',
+    partners_body: 'Mede dankzij deze partners kunnen we Routes Des Vins op poten zetten. Klik op een logo om hun website te bezoeken.',
+    partners_more: 'Meer over deze partner',
+    partners_visit: 'Bezoek de website →',
+    olearys_meta: 'Sportsbar en restaurant · Gent',
+    olearys_body: 'O\'Learys aan Dok Noord is de grootste bar van Gent: een sportsbar en restaurant in Bostonstijl op 3800 m². Je kan er bowlen op 18 banen, curlen, minigolfen en samen naar de grote matchen kijken.',
+    eurotap_meta: 'Verhuur tapmateriaal · Sint-Niklaas',
+    eurotap_body: 'Euro Tap Rent uit Sint-Niklaas verhuurt sinds 1998 tapinstallaties, koeltogen, frigo\'s, glazen en evenemententanks. Ze leveren en installeren alles voor bedrijfsfeesten, festivals en evenementen, zodat de organisatoren aan niets meer hoeven te denken.',
+    partners_cta_h2: 'Ook partner worden?',
+    partners_cta_body: 'Wil je met jouw bedrijf mee bouwen aan Routes Des Vins? Stuur ons een mail, dan bekijken we samen wat mogelijk is.',
     /* ── Sponsor section ── */
     sponsor_eyebrow: 'Samenwerken',
     sponsor_h2: 'Word sponsor',
@@ -271,7 +279,7 @@ window.RDV.translations = {
     nav_faq:       'FAQ',
     nav_about:     'À Propos',
     nav_cta:       'Acheter des billets',
-    nav_steunons:  'Nous soutenir',
+    nav_partners:  'Partenaires',
 
     /* ── Footer ── */
     footer_tagline:   'Not Your Casual Winetasting',
@@ -305,7 +313,7 @@ window.RDV.translations = {
     usp3_body:  'Après l\'événement, vous recevez votre profil gustatif personnalisé.',
 
     /* ── Home Teaser ── */
-    teaser_body: 'Chaque partenaire vin apporte sa propre histoire. Deux sont déjà connus : Wijnhuis Tinto et Wijndomein Waes.',
+    teaser_body: 'Chaque partenaire vin apporte sa propre histoire : Wijnhuis Tinto, Wijndomein Waes et CellAR.',
     teaser_cta:  'Découvrir la route →',
     hero_event_cta: 'Événement →',
 
@@ -335,7 +343,7 @@ window.RDV.translations = {
     /* ── Route Page ── */
     route_eyebrow:   'La Route',
     route_title:     'Nos partenaires vin',
-    route_intro:     'Trois maisons, trois histoires. Wijnhuis Tinto et Wijndomein Waes sont connus, le troisième sera dévoilé bientôt.',
+    route_intro:     'Trois maisons, trois histoires : Wijnhuis Tinto, Wijndomein Waes et CellAR.',
     waes_name:        'Wijndomein Waes',
     waes_meta:        'Zwijnaarde · depuis 2005 · Vin de Pays Flamand',
     waes_story_1:     'Le <a href="https://www.wijndomeinwaes.be/" target="_blank" rel="noopener">Wijndomein Waes</a> se situe à Zwijnaarde, à deux pas de Gand. Depuis 2005, Lodewijk Waes y cultive la vigne sur quatre hectares le long de l\'Escaut, le premier vignoble commercial de Gand depuis le 16e siècle.',
@@ -348,8 +356,12 @@ window.RDV.translations = {
     tinto_story_2:    'Tinto recherche des vins singuliers issus de régions méconnues, directement auprès des vignerons : du Dão portugais à la Galice, au Jura et à la Slovénie. Beaucoup de ces vignerons travaillent en bio ou en biodynamie, pour laisser vraiment parler le terroir. Lors de Routes Des Vins, vous dégustez une sélection de cette gamme.',
     tinto_slot:       'Vous dégustez les vins du Wijnhuis Tinto dans le créneau de 16h30 à 19h00.',
     tinto_slot_cta:   'Voir cette formule →',
-    partner_soon_name: 'Bientôt dévoilé',
-    partner_soon_body: 'Nous présenterons bientôt notre prochain partenaire vin. Suivez-nous sur Instagram pour être les premiers informés.',
+    cellar_name:      'CellAR',
+    cellar_meta:      'Bachte-Maria-Leerne (Deinze) · WSET Diploma · Oregon et État de Washington',
+    cellar_story_1:   '<a href="https://cellar.pro/" target="_blank" rel="noopener">CellAR</a> est un importateur de vins de Bachte-Maria-Leerne, près de Deinze. Derrière CellAR se trouve Jef Pinxteren : Weinakademiker, titulaire du WSET Diploma in Wines and Spirits (Level 4) et lui-même formateur WSET chez WineWise.',
+    cellar_story_2:   'CellAR importe lui-même ses vins, avec l\'Oregon et l\'État de Washington aux États-Unis comme spécialité. On y trouve aussi des vins du Frioul, du Piémont et de Toscane, de la Loire et du Minervois. Jef travaille souvent avec de petits producteurs, dont les vins ne se trouvent pas en supermarché. Lors de Routes Des Vins, vous dégustez une sélection de cette gamme.',
+    cellar_slot:      'Vous dégustez les vins de CellAR dans le créneau de 20h30 à 23h00.',
+    cellar_slot_cta:  'Voir cette formule →',
 
     /* ── Formules Page ── */
     formules_eyebrow: 'Formules',
@@ -372,13 +384,13 @@ window.RDV.translations = {
     sunset_food:      'Amuse-bouches élaborés (menu bientôt dévoilé)',
     sunset_body:      'Vous dégustez des vins 100 % belges du Wijndomein Waes, le premier domaine viticole commercial de Gand. Des vins primés de chez nous : blanc, rouge et bulles.',
     sunset_cta:       'Réserver ce créneau',
-    grandcru_name:    'Partenaire 3',
+    grandcru_name:    'CellAR',
     grandcru_price:   '€29',
     grandcru_time:    '20h30–23h00',
-    grandcru_wines:   '4 vins du partenaire 3',
+    grandcru_wines:   '4 vins de CellAR',
     grandcru_food:    'Pas d\'amuse-bouches pour cette formule',
     grandcru_guide:   'Accessible et convivial',
-    grandcru_body:    'Le vin n\'a pas besoin d\'être compliqué. Dans ce créneau, vous entrez dans le monde du vin de façon accessible et conviviale.',
+    grandcru_body:    'Vous dégustez les vins de CellAR, importateur spécialisé en Oregon et État de Washington. Le vin n\'a pas besoin d\'être compliqué : dans ce créneau, vous entrez dans le monde du vin de façon accessible et conviviale.',
     grandcru_cta:     'Réserver ce créneau',
     profile_included:  'Profil gustatif personnalisé',
     seated_included:   'Dégustation assise à table',
@@ -392,7 +404,7 @@ window.RDV.translations = {
     /* ── Tickets Page ── */
     tickets_eyebrow:  'Billets',
     tickets_title:    'Réservez votre voyage',
-    tickets_body:     'Les billets sont disponibles via Stamhoofd. Sélectionnez le créneau souhaité et réservez votre place. Le nombre de places par créneau est limité à 45 personnes. La billetterie pour le partenaire 3 ouvrira plus tard.',
+    tickets_body:     'Les billets sont disponibles via Stamhoofd. Sélectionnez le créneau souhaité et réservez votre place. Le nombre de places par créneau est limité à 45 personnes. La billetterie pour CellAR ouvrira plus tard.',
     tickets_cta:      'Acheter via Stamhoofd',
     tickets_soon:     'Billets bientôt disponibles',
     tickets_urgency:  'Places limitées, réservez vite !',
@@ -417,7 +429,7 @@ window.RDV.translations = {
     faq_q8:  'Où a lieu l\'événement?',
     faq_a8:  'À la Villa Anamma, un petit château avec jardin à Sint-Amandsberg (Gand). L\'adresse complète et l\'itinéraire vous parviennent avec votre billet.',
     faq_q9:  'À quelle heure dois-je arriver?',
-    faq_a9:  'Wijnhuis Tinto: 16h30–19h00 · Wijndomein Waes: 18h30–21h00 · Créneau 3: 20h30–23h00. Nous vous demandons d\'arriver à l\'heure pour le check-in.',
+    faq_a9:  'Wijnhuis Tinto: 16h30–19h00 · Wijndomein Waes: 18h30–21h00 · CellAR: 20h30–23h00. Nous vous demandons d\'arriver à l\'heure pour le check-in.',
     faq_q10: 'Y a-t-il des amuse-bouches végétariens?',
     faq_a10: 'Les informations sur les options végétariennes et allergènes suivront. Contactez-nous pour des questions spécifiques.',
 
@@ -453,7 +465,7 @@ window.RDV.translations = {
     eyebrow_overview:   'Aperçu',
     h2_comparison:      'Comparaison en un coup d\'œil',
     cta_formula_title:  'Prêt pour votre formule?',
-    cta_formula_body:   'Les billets sont disponibles via Stamhoofd. La vente pour le partenaire 3 ouvrira plus tard.',
+    cta_formula_body:   'Les billets sont disponibles via Stamhoofd. La vente pour CellAR ouvrira plus tard.',
 
     /* ── Tickets page ── */
     tickets_h2:           'Achetez votre billet',
@@ -497,13 +509,17 @@ window.RDV.translations = {
     cta_ready_travel: 'Prêt à voyager avec nous?',
 
     /* ── Steun Ons page ── */
-    steunons_eyebrow: 'Nous soutenir',
-    steunons_h1: 'Votre soutien compte',
-    steunons_body: 'Routes Des Vins est un événement étudiant. Avec votre soutien, nous pouvons couvrir les frais et créer une soirée inoubliable.',
-    steunons_item_title: 'Tire-bouchon personnalisé',
-    steunons_item_body: 'Commandez un tire-bouchon gravé à votre nom. Un souvenir durable et une façon de nous soutenir financièrement.',
-    steunons_order_cta: 'Commander par mail',
-    steunons_price_label: 'Prix sur demande',
+    partners_eyebrow: 'Partenaires',
+    partners_h1: 'Nos partenaires',
+    partners_body: 'C\'est aussi grâce à ces partenaires que nous pouvons mettre sur pied Routes Des Vins. Cliquez sur un logo pour visiter leur site.',
+    partners_more: 'En savoir plus sur ce partenaire',
+    partners_visit: 'Visiter le site →',
+    olearys_meta: 'Sports bar et restaurant · Gand',
+    olearys_body: 'O\'Learys, au Dok Noord, est le plus grand bar de Gand : un sports bar et restaurant de style bostonien sur 3800 m². On peut y jouer au bowling sur 18 pistes, au curling et au minigolf, ou regarder ensemble les grands matchs.',
+    eurotap_meta: 'Location de matériel de tirage · Sint-Niklaas',
+    eurotap_body: 'Euro Tap Rent, basé à Sint-Niklaas, loue depuis 1998 des installations de tirage, des comptoirs réfrigérés, des frigos, des verres et des cuves événementielles. Ils livrent et installent tout pour les fêtes d\'entreprise, festivals et événements, pour que les organisateurs n\'aient à penser à rien.',
+    partners_cta_h2: 'Devenir partenaire ?',
+    partners_cta_body: 'Vous souhaitez contribuer à Routes Des Vins avec votre entreprise ? Envoyez-nous un mail et nous verrons ensemble ce qui est possible.',
     /* ── Sponsor section ── */
     sponsor_eyebrow: 'Collaborer',
     sponsor_h2: 'Devenez sponsor',
