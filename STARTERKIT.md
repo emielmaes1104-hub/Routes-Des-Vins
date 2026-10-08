@@ -42,7 +42,7 @@
 |---|---|---|---|---|
 | 1 | `classic_*` | **Wijnhuis Tinto** (bevestigd okt 2026, `tinto_*`-sleutels) | €39 | 16u30–19u00 |
 | 2 | `sunset_*` | **Wijndomein Waes** (bevestigd, volledig verwerkt) | €45 | 18u30–21u00 |
-| 3 | `grandcru_*` | **CellAR** (bevestigd okt 2026, `cellar_*`-sleutels; ticketverkoop nog dicht) | €29 | 20u30–23u00 |
+| 3 | `grandcru_*` | **CellAR** (bevestigd okt 2026, `cellar_*`-sleutels; ticketverkoop open sinds 9 okt) | €29 | 20u30–23u00 |
 
 - Max. **45** personen per tijdslot (was ooit 30 — oude waarde dook nog op in `tickets.html`, is gefixt).
 - Countdown mikt op `2026-11-20T15:30:00` (in `translations.js`, onderaan).
@@ -77,7 +77,7 @@ formules.html       Formules: 3 formulekaarten + vergelijkingstabel
 tickets.html        Tickets: Stamhoofd-CTA, prijskaarten, stats
 faq.html            FAQ: accordion, 4 categorieën
 over-ons.html       Over Ons: verhaal, team (4 leden, klikbare bio's), kernwaarden
-partners.html       Partners (okt 2026, vervangt Steun ons): logo's met link naar hun site + uitklapbare uitleg (O'Learys Gent, Euro Tap Rent), oproep om partner te worden
+partners.html       Partners (okt 2026, vervangt Steun ons): logo's met link naar hun site + uitklapbare uitleg (O'Learys Gent, Euro Tap Rent, Fit-Out Destelbergen; 3 kolommen op desktop, logo's groen `#516F5A` in `fotos/logo-*-green.png`), oproep om partner te worden
 steun-ons.html      Enkel nog een redirect naar partners.html (oude links blijven werken)
 privacybeleid.html  Legal
 voorwaarden.html    Legal (incl. terugbetaling)

@@ -144,9 +144,8 @@ window.RDV.translations = {
     /* ── Tickets Page ── */
     tickets_eyebrow:  'Tickets',
     tickets_title:    'Boek jouw reis',
-    tickets_body:     'Tickets zijn beschikbaar via Stamhoofd. Selecteer het gewenste tijdslot en verzeker je van jouw plek. Het aantal plaatsen per tijdslot is beperkt tot 45 personen. De ticketverkoop voor CellAR start later.',
+    tickets_body:     'Tickets zijn beschikbaar via Stamhoofd. Selecteer het gewenste tijdslot en verzeker je van jouw plek. Het aantal plaatsen per tijdslot is beperkt tot 45 personen.',
     tickets_cta:      'Koop tickets via Stamhoofd',
-    tickets_soon:     'Tickets binnenkort beschikbaar',
     tickets_urgency:  'Beperkt aantal plaatsen, wees er snel bij!',
 
     /* ── FAQ Page ── */
@@ -205,7 +204,7 @@ window.RDV.translations = {
     eyebrow_overview:   'Overzicht',
     h2_comparison:      'Vergelijking op een rij',
     cta_formula_title:  'Klaar voor jouw formule?',
-    cta_formula_body:   'Tickets zijn beschikbaar via Stamhoofd. De verkoop voor CellAR start later.',
+    cta_formula_body:   'Tickets voor alle drie de tijdsloten zijn beschikbaar via Stamhoofd.',
 
     /* ── Tickets page ── */
     tickets_h2:           'Koop jouw ticket',
@@ -258,6 +257,8 @@ window.RDV.translations = {
     olearys_body: 'O\'Learys aan Dok Noord is de grootste bar van Gent: een sportsbar en restaurant in Bostonstijl op 3800 m². Je kan er bowlen op 18 banen, curlen, minigolfen en samen naar de grote matchen kijken.',
     eurotap_meta: 'Verhuur tapmateriaal · Sint-Niklaas',
     eurotap_body: 'Euro Tap Rent uit Sint-Niklaas verhuurt sinds 1998 tapinstallaties, koeltogen, frigo\'s, glazen en evenemententanks. Ze leveren en installeren alles voor bedrijfsfeesten, festivals en evenementen, zodat de organisatoren aan niets meer hoeven te denken.',
+    fitout_meta: 'Fitness en padel · Destelbergen',
+    fitout_body: 'Fit-Out is al ruim 30 jaar een familiale sportclub in Destelbergen en Lochristi, met meer dan 5000 m² sportplezier. Je kan er terecht voor fitness met begeleiding op maat, groepslessen, reformer pilates, Hyrox en padel.',
     partners_cta_h2: 'Ook partner worden?',
     partners_cta_body: 'Wil je met jouw bedrijf mee bouwen aan Routes Des Vins? Stuur ons een mail, dan bekijken we samen wat mogelijk is.',
     /* ── Sponsor section ── */
@@ -404,9 +405,8 @@ window.RDV.translations = {
     /* ── Tickets Page ── */
     tickets_eyebrow:  'Billets',
     tickets_title:    'Réservez votre voyage',
-    tickets_body:     'Les billets sont disponibles via Stamhoofd. Sélectionnez le créneau souhaité et réservez votre place. Le nombre de places par créneau est limité à 45 personnes. La billetterie pour CellAR ouvrira plus tard.',
+    tickets_body:     'Les billets sont disponibles via Stamhoofd. Sélectionnez le créneau souhaité et réservez votre place. Le nombre de places par créneau est limité à 45 personnes.',
     tickets_cta:      'Acheter via Stamhoofd',
-    tickets_soon:     'Billets bientôt disponibles',
     tickets_urgency:  'Places limitées, réservez vite !',
 
     /* ── FAQ Page ── */
@@ -465,7 +465,7 @@ window.RDV.translations = {
     eyebrow_overview:   'Aperçu',
     h2_comparison:      'Comparaison en un coup d\'œil',
     cta_formula_title:  'Prêt pour votre formule?',
-    cta_formula_body:   'Les billets sont disponibles via Stamhoofd. La vente pour CellAR ouvrira plus tard.',
+    cta_formula_body:   'Les billets pour les trois créneaux sont disponibles via Stamhoofd.',
 
     /* ── Tickets page ── */
     tickets_h2:           'Achetez votre billet',
@@ -518,6 +518,8 @@ window.RDV.translations = {
     olearys_body: 'O\'Learys, au Dok Noord, est le plus grand bar de Gand : un sports bar et restaurant de style bostonien sur 3800 m². On peut y jouer au bowling sur 18 pistes, au curling et au minigolf, ou regarder ensemble les grands matchs.',
     eurotap_meta: 'Location de matériel de tirage · Sint-Niklaas',
     eurotap_body: 'Euro Tap Rent, basé à Sint-Niklaas, loue depuis 1998 des installations de tirage, des comptoirs réfrigérés, des frigos, des verres et des cuves événementielles. Ils livrent et installent tout pour les fêtes d\'entreprise, festivals et événements, pour que les organisateurs n\'aient à penser à rien.',
+    fitout_meta: 'Fitness et padel · Destelbergen',
+    fitout_body: 'Fit-Out est depuis plus de 30 ans un club de sport familial à Destelbergen et Lochristi, avec plus de 5000 m² consacrés au sport. On y trouve du fitness avec un accompagnement sur mesure, des cours collectifs, du reformer pilates, de l\'Hyrox et du padel.',
     partners_cta_h2: 'Devenir partenaire ?',
     partners_cta_body: 'Vous souhaitez contribuer à Routes Des Vins avec votre entreprise ? Envoyez-nous un mail et nous verrons ensemble ce qui est possible.',
     /* ── Sponsor section ── */

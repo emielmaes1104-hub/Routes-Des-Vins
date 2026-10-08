@@ -12,11 +12,11 @@
     .cta-banner::before { content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 25% 50%,rgba(81,111,90,.3) 0%,transparent 70%),radial-gradient(ellipse 50% 60% at 80% 30%,rgba(140,161,128,.15) 0%,transparent 60%); }
     .cta-banner > .container { position:relative;z-index:1; }
     .sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
-    .partner-grid { display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;max-width:880px;margin:0 auto;align-items:start; }
-    @media (max-width: 640px) { .partner-grid { grid-template-columns:1fr; } }
+    .partner-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1080px;margin:0 auto;align-items:start; }
+    @media (max-width: 900px) { .partner-grid { grid-template-columns:1fr;max-width:480px; } }
     .partner-card { background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-md);transition:transform 0.3s var(--ease-spring),box-shadow 0.3s; }
     .partner-card:hover { transform:translateY(-4px);box-shadow:var(--shadow-xl); }
-    .partner-logo-link { display:flex;align-items:center;justify-content:center;height:200px;padding:2rem 2.5rem;background:var(--c-cream);border-bottom:1px solid var(--c-offwhite); }
+    .partner-logo-link { display:flex;align-items:center;justify-content:center;height:180px;padding:2rem;background:var(--c-cream);border-bottom:1px solid var(--c-offwhite); }
     .partner-logo-link img { max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;transition:transform 0.35s var(--ease-spring); }
     .partner-logo-link:hover img { transform:scale(1.05); }
     .partner-logo-link:active img { transform:scale(0.98); }
@@ -133,6 +133,28 @@
           <div class="partner-bio-inner"><div>
             <p data-i18n="eurotap_body">Euro Tap Rent uit Sint-Niklaas verhuurt sinds 1998 tapinstallaties, koeltogen, frigo's, glazen en evenemententanks. Ze leveren en installeren alles voor bedrijfsfeesten, festivals en evenementen, zodat de organisatoren aan niets meer hoeven te denken.</p>
             <a class="partner-visit" href="https://eurotaprent.be/" target="_blank" rel="noopener" data-i18n="partners_visit">Bezoek de website →</a>
+          </div></div>
+        </div>
+      </div>
+      <!-- Fit-Out Destelbergen -->
+      <div class="partner-card reveal delay-3">
+        <a class="partner-logo-link" href="https://fit-out.be/" target="_blank" rel="noopener">
+          <img src="fotos/logo-fitout-green.png" alt="Fit-Out Destelbergen" loading="lazy">
+        </a>
+        <div class="partner-card-body">
+          <div>
+            <div class="partner-name">Fit-Out Destelbergen</div>
+            <div class="partner-meta" data-i18n="fitout_meta">Fitness en padel · Destelbergen</div>
+          </div>
+          <button class="bio-toggle" type="button" aria-expanded="false" aria-controls="bio-fitout" onclick="togglePartner(this)">
+            <span class="sr-only" data-i18n="partners_more">Meer over deze partner</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bio-chevron" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+        <div class="partner-bio" id="bio-fitout">
+          <div class="partner-bio-inner"><div>
+            <p data-i18n="fitout_body">Fit-Out is al ruim 30 jaar een familiale sportclub in Destelbergen en Lochristi, met meer dan 5000 m² sportplezier. Je kan er terecht voor fitness met begeleiding op maat, groepslessen, reformer pilates, Hyrox en padel.</p>
+            <a class="partner-visit" href="https://fit-out.be/" target="_blank" rel="noopener" data-i18n="partners_visit">Bezoek de website →</a>
           </div></div>
         </div>
       </div>
