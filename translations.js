@@ -134,6 +134,9 @@ window.RDV.translations = {
     included_cell:     'Inbegrepen',
     row_welcome:       'Welkomstdrankje',
     row_passport:      'Wijnpaspoort',
+    row_extra:         'Extraatje',
+    sunset_gift:       'Extraatje: een kleine attentie van Wijndomein Waes',
+    sunset_gift_cell:  'Kleine attentie van het domein',
     belgian_badge:     '100% Belgisch',
     sunset_belgian:    'Wijn van eigen bodem, met een Belgian Wine Award 2026',
 
@@ -391,6 +394,9 @@ window.RDV.translations = {
     included_cell:     'Inclus',
     row_welcome:       'Boisson de bienvenue',
     row_passport:      'Passeport viticole',
+    row_extra:         'Petit plus',
+    sunset_gift:       'En bonus : une petite attention du Wijndomein Waes',
+    sunset_gift_cell:  'Petite attention du domaine',
     belgian_badge:     '100 % belge',
     sunset_belgian:    'Du vin de chez nous, primé aux Belgian Wine Awards 2026',
 
