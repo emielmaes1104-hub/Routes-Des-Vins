@@ -43,6 +43,138 @@
       pointer-events: none;
     }
     .cta-banner > * { position: relative; z-index: 1; }
+
+    /* ── Bereikbaarheid ── */
+    .travel-head { max-width: 640px; margin-bottom: 2.5rem; }
+    .travel-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 2rem;
+      align-items: stretch;
+    }
+    @media (max-width: 900px) { .travel-grid { grid-template-columns: 1fr; } }
+
+    .dest-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .dest-top {
+      background: var(--c-dark);
+      color: #fff;
+      padding: 1.5rem 1.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1rem;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .dest-top::after {
+      content: '';
+      position: absolute;
+      left: 1.25rem; right: 1.25rem; bottom: -1px;
+      border-bottom: 2px dashed rgba(255,255,255,.18);
+    }
+    .dest-label { font-size: 0.62rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+    .dest-name { font-family: var(--font-display); font-size: 1.75rem; line-height: 1.1; margin-top: 0.35rem; }
+    .dest-addr { font-size: 0.9rem; color: rgba(255,255,255,.75); margin-top: 0.25rem; }
+    .dest-code { font-family: var(--font-display); font-size: 2.25rem; color: var(--c-light); line-height: 1; }
+    .dest-map { position: relative; flex: 1; min-height: 280px; background: var(--c-offwhite); }
+    .dest-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; filter: saturate(.75); }
+    .dest-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; padding: 1.1rem 1.25rem; border-top: 1px solid rgba(81,111,90,.12); }
+    .chip-btn {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      font-family: var(--font-body); font-size: 0.85rem; font-weight: 600;
+      padding: 0.55rem 0.95rem; border-radius: 999px;
+      border: 1.5px solid rgba(81,111,90,.25); background: var(--c-cream); color: var(--c-dark);
+      cursor: pointer;
+      transition: background .2s var(--ease-out), border-color .2s var(--ease-out), transform .2s var(--ease-spring);
+    }
+    .chip-btn:hover { background: var(--c-light); border-color: var(--c-sage); transform: translateY(-1px); }
+    .chip-btn:active { transform: translateY(0); }
+    .chip-btn:focus-visible { outline: 3px solid var(--c-sage); outline-offset: 2px; }
+    .chip-btn.primary { background: var(--c-forest); border-color: var(--c-forest); color: #fff; }
+    .chip-btn.primary:hover { background: var(--c-dark-mid); border-color: var(--c-dark-mid); }
+    .chip-btn svg { flex-shrink: 0; }
+
+    .modes { display: flex; flex-direction: column; gap: 0.85rem; }
+    .mode {
+      background: #fff; border-radius: 16px; padding: 1.15rem 1.25rem;
+      box-shadow: var(--shadow-sm);
+      display: grid; grid-template-columns: 44px 1fr; gap: 1rem; align-items: start;
+    }
+    .mode-icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: var(--c-cream); color: var(--c-forest);
+      display: grid; place-items: center;
+    }
+    .mode-title { font-weight: 600; color: var(--c-dark); font-size: 1rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+    .mode-tag { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; background: var(--c-light); color: var(--c-dark); padding: 0.15rem 0.5rem; border-radius: 999px; }
+    .mode-body { font-size: 0.9rem; color: var(--c-text-light); margin-top: 0.2rem; line-height: 1.6; }
+    .mode-body strong { color: var(--c-text); font-weight: 600; }
+    .mode-link { display: inline-block; margin-top: 0.4rem; font-size: 0.82rem; font-weight: 600; color: var(--c-forest); border-bottom: 1px solid rgba(81,111,90,.3); }
+    .mode-link:hover { color: var(--c-dark); border-color: var(--c-dark); }
+    .mode-link:focus-visible { outline: 2px solid var(--c-sage); outline-offset: 2px; }
+
+    /* Planner */
+    .planner {
+      margin-top: 2rem;
+      background: var(--c-dark);
+      color: #fff;
+      border-radius: 20px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .planner::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 50% 90% at 0% 0%, rgba(81,111,90,.35) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 70% at 100% 100%, rgba(140,161,128,.18) 0%, transparent 60%);
+    }
+    .planner > * { position: relative; }
+    .planner-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 2rem; align-items: center; }
+    @media (max-width: 900px) { .planner-grid { grid-template-columns: 1fr; } .planner { padding: 1.5rem; } }
+    .planner h3 { color: #fff; font-size: 1.6rem; }
+    .planner p.lead { color: rgba(255,255,255,.65); font-size: 0.95rem; margin-top: 0.5rem; }
+    .slot-pick { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
+    .slot-btn {
+      font-family: var(--font-body); font-size: 0.85rem; font-weight: 600;
+      padding: 0.6rem 1rem; border-radius: 999px; cursor: pointer;
+      background: rgba(255,255,255,.06); color: #fff; border: 1.5px solid rgba(255,255,255,.18);
+      transition: background .2s var(--ease-out), border-color .2s var(--ease-out), transform .2s var(--ease-spring);
+    }
+    .slot-btn small { display: block; font-weight: 400; font-size: 0.72rem; color: rgba(255,255,255,.6); }
+    .slot-btn:hover { border-color: var(--c-light); transform: translateY(-1px); }
+    .slot-btn:active { transform: translateY(0); }
+    .slot-btn:focus-visible { outline: 3px solid var(--c-sage); outline-offset: 2px; }
+    .slot-btn[aria-pressed="true"] { background: var(--c-light); color: var(--c-dark); border-color: var(--c-light); }
+    .slot-btn[aria-pressed="true"] small { color: var(--c-dark-mid); }
+
+    .itin { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); border-radius: 16px; padding: 1.25rem 1.4rem; }
+    .itin-row { display: grid; grid-template-columns: 64px 1fr; gap: 0.9rem; padding: 0.55rem 0; position: relative; }
+    .itin-row + .itin-row { border-top: 1px dashed rgba(255,255,255,.12); }
+    .itin-time { font-family: var(--font-display); font-size: 1.15rem; color: var(--c-light); }
+    .itin-txt { font-size: 0.88rem; color: rgba(255,255,255,.8); line-height: 1.5; }
+    .itin-txt strong { color: #fff; font-weight: 600; }
+    .itin-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+    .itin-actions .chip-btn { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.2); color: #fff; }
+    .itin-actions .chip-btn:hover { background: rgba(255,255,255,.16); border-color: var(--c-light); }
+    .itin-actions .chip-btn.primary { background: var(--c-light); border-color: var(--c-light); color: var(--c-dark); }
+    .itin-actions .chip-btn.primary:hover { background: #fff; border-color: #fff; }
+
+    .care-note {
+      margin-top: 1.25rem; display: flex; gap: 0.85rem; align-items: flex-start;
+      background: var(--c-offwhite); border-radius: 14px; padding: 1rem 1.25rem;
+      font-size: 0.9rem; color: var(--c-text);
+    }
+    .care-note .ico { color: var(--c-forest); flex-shrink: 0; margin-top: 2px; }
+    .copy-toast { font-size: 0.8rem; color: var(--c-forest); font-weight: 600; opacity: 0; transition: opacity .25s var(--ease-out); align-self: center; }
+    .copy-toast.show { opacity: 1; }
   </style>
 </head>
 <body>
@@ -246,6 +378,131 @@
   </div>
 </section>
 
+<!-- Bereikbaarheid -->
+<section class="section" id="bereikbaarheid" style="background:var(--c-cream)">
+  <div class="container">
+    <div class="travel-head">
+      <span class="section-eyebrow reveal" data-i18n="travel_eyebrow">Jouw reisroute</span>
+      <h2 class="display-md reveal delay-1" style="margin-top:0.5rem" data-i18n="travel_title">Hoe geraak je in de villa?</h2>
+      <p class="body-lg reveal delay-2" style="margin-top:1rem;color:var(--c-text-light)" data-i18n="travel_intro">Villa Anamma ligt in Sint-Amandsberg, net buiten het centrum van Gent. Hieronder vind je alles om je avond zorgeloos te plannen, van je eerste stap tot je terugreis.</p>
+    </div>
+
+    <div class="travel-grid">
+      <!-- Bestemming + kaart -->
+      <div class="dest-card reveal-scale">
+        <div class="dest-top">
+          <div>
+            <div class="dest-label" data-i18n="travel_dest_label">Bestemming</div>
+            <div class="dest-name">Villa Anamma</div>
+            <div class="dest-addr">Gustaaf Carelshof 35, 9040 Sint-Amandsberg (Gent)</div>
+          </div>
+          <div style="text-align:right">
+            <div class="dest-label" data-i18n="travel_date_label">Datum</div>
+            <div class="dest-code">20 NOV</div>
+          </div>
+        </div>
+        <div class="dest-map">
+          <iframe
+            title="Kaart Villa Anamma"
+            src="https://maps.google.com/maps?q=Villa%20Anamma%2C%20Gustaaf%20Carelshof%2035%2C%209040%20Gent&z=15&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="dest-actions">
+          <a class="chip-btn primary" href="https://www.google.com/maps/dir/?api=1&destination=Villa%20Anamma%2C%20Gustaaf%20Carelshof%2035%2C%209040%20Gent" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            <span data-i18n="travel_btn_gmaps">Route in Google Maps</span>
+          </a>
+          <a class="chip-btn" href="https://maps.apple.com/?daddr=Gustaaf%20Carelshof%2035%2C%209040%20Gent&q=Villa%20Anamma" target="_blank" rel="noopener">
+            <span data-i18n="travel_btn_apple">Apple Kaarten</span>
+          </a>
+          <button class="chip-btn" type="button" id="copyAddr">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span data-i18n="travel_btn_copy">Kopieer adres</span>
+          </button>
+          <span class="copy-toast" id="copyToast" data-i18n="travel_copied">Gekopieerd!</span>
+        </div>
+      </div>
+
+      <!-- Vervoerswijzen -->
+      <div class="modes">
+        <div class="mode reveal delay-1">
+          <div class="mode-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="14" rx="3"/><path d="M4 11h16"/><path d="M12 3v8"/><circle cx="8.5" cy="14" r="0.6" fill="currentColor"/><circle cx="15.5" cy="14" r="0.6" fill="currentColor"/><path d="m7 21 2-4"/><path d="m17 21-2-4"/></svg>
+          </div>
+          <div>
+            <div class="mode-title"><span data-i18n="travel_train_title">Met de trein</span> <span class="mode-tag" data-i18n="travel_tag_tip">Onze tip</span></div>
+            <div class="mode-body" data-i18n="travel_train_body">Stap af in <strong>Gent-Dampoort</strong>, het dichtstbijzijnde station. Van daar ben je met de bus in een tiental minuten aan de villa. Kom je via <strong>Gent-Sint-Pieters</strong>? Dan sta je met de trein op een paar minuten in Gent-Dampoort.</div>
+            <a class="mode-link" href="https://www.belgiantrain.be/nl" target="_blank" rel="noopener" data-i18n="travel_train_link" data-i18n-href="travel_train_href">Plan je treinreis bij NMBS →</a>
+          </div>
+        </div>
+
+        <div class="mode reveal delay-2">
+          <div class="mode-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="3"/><path d="M3 10h18"/><circle cx="7.5" cy="13.5" r="0.6" fill="currentColor"/><circle cx="16.5" cy="13.5" r="0.6" fill="currentColor"/><path d="M6 17v3"/><path d="M18 17v3"/></svg>
+          </div>
+          <div>
+            <div class="mode-title" data-i18n="travel_bus_title">Met de bus</div>
+            <div class="mode-body" data-i18n="travel_bus_body">Halte <strong>Sint-Amandsberg Carelshof</strong> ligt op de Antwerpsesteenweg, op ±3 minuten wandelen van de villa. Er rijden meerdere lijnen langs, onder meer vanaf Gent-Dampoort.</div>
+            <a class="mode-link" href="https://www.delijn.be/nl/routeplanner/" target="_blank" rel="noopener" data-i18n="travel_bus_link">Plan je rit bij De Lijn →</a>
+          </div>
+        </div>
+
+        <div class="mode reveal delay-3">
+          <div class="mode-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+          </div>
+          <div>
+            <div class="mode-title" data-i18n="travel_bike_title">Met de fiets</div>
+            <div class="mode-body" data-i18n="travel_bike_body">Gent is een fietsstad. Vanaf de Korenmarkt fiets je in ±15 minuten naar de villa. Geen fiets bij? Aan station Gent-Dampoort kan je een <strong>Blue-bike</strong> huren.</div>
+          </div>
+        </div>
+
+        <div class="mode reveal delay-4">
+          <div class="mode-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3v-5l2-5h14l2 5v5h-2"/><path d="M3 12h18"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M9 17h6"/></svg>
+          </div>
+          <div>
+            <div class="mode-title" data-i18n="travel_car_title">Met de wagen</div>
+            <div class="mode-body" data-i18n="travel_car_body">De villa ligt <strong>buiten de Gentse lage-emissiezone (LEZ)</strong>. Er is beperkte parking aan de villa. Op ±10 minuten wandelen kan je gratis parkeren op <strong>P+R Oostakker</strong> (±200 plaatsen).</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="care-note reveal">
+      <svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M12 15v7"/><path d="M5 3h14l-1 7a6 6 0 0 1-12 0z"/></svg>
+      <div data-i18n="travel_care">Proef met een gerust hart: wie met trein, bus of fiets komt, kan elk glas ten volle beleven. Kom je met de wagen? Spreek dan vooraf af wie er rijdt, of plan een taxi voor de terugweg.</div>
+    </div>
+
+    <!-- Avondplanner -->
+    <div class="planner reveal">
+      <div class="planner-grid">
+        <div>
+          <span class="dest-label" data-i18n="planner_eyebrow">Jouw avond in één oogopslag</span>
+          <h3 style="margin-top:0.5rem" data-i18n="planner_title">Plan je avond</h3>
+          <p class="lead" data-i18n="planner_lead">Kies jouw tijdslot. Dan zie je meteen wanneer je best vertrekt en kan je alles in je agenda zetten.</p>
+          <div class="slot-pick" role="group" aria-label="Kies je tijdslot">
+            <button type="button" class="slot-btn" data-slot="0" aria-pressed="true">16u30–19u00<small>Wijnhuis Tinto</small></button>
+            <button type="button" class="slot-btn" data-slot="1" aria-pressed="false">18u30–21u00<small>Wijndomein Waes</small></button>
+            <button type="button" class="slot-btn" data-slot="2" aria-pressed="false">20u30–23u00<small>CellAR</small></button>
+          </div>
+        </div>
+        <div class="itin" aria-live="polite">
+          <div id="itinRows"></div>
+          <div class="itin-actions">
+            <button type="button" class="chip-btn primary" id="icsBtn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              <span data-i18n="planner_ics">Zet in mijn agenda</span>
+            </button>
+            <a class="chip-btn" href="https://www.google.com/maps/dir/?api=1&destination=Villa%20Anamma%2C%20Gustaaf%20Carelshof%2035%2C%209040%20Gent&travelmode=transit" target="_blank" rel="noopener" data-i18n="planner_transit">Route met openbaar vervoer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA Banner -->
 <section class="section cta-banner">
   <div class="container" style="display:flex;flex-direction:column;align-items:center;gap:1.5rem">
@@ -319,5 +576,98 @@
 </footer>
 
 <script src="translations.js"></script>
+<script>
+(function() {
+  const ADDRESS = 'Villa Anamma, Gustaaf Carelshof 35, 9040 Sint-Amandsberg (Gent)';
+  // Tijden in lokale tijd (20 nov 2026, CET = UTC+1)
+  const SLOTS = [
+    { partner: 'Wijnhuis Tinto',  start: [16, 30], end: [19, 0] },
+    { partner: 'Wijndomein Waes', start: [18, 30], end: [21, 0] },
+    { partner: 'CellAR',          start: [20, 30], end: [23, 0] }
+  ];
+  const TXT = {
+    nl: {
+      arrive: 'Kom aan in Villa Anamma. Zo heb je tijd om rustig in te checken en je boarding pass op te halen.',
+      start:  p => 'Je proeverij bij <strong>' + p + '</strong> begint.',
+      end:    'Einde van je sessie. Je favorieten kan je meteen meenemen.',
+      home:   'Tijd voor de terugreis. Check vooraf je verbinding, zeker als je met trein of bus naar huis gaat.',
+      fmt:    (h, m) => h + 'u' + String(m).padStart(2, '0'),
+      calTitle: p => 'Routes Des Vins · ' + p,
+      calDesc: 'Not your casual winetasting. Kom 15 minuten vooraf voor de check-in. Info en bereikbaarheid: '
+    },
+    fr: {
+      arrive: 'Arrivée à la Villa Anamma. Vous avez le temps de faire le check-in et de récupérer votre carte d\'embarquement.',
+      start:  p => 'Votre dégustation chez <strong>' + p + '</strong> commence.',
+      end:    'Fin de votre session. Vous pouvez emporter vos coups de cœur sur place.',
+      home:   'L\'heure du retour. Vérifiez votre correspondance à l\'avance, surtout en train ou en bus.',
+      fmt:    (h, m) => h + 'h' + String(m).padStart(2, '0'),
+      calTitle: p => 'Routes Des Vins · ' + p,
+      calDesc: 'Not your casual winetasting. Arrivez 15 minutes à l\'avance pour le check-in. Infos et accès : '
+    }
+  };
+
+  let current = 0;
+  const lang = () => (window.RDV && window.RDV.getLang && TXT[window.RDV.getLang()]) ? window.RDV.getLang() : 'nl';
+  const shift = ([h, m], d) => { const t = h * 60 + m + d; return [Math.floor(t / 60), t % 60]; };
+
+  function render() {
+    const s = SLOTS[current], T = TXT[lang()];
+    const rows = [
+      [shift(s.start, -15), T.arrive],
+      [s.start, T.start(s.partner)],
+      [s.end, T.end],
+      [shift(s.end, 15), T.home]
+    ];
+    document.getElementById('itinRows').innerHTML = rows.map(([t, txt]) =>
+      '<div class="itin-row"><div class="itin-time">' + T.fmt(t[0], t[1]) + '</div><div class="itin-txt">' + txt + '</div></div>'
+    ).join('');
+  }
+
+  document.querySelectorAll('.slot-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      current = +btn.dataset.slot;
+      document.querySelectorAll('.slot-btn').forEach(b => b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'));
+      render();
+    });
+  });
+  document.querySelectorAll('.lang-btn').forEach(b => b.addEventListener('click', () => setTimeout(render, 0)));
+
+  // Agenda (.ics)
+  function icsTime([h, m]) {
+    const utcH = h - 1; // CET → UTC
+    return '20261120T' + String(utcH).padStart(2, '0') + String(m).padStart(2, '0') + '00Z';
+  }
+  document.getElementById('icsBtn').addEventListener('click', () => {
+    const s = SLOTS[current], T = TXT[lang()];
+    const ics = [
+      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Routes Des Vins//Event//NL', 'CALSCALE:GREGORIAN',
+      'BEGIN:VEVENT',
+      'UID:rdv-2026-slot' + current + '@routesdesvins.com',
+      'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z',
+      'DTSTART:' + icsTime(shift(s.start, -15)),
+      'DTEND:' + icsTime(s.end),
+      'SUMMARY:' + T.calTitle(s.partner),
+      'LOCATION:' + ADDRESS.replace(/,/g, '\\,'),
+      'DESCRIPTION:' + (T.calDesc + location.href.split('#')[0] + '#bereikbaarheid').replace(/,/g, '\\,'),
+      'BEGIN:VALARM', 'TRIGGER:-PT2H', 'ACTION:DISPLAY', 'DESCRIPTION:Routes Des Vins', 'END:VALARM',
+      'END:VEVENT', 'END:VCALENDAR'
+    ].join('\r\n');
+    const url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar;charset=utf-8' }));
+    const a = document.createElement('a');
+    a.href = url; a.download = 'routes-des-vins.ics';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+
+  // Adres kopiëren
+  document.getElementById('copyAddr').addEventListener('click', () => {
+    const toast = document.getElementById('copyToast');
+    const done = () => { toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 1800); };
+    if (navigator.clipboard) navigator.clipboard.writeText(ADDRESS).then(done).catch(() => {});
+  });
+
+  render();
+})();
+</script>
 </body>
 </html>
