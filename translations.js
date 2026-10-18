@@ -285,6 +285,8 @@ window.RDV.translations = {
     eurotap_body: 'Euro Tap Rent uit Sint-Niklaas verhuurt sinds 1998 tapinstallaties, koeltogen, frigo\'s, glazen en evenemententanks. Ze leveren en installeren alles voor bedrijfsfeesten, festivals en evenementen, zodat de organisatoren aan niets meer hoeven te denken.',
     fitout_meta: 'Fitness en padel · Destelbergen',
     fitout_body: 'Fit-Out is al ruim 30 jaar een familiale sportclub in Destelbergen en Lochristi, met meer dan 5000 m² sportplezier. Je kan er terecht voor fitness met begeleiding op maat, groepslessen, reformer pilates, Hyrox en padel.',
+    immozone_meta: 'Vastgoedmakelaar · Wetteren',
+    immozone_body: 'Immo Zone is een erkend vastgoedkantoor dat thuis is in de regio, met onder meer een kantoor in Wetteren. Vastgoedmakelaar Quinten Van Hauwermeiren helpt je er bij het kopen, verkopen, huren en verhuren van je woning, en schat je woning ook gratis en vrijblijvend.',
     partners_cta_h2: 'Ook partner worden?',
     partners_cta_body: 'Wil je met jouw bedrijf mee bouwen aan Routes Des Vins? Stuur ons een mail, dan bekijken we samen wat mogelijk is.',
     /* ── Sponsor section ── */
@@ -572,6 +574,8 @@ window.RDV.translations = {
     eurotap_body: 'Euro Tap Rent, basé à Sint-Niklaas, loue depuis 1998 des installations de tirage, des comptoirs réfrigérés, des frigos, des verres et des cuves événementielles. Ils livrent et installent tout pour les fêtes d\'entreprise, festivals et événements, pour que les organisateurs n\'aient à penser à rien.',
     fitout_meta: 'Fitness et padel · Destelbergen',
     fitout_body: 'Fit-Out est depuis plus de 30 ans un club de sport familial à Destelbergen et Lochristi, avec plus de 5000 m² consacrés au sport. On y trouve du fitness avec un accompagnement sur mesure, des cours collectifs, du reformer pilates, de l\'Hyrox et du padel.',
+    immozone_meta: 'Agent immobilier · Wetteren',
+    immozone_body: 'Immo Zone est une agence immobilière agréée, bien ancrée dans la région, avec notamment un bureau à Wetteren. L\'agent immobilier Quinten Van Hauwermeiren vous y accompagne pour acheter, vendre, louer ou mettre en location votre bien, et réalise aussi une estimation gratuite et sans engagement.',
     partners_cta_h2: 'Devenir partenaire ?',
     partners_cta_body: 'Vous souhaitez contribuer à Routes Des Vins avec votre entreprise ? Envoyez-nous un mail et nous verrons ensemble ce qui est possible.',
     /* ── Sponsor section ── */
