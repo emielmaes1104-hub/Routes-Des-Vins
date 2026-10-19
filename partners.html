@@ -38,6 +38,9 @@
     .partner-visit { font-size:0.85rem;font-weight:600;color:var(--c-forest);text-decoration:none;display:inline-block;transition:transform 0.25s var(--ease-spring); }
     .partner-visit:hover { transform:translateX(3px);text-decoration:underline; }
     .partner-visit:active { opacity:0.7; }
+    .media-partner { margin-top:4.5rem;display:flex;flex-direction:column;align-items:center;gap:1.5rem; }
+    .partner-grid.single { grid-template-columns:minmax(0,340px);justify-content:center; }
+    .partner-logo-link img.round { max-height:116px;border-radius:50%;box-shadow:0 6px 18px rgba(36,56,44,.18); }
     .partner-visit:focus-visible { outline:2px solid var(--c-sage);outline-offset:2px;border-radius:4px; }
   </style>
 </head>
@@ -157,6 +160,34 @@
             <p data-i18n="immozone_body">Immo Zone is een erkend vastgoedkantoor dat thuis is in de regio, met onder meer een kantoor in Wetteren. Vastgoedmakelaar Quinten Van Hauwermeiren helpt je er bij het kopen, verkopen, huren en verhuren van je woning, en schat je woning ook gratis en vrijblijvend.</p>
             <a class="partner-visit" href="https://www.immo-zone.be/" target="_blank" rel="noopener" data-i18n="partners_visit">Bezoek de website →</a>
           </div></div>
+        </div>
+      </div>
+    </div>
+    <!-- Mediapartner -->
+    <div class="media-partner">
+      <span class="section-eyebrow reveal" data-i18n="partners_media">Mediapartner</span>
+      <div class="partner-grid single">
+        <!-- WijnWijnWijn -->
+        <div class="partner-card reveal delay-1">
+          <a class="partner-logo-link" href="https://wijnwijnwijn.be/" target="_blank" rel="noopener">
+            <img class="round" src="fotos/logo-wijnwijnwijn.jpg" alt="WijnWijnWijn" loading="lazy">
+          </a>
+          <div class="partner-card-body">
+            <div>
+              <div class="partner-name">WijnWijnWijn</div>
+              <div class="partner-meta" data-i18n="wijnwijnwijn_meta">Onafhankelijk wijnmagazine · online</div>
+            </div>
+            <button class="bio-toggle" type="button" aria-expanded="false" aria-controls="bio-wijnwijnwijn" onclick="togglePartner(this)">
+              <span class="sr-only" data-i18n="partners_more">Meer over deze partner</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bio-chevron" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+          <div class="partner-bio" id="bio-wijnwijnwijn">
+            <div class="partner-bio-inner"><div>
+              <p data-i18n="wijnwijnwijn_body">WijnWijnWijn is een onafhankelijke wijncommunity die wijnliefhebbers en wijnprofessionals dichter bij elkaar wil brengen. Met een online magazine, een gratis nieuwsbrief om de twee weken en een Facebookgroep brengen ze wijnnieuws, verhalen en een uitgebreide wijnagenda. Ook Routes Des Vins vind je erin terug.</p>
+              <a class="partner-visit" href="https://wijnwijnwijn.be/" target="_blank" rel="noopener" data-i18n="partners_visit">Bezoek de website →</a>
+            </div></div>
+          </div>
         </div>
       </div>
     </div>
