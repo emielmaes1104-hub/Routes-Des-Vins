@@ -12,7 +12,7 @@
     .cta-banner::before { content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 25% 50%,rgba(81,111,90,.3) 0%,transparent 70%),radial-gradient(ellipse 50% 60% at 80% 30%,rgba(140,161,128,.15) 0%,transparent 60%); }
     .cta-banner > .container { position:relative;z-index:1; }
     .sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
-    .partner-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1080px;margin:0 auto;align-items:start; }
+    .partner-grid { display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;max-width:920px;margin:0 auto;align-items:start; }
     @media (max-width: 900px) { .partner-grid { grid-template-columns:1fr;max-width:480px; } }
     .partner-card { background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-md);transition:transform 0.3s var(--ease-spring),box-shadow 0.3s; }
     .partner-card:hover { transform:translateY(-4px);box-shadow:var(--shadow-xl); }
@@ -159,6 +159,28 @@
           <div class="partner-bio-inner"><div>
             <p data-i18n="immozone_body">Immo Zone is een erkend vastgoedkantoor dat thuis is in de regio, met onder meer een kantoor in Wetteren. Vastgoedmakelaar Quinten Van Hauwermeiren helpt je er bij het kopen, verkopen, huren en verhuren van je woning, en schat je woning ook gratis en vrijblijvend.</p>
             <a class="partner-visit" href="https://www.immo-zone.be/" target="_blank" rel="noopener" data-i18n="partners_visit">Bezoek de website →</a>
+          </div></div>
+        </div>
+      </div>
+      <!-- Eskimofabriek -->
+      <div class="partner-card reveal delay-4">
+        <a class="partner-logo-link" href="https://www.eskimofabriek.be/" target="_blank" rel="noopener">
+          <img src="fotos/logo-eskimofabriek-green.svg" alt="Eskimofabriek" loading="lazy">
+        </a>
+        <div class="partner-card-body">
+          <div>
+            <div class="partner-name">Eskimofabriek</div>
+            <div class="partner-meta" data-i18n="eskimo_meta">Evenementenlocatie · Gent</div>
+          </div>
+          <button class="bio-toggle" type="button" aria-expanded="false" aria-controls="bio-eskimo" onclick="togglePartner(this)">
+            <span class="sr-only" data-i18n="partners_more">Meer over deze partner</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bio-chevron" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+        <div class="partner-bio" id="bio-eskimo">
+          <div class="partner-bio-inner"><div>
+            <p data-i18n="eskimo_body">De Eskimofabriek aan de Wiedauwkaai in Gent is een textielfabriek uit 1906 die volledig gerenoveerd werd tot evenementenlocatie. Je kan er terecht voor feesten, seminaries en congressen, en in de Business Village hebben bedrijven er hun kantoor.</p>
+            <a class="partner-visit" href="https://www.eskimofabriek.be/" target="_blank" rel="noopener" data-i18n="partners_visit">Bezoek de website →</a>
           </div></div>
         </div>
       </div>
