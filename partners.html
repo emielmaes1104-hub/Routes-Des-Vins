@@ -13,6 +13,7 @@
     .cta-banner > .container { position:relative;z-index:1; }
     .sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
     .partner-grid { display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;max-width:920px;margin:0 auto;align-items:start; }
+    @media (min-width: 901px) { .partner-grid:not(.single) > .partner-card:last-child:nth-child(odd) { grid-column:1 / -1;justify-self:center;width:calc(50% - 0.75rem); } }
     @media (max-width: 900px) { .partner-grid { grid-template-columns:1fr;max-width:480px; } }
     .partner-card { background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-md);transition:transform 0.3s var(--ease-spring),box-shadow 0.3s; }
     .partner-card:hover { transform:translateY(-4px);box-shadow:var(--shadow-xl); }
@@ -181,6 +182,28 @@
           <div class="partner-bio-inner"><div>
             <p data-i18n="eskimo_body">De Eskimofabriek aan de Wiedauwkaai in Gent is een textielfabriek uit 1906 die volledig gerenoveerd werd tot evenementenlocatie. Je kan er terecht voor feesten, seminaries en congressen, en in de Business Village hebben bedrijven er hun kantoor.</p>
             <a class="partner-visit" href="https://www.eskimofabriek.be/" target="_blank" rel="noopener" data-i18n="partners_visit">Bezoek de website →</a>
+          </div></div>
+        </div>
+      </div>
+      <!-- Zwart op Wit -->
+      <div class="partner-card reveal delay-1">
+        <a class="partner-logo-link" href="https://www.zwartopwit.be/" target="_blank" rel="noopener">
+          <img src="fotos/logo-zwartopwit-green.png" alt="Zwart op Wit, duurzaam drukwerk" loading="lazy">
+        </a>
+        <div class="partner-card-body">
+          <div>
+            <div class="partner-name">Zwart op Wit</div>
+            <div class="partner-meta" data-i18n="zwartopwit_meta">Duurzame drukkerij · Herenthout</div>
+          </div>
+          <button class="bio-toggle" type="button" aria-expanded="false" aria-controls="bio-zwartopwit" onclick="togglePartner(this)">
+            <span class="sr-only" data-i18n="partners_more">Meer over deze partner</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bio-chevron" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+        <div class="partner-bio" id="bio-zwartopwit">
+          <div class="partner-bio-inner"><div>
+            <p data-i18n="zwartopwit_body">Zwart op Wit is een duurzame drukkerij uit Herenthout die drukt op FSC-gecertificeerd en gerecycleerd papier. Van flyers tot boekjes en blokken: ook onze flyers en de wijnpaspoorten die je op het event krijgt, komen van bij hen.</p>
+            <a class="partner-visit" href="https://www.zwartopwit.be/" target="_blank" rel="noopener" data-i18n="partners_visit">Bezoek de website →</a>
           </div></div>
         </div>
       </div>
