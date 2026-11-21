@@ -18,7 +18,7 @@ window.RDV.translations = {
     nav_tickets:   'Tickets',
     nav_faq:       'FAQ',
     nav_about:     'Over Ons',
-    nav_cta:       'Tickets kopen',
+    nav_cta:       'Bekijk de top 3',
     nav_partners:  'Partners',
 
     /* ── Footer ── */
@@ -334,7 +334,7 @@ window.RDV.translations = {
     nav_tickets:   'Billets',
     nav_faq:       'FAQ',
     nav_about:     'À Propos',
-    nav_cta:       'Acheter des billets',
+    nav_cta:       'Voir le top 3',
     nav_partners:  'Partenaires',
 
     /* ── Footer ── */
