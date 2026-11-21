@@ -34,7 +34,11 @@ window.RDV.translations = {
     hero_title:    'Routes Des Vins',
     hero_subtitle: 'Not your casual winetasting',
     hero_date:     '20 november 2026 · Villa Anamma',
-    hero_cta:      'Tickets kopen',
+    hero_cta:      'Bekijk de top 3',
+    eyebrow_top3:  'Jullie podium',
+    top3_title:    'De top 3 per wijnpartner',
+    top3_body:     'Na je laatste glas koos je in je wijnpaspoort je eigen podium. Dit zijn de wijnen die het vaakst met de medailles gingen lopen.',
+    top3_note:     'Je favoriet vergeten te kopen? Je wijnpartner bestelt hem graag voor je.',
     hero_body:     'Doe je rugzak dicht. Vanavond vertrek je op een reis langs drie wijnpartners, elk met hun eigen verhaal, zonder vliegticket maar met een boarding pass.',
 
     /* ── Home Countdown ── */
@@ -338,7 +342,11 @@ window.RDV.translations = {
     hero_title:    'Routes Des Vins',
     hero_subtitle: 'Not your casual winetasting',
     hero_date:     '20 novembre 2026 · Villa Anamma',
-    hero_cta:      'Acheter des billets',
+    hero_cta:      'Voir le top 3',
+    eyebrow_top3:  'Votre podium',
+    top3_title:    'Le top 3 par partenaire',
+    top3_body:     'Après votre dernier verre, vous avez composé votre propre podium dans votre passeport du vin. Voici les vins qui ont le plus souvent décroché une médaille.',
+    top3_note:     'Vous avez oublié d\'acheter votre favori ? Votre partenaire vin le commande volontiers pour vous.',
     hero_body:     'Fermez votre sac. Ce soir, vous partez en voyage chez trois partenaires vin, chacun avec sa propre histoire, sans billet d\'avion mais avec une carte d\'embarquement.',
 
     /* ── Home Countdown ── */
