@@ -251,41 +251,184 @@
 <!-- TOP 3 (na het event, 21/11) -->
 <section class="section" id="top3" style="background:var(--c-cream);scroll-margin-top:var(--nav-h)">
   <div class="container">
-    <div style="max-width:640px;margin:0 auto 3rem;text-align:center">
+    <div style="max-width:660px;margin:0 auto 3rem;text-align:center">
       <span class="section-eyebrow reveal" style="justify-content:center" data-i18n="eyebrow_top3">Jullie podium</span>
       <h2 class="display-md reveal delay-1" data-i18n="top3_title">De top 3 per wijnpartner</h2>
-      <p class="text-muted reveal delay-2" style="margin-top:1rem" data-i18n="top3_body">Na je laatste glas koos je in je wijnpaspoort je eigen podium. Dit zijn de wijnen die het vaakst met de medailles gingen lopen.</p>
+      <p class="text-muted reveal delay-2" style="margin-top:1rem" data-i18n="top3_body">Na je laatste glas koos je in je wijnpaspoort je eigen podium. Hier zie je alle wijnen van de avond, met de medailles erbij. Je favoriet bestel je met één klik bij de wijnpartner.</p>
     </div>
-    <div class="top3-grid">
-      <div class="top3-card reveal">
-        <span class="top3-halte">Halte 1 · 16u30</span>
-        <h3>Wijnhuis Tinto</h3>
-        <ol>
-          <li><span class="top3-medal m1">1</span><span><strong>Monte Pío Raxeira 2025</strong><small>Rías Baixas DO</small></span></li>
-          <li><span class="top3-medal m2">2</span><span><strong>Celler Piñol L'Avi Arrufí 2021</strong><small>Terra Alta DO</small></span></li>
-          <li><span class="top3-medal m3">3</span><span><strong>Gómez Cruzado Crianza 2022</strong><small>Rioja DOC</small></span></li>
-        </ol>
+    <div class="partner-wines reveal" id="wijnen-tinto">
+      <div class="partner-wines-head">
+        <div>
+          <span class="top3-halte">Halte 1 · 16u30</span>
+          <h3>Wijnhuis Tinto</h3>
+        </div>
+        <p class="partner-how" data-i18n="top3_how_tinto">Online bestellen in hun webshop, of afhalen in Heusden.</p>
       </div>
-      <div class="top3-card reveal">
-        <span class="top3-halte">Halte 2 · 18u30</span>
-        <h3>Wijndomein Waes</h3>
-        <ol>
-          <li><span class="top3-medal m1">1</span><span><strong>Waes Cabernet Blanc Brut</strong><small>Brut Nature · Gault&amp;Millau 2026</small></span></li>
-          <li><span class="top3-medal m2">2</span><span><strong>Waes Cabernet Blanc 2023</strong><small>Cabernet Blanc</small></span></li>
-          <li><span class="top3-medal m3">3</span><span><strong>Waes Rood 2024</strong><small>Rondo · Regent · Léon Millot · Cabernet Cortis</small></span></li>
-        </ol>
-      </div>
-      <div class="top3-card reveal">
-        <span class="top3-halte">Halte 3 · 20u30</span>
-        <h3>CellAR</h3>
-        <ol>
-          <li><span class="top3-medal m1">1</span><span><strong>Comelli Sauvignon</strong><small>Friuli Colli Orientali</small></span></li>
-          <li><span class="top3-medal m2">2</span><span><strong>Marco Bonfante Borgo Brut</strong><small>Piemonte · Cortese</small></span></li>
-          <li><span class="top3-medal m3">3</span><span><strong>Comelli Jaco</strong><small>Friuli · Merlot</small></span></li>
-        </ol>
+      <div class="wine-grid">
+        <article class="wine-card is-podium">
+          <div class="wine-stage"><span class="top3-medal m1" aria-label="Plaats 1">1</span><svg class="wine-svg" viewBox="0 0 80 240" role="img" aria-hidden="true"><path d="M33 6h14v52c0 12 21 24 21 50v116a10 10 0 0 1-10 10H22a10 10 0 0 1-10-10V108c0-26 21-38 21-50z" fill="#D9C98A"/><rect x="31" y="6" width="18" height="30" fill="#1C2A21" opacity=".75"/><rect x="18" y="128" width="44" height="58" rx="2" fill="#F1F4EC"/><text x="40" y="161" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="7.5" font-weight="700" fill="#1C2A21" letter-spacing=".5">MONTE PÍO</text></svg></div>
+          <div class="wine-info">
+            <span class="wine-type t-wit" data-i18n="top3_type_wit">Wit</span>
+            <h4>Monte Pío Raxeira 2025</h4>
+            <p class="wine-region">Rías Baixas DO</p>
+            <p class="wine-price">€ 12,90</p>
+            <a class="wine-order" href="https://www.wijnhuistinto.be/nl/wijn-shop/wijn-detail.asp?id=475" target="_blank" rel="noopener"><span data-i18n="top3_order_online">Bestel online</span> →</a>
+          </div>
+        </article>
+        <article class="wine-card is-podium">
+          <div class="wine-stage"><span class="top3-medal m2" aria-label="Plaats 2">2</span><img src="fotos/wijnen/tinto-lavi-arrufi.jpg" alt="Fles Celler Piñol L'Avi Arrufí 2021" loading="lazy" width="200" height="640"></div>
+          <div class="wine-info">
+            <span class="wine-type t-wit" data-i18n="top3_type_wit">Wit</span>
+            <h4>Celler Piñol L'Avi Arrufí 2021</h4>
+            <p class="wine-region">Terra Alta DO</p>
+            <p class="wine-price">€ 23,50</p>
+            <a class="wine-order" href="https://www.wijnhuistinto.be/nl/wijn-shop/wijn-detail.asp?id=133" target="_blank" rel="noopener"><span data-i18n="top3_order_online">Bestel online</span> →</a>
+          </div>
+        </article>
+        <article class="wine-card is-podium">
+          <div class="wine-stage"><span class="top3-medal m3" aria-label="Plaats 3">3</span><img src="fotos/wijnen/tinto-gomez-cruzado.jpg" alt="Fles Gómez Cruzado Crianza 2022" loading="lazy" width="200" height="640"></div>
+          <div class="wine-info">
+            <span class="wine-type t-rood" data-i18n="top3_type_rood">Rood</span>
+            <h4>Gómez Cruzado Crianza 2022</h4>
+            <p class="wine-region">Rioja DOC</p>
+            <p class="wine-price">€ 12,70</p>
+            <a class="wine-order" href="https://www.wijnhuistinto.be/nl/wijn-shop/wijn-detail.asp?id=378" target="_blank" rel="noopener"><span data-i18n="top3_order_online">Bestel online</span> →</a>
+          </div>
+        </article>
+        <article class="wine-card">
+          <div class="wine-stage"><img src="fotos/wijnen/tinto-casa-de-mouraz.jpg" alt="Fles Casa de Mouraz 2023" loading="lazy" width="200" height="640"></div>
+          <div class="wine-info">
+            <span class="wine-type t-rood" data-i18n="top3_type_rood">Rood</span>
+            <h4>Casa de Mouraz 2023</h4>
+            <p class="wine-region">Dão DOC</p>
+            <p class="wine-price">€ 12,50</p>
+            <a class="wine-order" href="https://www.wijnhuistinto.be/nl/wijn-shop/wijn-detail.asp?id=16" target="_blank" rel="noopener"><span data-i18n="top3_order_online">Bestel online</span> →</a>
+          </div>
+        </article>
+        <article class="wine-card">
+          <div class="wine-stage"><svg class="wine-svg" viewBox="0 0 80 240" role="img" aria-hidden="true"><path d="M33 6h14v52c0 12 21 24 21 50v116a10 10 0 0 1-10 10H22a10 10 0 0 1-10-10V108c0-26 21-38 21-50z" fill="#C9B66A"/><rect x="31" y="6" width="18" height="30" fill="#1C2A21" opacity=".75"/><rect x="18" y="128" width="44" height="58" rx="2" fill="#F1F4EC"/><text x="40" y="161" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="7.5" font-weight="700" fill="#1C2A21" letter-spacing=".5">BROT</text></svg></div>
+          <div class="wine-info">
+            <span class="wine-type t-bubbels" data-i18n="top3_type_bubbels">Bubbels</span>
+            <h4>BROT Pet Nat 2023</h4>
+            <p class="wine-region">Pétillant naturel</p>
+            <p class="wine-price">€ 14,90</p>
+            <a class="wine-order" href="https://www.wijnhuistinto.be/nl/wijn-shop/wijn-detail.asp?id=562" target="_blank" rel="noopener"><span data-i18n="top3_order_online">Bestel online</span> →</a>
+          </div>
+        </article>
       </div>
     </div>
-    <p class="text-muted body-sm reveal" style="text-align:center;margin-top:2rem" data-i18n="top3_note">Je favoriet vergeten te kopen? Je wijnpartner bestelt hem graag voor je.</p>
+    <div class="partner-wines reveal" id="wijnen-waes">
+      <div class="partner-wines-head">
+        <div>
+          <span class="top3-halte">Halte 2 · 18u30</span>
+          <h3>Wijndomein Waes</h3>
+        </div>
+        <p class="partner-how" data-i18n="top3_how_waes">Bestellen per mail, of langsgaan op het domein in Zwijnaarde.</p>
+      </div>
+      <div class="wine-grid">
+        <article class="wine-card is-podium">
+          <div class="wine-stage"><span class="top3-medal m1" aria-label="Plaats 1">1</span><img src="fotos/wijnen/waes-cabernet-blanc-brut.jpg" alt="Fles Waes Cabernet Blanc Brut" loading="lazy" width="200" height="640"></div>
+          <div class="wine-info">
+            <span class="wine-type t-bubbels" data-i18n="top3_type_bubbels">Bubbels</span>
+            <h4>Waes Cabernet Blanc Brut</h4>
+            <p class="wine-region">Brut Nature · Gault&amp;Millau 2026</p>
+            <p class="wine-price">€ 24,50</p>
+            <a class="wine-order" href="mailto:info@wijndomeinwaes.be?subject=Bestelling%20Waes%20Cabernet%20Blanc%20Brut%20%28Routes%20Des%20Vins%29"><span data-i18n="top3_order_mail">Bestel per mail</span> →</a>
+          </div>
+        </article>
+        <article class="wine-card is-podium">
+          <div class="wine-stage"><span class="top3-medal m2" aria-label="Plaats 2">2</span><img src="fotos/wijnen/waes-cabernet-blanc.jpg" alt="Fles Waes Cabernet Blanc 2023" loading="lazy" width="200" height="640"></div>
+          <div class="wine-info">
+            <span class="wine-type t-wit" data-i18n="top3_type_wit">Wit</span>
+            <h4>Waes Cabernet Blanc 2023</h4>
+            <p class="wine-region">Cabernet Blanc</p>
+            <p class="wine-price">€ 21</p>
+            <a class="wine-order" href="mailto:info@wijndomeinwaes.be?subject=Bestelling%20Waes%20Cabernet%20Blanc%202023%20%28Routes%20Des%20Vins%29"><span data-i18n="top3_order_mail">Bestel per mail</span> →</a>
+          </div>
+        </article>
+        <article class="wine-card is-podium">
+          <div class="wine-stage"><span class="top3-medal m3" aria-label="Plaats 3">3</span><img src="fotos/wijnen/waes-rood.jpg" alt="Fles Waes Rood 2024" loading="lazy" width="200" height="640"></div>
+          <div class="wine-info">
+            <span class="wine-type t-rood" data-i18n="top3_type_rood">Rood</span>
+            <h4>Waes Rood 2024</h4>
+            <p class="wine-region">Rondo · Regent · Léon Millot · Cabernet Cortis</p>
+            <p class="wine-price">€ 21</p>
+            <a class="wine-order" href="mailto:info@wijndomeinwaes.be?subject=Bestelling%20Waes%20Rood%202024%20%28Routes%20Des%20Vins%29"><span data-i18n="top3_order_mail">Bestel per mail</span> →</a>
+          </div>
+        </article>
+        <article class="wine-card">
+          <div class="wine-stage"><img src="fotos/wijnen/waes-wit.jpg" alt="Fles Waes Wit 2022" loading="lazy" width="200" height="640"></div>
+          <div class="wine-info">
+            <span class="wine-type t-wit" data-i18n="top3_type_wit">Wit</span>
+            <h4>Waes Wit 2022</h4>
+            <p class="wine-region">Solaris &amp; Bianca</p>
+            <p class="wine-price">€ 20</p>
+            <a class="wine-order" href="mailto:info@wijndomeinwaes.be?subject=Bestelling%20Waes%20Wit%202022%20%28Routes%20Des%20Vins%29"><span data-i18n="top3_order_mail">Bestel per mail</span> →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="partner-wines reveal" id="wijnen-cellar">
+      <div class="partner-wines-head">
+        <div>
+          <span class="top3-halte">Halte 3 · 20u30</span>
+          <h3>CellAR</h3>
+        </div>
+        <p class="partner-how" data-i18n="top3_how_cellar">Online bestellen in hun webshop, per fles of per doos van 6.</p>
+      </div>
+      <div class="wine-grid">
+        <article class="wine-card is-podium">
+          <div class="wine-stage"><span class="top3-medal m1" aria-label="Plaats 1">1</span><img src="fotos/wijnen/cellar-la-stella.jpg" alt="Fles Marco Bonfante La Stella" loading="lazy" width="200" height="640"></div>
+          <div class="wine-info">
+            <span class="wine-type t-rood" data-i18n="top3_type_rood">Rood</span>
+            <h4>Marco Bonfante La Stella</h4>
+            <p class="wine-region">Barbera d’Asti</p>
+            <p class="wine-price">€ 13<span class="wine-box"><span data-i18n="top3_box">doos van 6</span>: € 65</span></p>
+            <a class="wine-order" href="mailto:info@cellar.pro?subject=Bestelling%20Marco%20Bonfante%20La%20Stella%20%28Routes%20Des%20Vins%29"><span data-i18n="top3_order_mail">Bestel per mail</span> →</a>
+          </div>
+        </article>
+        <article class="wine-card is-podium">
+          <div class="wine-stage"><span class="top3-medal m2" aria-label="Plaats 2">2</span><img src="fotos/wijnen/cellar-sauvignon.jpg" alt="Fles Comelli Sauvignon" loading="lazy" width="200" height="640"></div>
+          <div class="wine-info">
+            <span class="wine-type t-wit" data-i18n="top3_type_wit">Wit</span>
+            <h4>Comelli Sauvignon</h4>
+            <p class="wine-region">Friuli Colli Orientali</p>
+            <p class="wine-price">€ 14<span class="wine-box"><span data-i18n="top3_box">doos van 6</span>: € 70</span></p>
+            <a class="wine-order" href="https://cellar.pro/products/sauvignon-comelli-2014" target="_blank" rel="noopener"><span data-i18n="top3_order_online">Bestel online</span> →</a>
+          </div>
+        </article>
+        <article class="wine-card is-podium">
+          <div class="wine-stage"><span class="top3-medal m3" aria-label="Plaats 3">3</span><img src="fotos/wijnen/cellar-borgo-brut.jpg" alt="Fles Marco Bonfante Borgo Brut" loading="lazy" width="200" height="640"></div>
+          <div class="wine-info">
+            <span class="wine-type t-bubbels" data-i18n="top3_type_bubbels">Bubbels</span>
+            <h4>Marco Bonfante Borgo Brut</h4>
+            <p class="wine-region">Piemonte · Cortese</p>
+            <p class="wine-price">€ 13<span class="wine-box"><span data-i18n="top3_box">doos van 6</span>: € 65</span></p>
+            <a class="wine-order" href="https://cellar.pro/products/marco-bonfante-borgo-brut" target="_blank" rel="noopener"><span data-i18n="top3_order_online">Bestel online</span> →</a>
+          </div>
+        </article>
+        <article class="wine-card">
+          <div class="wine-stage"><img src="fotos/wijnen/cellar-jaco.jpg" alt="Fles Comelli Jaco" loading="lazy" width="200" height="640"></div>
+          <div class="wine-info">
+            <span class="wine-type t-rood" data-i18n="top3_type_rood">Rood</span>
+            <h4>Comelli Jaco</h4>
+            <p class="wine-region">Friuli · Merlot</p>
+            <p class="wine-price">€ 15<span class="wine-box"><span data-i18n="top3_box">doos van 6</span>: € 75</span></p>
+            <a class="wine-order" href="https://cellar.pro/products/jaco-merlot-comelli-2013" target="_blank" rel="noopener"><span data-i18n="top3_order_online">Bestel online</span> →</a>
+          </div>
+        </article>
+        <article class="wine-card">
+          <div class="wine-stage"><img src="fotos/wijnen/cellar-esprimo.jpg" alt="Fles Comelli Esprimo" loading="lazy" width="200" height="640"></div>
+          <div class="wine-info">
+            <span class="wine-type t-rood" data-i18n="top3_type_rood">Rood</span>
+            <h4>Comelli Esprimo</h4>
+            <p class="wine-region">Friuli · Refosco</p>
+            <p class="wine-price">€ 10<span class="wine-box"><span data-i18n="top3_box">doos van 6</span>: € 50</span></p>
+            <a class="wine-order" href="https://cellar.pro/products/esprimo-red-comelli-2013" target="_blank" rel="noopener"><span data-i18n="top3_order_online">Bestel online</span> →</a>
+          </div>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
 
